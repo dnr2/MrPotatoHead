@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{AB65B972-DD94-50A7-C7B4-51ECF08711B4}") = "Mr Potato Head to the Rescue", "Assembly-CSharp-firstpass-vs.csproj", "{5AEB3FB0-6ADD-3183-10DE-A72E9B93F594}"
+EndProject
 Project("{AB65B972-DD94-50A7-C7B4-51ECF08711B4}") = "Mr Potato Head to the Rescue", "Assembly-CSharp-vs.csproj", "{0DE062AA-7287-C2EF-6B2F-20CB3579729F}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AEB3FB0-6ADD-3183-10DE-A72E9B93F594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AEB3FB0-6ADD-3183-10DE-A72E9B93F594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AEB3FB0-6ADD-3183-10DE-A72E9B93F594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AEB3FB0-6ADD-3183-10DE-A72E9B93F594}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0DE062AA-7287-C2EF-6B2F-20CB3579729F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0DE062AA-7287-C2EF-6B2F-20CB3579729F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DE062AA-7287-C2EF-6B2F-20CB3579729F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-		GlobalSection(MonoDevelopProperties) = preSolution
+					GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
