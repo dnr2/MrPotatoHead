@@ -9,8 +9,9 @@ public class CheckPoint : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player") {
 			//audio.Play();
+
 			spawnPoint.position = new Vector3(transform.position.x, spawnPoint.position.y, spawnPoint.position.z);
-			Object.Destroy(gameObject);
+			Object.Destroy(this);
 
 			}
 		}
