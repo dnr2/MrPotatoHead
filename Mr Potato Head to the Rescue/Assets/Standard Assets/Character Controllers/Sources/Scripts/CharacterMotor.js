@@ -13,11 +13,17 @@ var useFixedUpdate : boolean = true;
 // The current global direction we want the character to move in.
 @System.NonSerialized
 var inputMoveDirection : Vector3 = Vector3.zero;
-
+var anim : Animator;
 // Is the jump button held down? We use this interface instead of checking
 // for the jump button directly so this script can also be used by AIs.
 @System.NonSerialized
 var inputJump : boolean = false;
+
+function Start () 
+{
+    anim = GetComponent("Animator");
+    anim.SetBool("Jump", false);
+}
 
 class CharacterMotorMovement {
 	// The maximum horizontal speed when moving
@@ -226,6 +232,9 @@ private function UpdateFunction () {
 	groundNormal = Vector3.zero;
 	
    	// Move our character!
+	anim.SetFloat("Speed", currentMovementOffset.x);
+	
+	
 	movement.collisionFlags = controller.Move (currentMovementOffset);
 	
 	movement.lastHitPoint = movement.hitPoint;
@@ -288,6 +297,7 @@ private function UpdateFunction () {
 	}
 	// We were not grounded but just landed on something
 	else if (!grounded && IsGroundedTest()) {
+		anim.SetBool("Jump", false);
 		grounded = true;
 		jumping.jumping = false;
 		SubtractNewPlatformVelocity();
@@ -404,6 +414,7 @@ private function ApplyGravityAndJumping (velocity : Vector3) {
 		// When jumping up we don't apply gravity for some time when the user is holding the jump button.
 		// This gives more control over jump height by pressing the button longer.
 		if (jumping.jumping && jumping.holdingJumpButton) {
+			anim.SetBool("Jump", true);
 			// Calculate the duration that the extra jump force should have effect.
 			// If we're still less than that duration after the jumping time, apply the force.
 			if (Time.time < jumping.lastStartTime + jumping.extraHeight / CalculateJumpVerticalSpeed(jumping.baseHeight)) {
@@ -424,6 +435,7 @@ private function ApplyGravityAndJumping (velocity : Vector3) {
 		// it's confusing and it feels like the game is buggy.
 		if (jumping.enabled && canControl && (Time.time - jumping.lastButtonDownTime < 0.2)) {
 			grounded = false;
+			anim.SetBool("Jump", true);
 			jumping.jumping = true;
 			jumping.lastStartTime = Time.time;
 			jumping.lastButtonDownTime = -100;
