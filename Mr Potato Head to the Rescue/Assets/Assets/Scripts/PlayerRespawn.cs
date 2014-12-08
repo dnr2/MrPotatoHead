@@ -10,7 +10,7 @@ using System.Collections;
 
 	void OnTriggerEnter(Collider other){
 		Object.Destroy (other.gameObject);
-		GameObject P = (GameObject)GameObject.Instantiate (player, spawnPoint.position, Quaternion.identity);
+		GameObject P = (GameObject)GameObject.Instantiate (player, spawnPoint.position, player.transform.rotation);
 		MainCameraController c = Camera.main.GetComponent <MainCameraController>();
 		c.target = P.transform;
 	}
