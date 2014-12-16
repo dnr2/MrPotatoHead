@@ -7,55 +7,88 @@ public class ThrowHat : MonoBehaviour {
 	private bool attacking;
 	private int attackingState;
 	private Animator throwingHatAnimator;
-
-	public GameObject throwingHat;
+	private GameObject throwingHatClone;
+	private Vector3 offset;
+	public GameObject throwingHatPrefab;
 	public SkinnedMeshRenderer stationaryHatMesh;
 
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator>();
-		if( throwingHat != null ) throwingHatAnimator = throwingHat.GetComponent<Animator> ();
 		animator.SetBool("isAttack", false);
-		throwingHatAnimator.SetBool ("throwing", false);
 		attacking = false;
+		throwingHatClone = null;
 		attackingState = 0;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
+
 		//TODO ugly code! =)
 		bool runningInitialAnimation = animator.GetCurrentAnimatorStateInfo (0).IsName ("AttackHat");
-		bool runningThrowingAnimation = throwingHatAnimator.GetCurrentAnimatorStateInfo (0).IsName ("ThrowingHatAnimation");
-
+		bool runningThrowingAnimation = false;
+		if( throwingHatAnimator != null ) runningThrowingAnimation = throwingHatAnimator.GetCurrentAnimatorStateInfo (0).IsName("ThrowingHatAnimation");
 
 		if (attacking) {
-				animator.SetBool ("Jump", false);
+				
+				animator.SetBool ("Jump", false);	
+				
+				throwingHatClone.transform.position = transform.position;
+				throwingHatClone.transform.position += offset;
+				
 				if (attackingState == 0 && runningInitialAnimation ) {
 					animator.SetBool ("isAttack", false);
 					attackingState = 1;
-				}
+				}		
 				if (attackingState == 1 && !runningInitialAnimation ) {
-					stationaryHatMesh.enabled = false;
-					throwingHatAnimator.SetBool ("throwing", true);
+					stationaryHatMesh.enabled = false;					
+					
+					//TODO talvez fazer isso depois de um delay
+					if( this.transform.localScale.z < 0){
+						Vector3 newRotation = new Vector3(0f,180f,0f);
+						throwingHatClone.transform.eulerAngles = newRotation;
+						offset = new Vector3( -4.35f, 2.48f, 0);
+					} else {
+						offset = new Vector3( 4.35f, 2.48f, 0);
+					}
 					attackingState = 2;
+					throwingHatAnimator.SetBool ("throwing", true);
 				}
-				if (attackingState == 2 && runningThrowingAnimation ) {
-					Debug.Log("seting throwing false");
+		
+				if (attackingState == 2 && runningThrowingAnimation ) {					
 					throwingHatAnimator.SetBool("throwing", false);
 					attackingState = 3;
 				}
+				
 				if( attackingState == 3 && !runningThrowingAnimation){
 					stationaryHatMesh.enabled = true;
 					attacking = false;
 					attackingState = 4;
+					Destroy( throwingHatClone );	
+					throwingHatClone = null;
+					throwingHatAnimator = null;
 				}
+				
+
 		} else {
-			if( Input.GetKeyDown(KeyCode.Z) && throwingHat != null && stationaryHatMesh != null) { //TODO setar para "fire1"
+
+			if( Input.GetKeyDown(KeyCode.Z) && throwingHatPrefab != null && stationaryHatMesh != null) { //TODO setar para "fire1"
+							
+				throwingHatClone =  Instantiate(throwingHatPrefab, throwingHatPrefab.transform.position, throwingHatPrefab.transform.rotation) as GameObject;	
+				throwingHatAnimator =  GameObject.Find("ThrowingHatPhysics").GetComponent<Animator>();
+				throwingHatAnimator.SetBool ("throwing", false);
+
+
+
+
 				animator.SetBool("isAttack", true);
 				attacking = true;
 				attackingState = 0;
 			}
 		}
+		
+
 	}
 }
