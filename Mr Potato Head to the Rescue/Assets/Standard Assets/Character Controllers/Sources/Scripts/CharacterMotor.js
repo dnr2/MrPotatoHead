@@ -594,6 +594,21 @@ function SetVelocity (velocity : Vector3) {
 	SendMessage("OnExternalVelocity");
 }
 
+function SetForwardSpeed(speed : float) {
+	movement.maxForwardSpeed = speed;
+}
+
+function GetForwardSpeed() : float {
+	return movement.maxForwardSpeed;
+}
+
+function SetBackwardSpeed(speed : float) {
+	movement.maxBackwardsSpeed = speed;
+}
+
+function GetBackwardSpeed() : float {
+	return movement.maxBackwardsSpeed;
+}
 // Require a character controller to be attached to the same game object
 @script RequireComponent (CharacterController)
 @script AddComponentMenu ("Character/Character Motor")
