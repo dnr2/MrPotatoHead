@@ -30,6 +30,7 @@ public class ThrowHat : MonoBehaviour {
 
 
 		if (attacking) {
+				animator.SetBool ("Jump", false);
 				if (attackingState == 0 && runningInitialAnimation ) {
 					animator.SetBool ("isAttack", false);
 					attackingState = 1;
