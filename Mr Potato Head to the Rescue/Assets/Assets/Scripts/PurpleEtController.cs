@@ -6,16 +6,16 @@ public class PurpleEtController : MonoBehaviour {
 	public bool moves = true; // se o objeto vai se mover
 	public int maxIncrementPos = 10; // quantidade maxima que vai andar
 	public float stepSpeed = 1; // valor a se mover
-	//public Transform modelTransform;
 	public bool initialyFacingForward = true;
 	public GameObject shot;
 	public Transform shotSpawn;
+	public float fireRate = 1F;
 	
 	private float originalXScale;
 	private float originalXPos;
 	private bool movingfForward;
-	public float fireRate = 1F;
 	private float nextFire;
+	private GameObject mrPotatoHead;
 
 	// Use this for initialization
 	void Start () {
@@ -30,7 +30,10 @@ public class PurpleEtController : MonoBehaviour {
 		if(Time.time > nextFire)
 		{
 			nextFire = Time.time + fireRate;
-			GameObject obj = Instantiate (shot, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
+			if(mrPotatoHead == null)
+				mrPotatoHead = GameObject.Find("MrPotatoHead");
+			shot.GetComponent<ProjectileController>().targetPos = mrPotatoHead.transform.position;
+			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
 		}
 
 		if (moves) { // se o objeto se move

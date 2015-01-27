@@ -321,9 +321,7 @@ private function UpdateFunction () {
 function FixedUpdate () {
 	if (movingPlatform.enabled) {
 		if (movingPlatform.activePlatform != null) {
-			if (!movingPlatform.newPlatform) {
-				var lastVelocity : Vector3 = movingPlatform.platformVelocity;
-				
+			if (!movingPlatform.newPlatform) {				
 				movingPlatform.platformVelocity = (
 					movingPlatform.activePlatform.localToWorldMatrix.MultiplyPoint3x4(movingPlatform.activeLocalPoint)
 					- movingPlatform.lastMatrix.MultiplyPoint3x4(movingPlatform.activeLocalPoint)

@@ -6,7 +6,6 @@ public class ProjectileController : MonoBehaviour {
 	public Vector3 targetPos;
 	public int type;
 	private Vector3 XAxis = new Vector3(1,0,0);
-	private Vector3 YAxis = new Vector3(0,1,0);
 	private Vector3 ZAxis = new Vector3(0,0,1);
 	// Use this for initialization
 	void Start () {
@@ -23,9 +22,6 @@ public class ProjectileController : MonoBehaviour {
 		} else {
 			this.transform.Rotate (ZAxis, toEulerDegrees (Mathf.Acos (cos))-90);
 		}
-
-		print (Mathf.Acos (cos));
-		print (toEulerDegrees(Mathf.Acos(cos)));
 		this.rigidbody.velocity = direction * speed;
 	}
 
