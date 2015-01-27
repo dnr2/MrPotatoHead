@@ -8,10 +8,14 @@ public class PurpleEtController : MonoBehaviour {
 	public float stepSpeed = 1; // valor a se mover
 	//public Transform modelTransform;
 	public bool initialyFacingForward = true;
+	public GameObject shot;
+	public Transform shotSpawn;
 	
 	private float originalXScale;
 	private float originalXPos;
 	private bool movingfForward;
+	public float fireRate = 1F;
+	private float nextFire;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +26,13 @@ public class PurpleEtController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if(Time.time > nextFire)
+		{
+			nextFire = Time.time + fireRate;
+			GameObject obj = Instantiate (shot, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
+		}
+
 		if (moves) { // se o objeto se move
 			if( originalXPos + maxIncrementPos < transform.localPosition.x ) movingfForward = false;
 			if( originalXPos > transform.localPosition.x ) movingfForward = true;
