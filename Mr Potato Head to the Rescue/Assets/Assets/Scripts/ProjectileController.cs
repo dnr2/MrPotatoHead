@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LaserController : MonoBehaviour {
+public class ProjectileController : MonoBehaviour {
 	public float speed;
 	public Vector3 targetPos;
 	public int type;
@@ -18,7 +18,13 @@ public class LaserController : MonoBehaviour {
 		Vector3 direction = new Vector3(targetPos.x - this.transform.position.x, targetPos.y - this.transform.position.y, 0);
 		direction = Vector3.Normalize(direction);
 		float cos = scalarProduct(direction, XAxis/(norm(direction)*norm(XAxis)));
-		this.transform.Rotate(ZAxis, toEulerDegrees(Mathf.Acos(cos)));
+		if (targetPos.y - this.transform.position.y < 0) {
+			this.transform.Rotate (ZAxis, 90 - toEulerDegrees (Mathf.Acos (cos)));
+		} else {
+			this.transform.Rotate (ZAxis, toEulerDegrees (Mathf.Acos (cos))-90);
+		}
+
+		print (Mathf.Acos (cos));
 		print (toEulerDegrees(Mathf.Acos(cos)));
 		this.rigidbody.velocity = direction * speed;
 	}
@@ -35,6 +41,6 @@ public class LaserController : MonoBehaviour {
 	
 	private float norm(Vector3 a)
 	{
-		return Mathf.Sqrt(Mathf.Pow(a.x, 2) + Mathf.Pow(a.y, 2) + Mathf.Pow(a.z, 2));
+		return Mathf.Sqrt(scalarProduct(a,a));
 	}
 }
