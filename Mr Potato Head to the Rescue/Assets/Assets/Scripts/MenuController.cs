@@ -1,13 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour {
-
-
-
 	public float timeDelay = 0.5f;
 	public int startState;
 	public List<Text> texts;
