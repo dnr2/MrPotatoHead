@@ -11,6 +11,10 @@ public class ProjectileController : MonoBehaviour {
 	void Start () {
 		this.calculateProjectileRotation();
 	}
+
+	void OnTriggerEnter(Collider other) {
+		Destroy(gameObject);
+	}
 	
 	private void calculateProjectileRotation()
 	{
