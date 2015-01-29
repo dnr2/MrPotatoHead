@@ -19,17 +19,40 @@ public class FlyingRedEtController : MonoBehaviour {
 	private int shots = 3;
 	private GameObject mrPotatoHead;
 	
+	private Vector3 center = new Vector3(59,17,0);
+	private float radius = 1.5f;
+	private float wanderRefreshRate = 2f;
+	private float nextWanderRefresh;
+	
 	// Use this for initialization
 	void Start () {
 		//originalXScale = modelTransform.localScale.x;
 		originalXPos = transform.localPosition.x;
 		movingfForward = initialyFacingForward;
+		if(mrPotatoHead == null)
+			mrPotatoHead = GameObject.Find("MrPotatoHead");
+	}
+	
+	void FixedUpdate()
+	{
+		if(distance (mrPotatoHead.transform.position, this.transform.position) <= 10)
+		{
+			Vector3 direction = new Vector3(this.transform.position.x - mrPotatoHead.transform.position.x, 0, 0);
+			rigidbody.velocity = direction * stepSpeed;
+		}
+		else if(distance (mrPotatoHead.transform.position, this.transform.position) >= 20)
+		{
+			Vector3 direction = new Vector3(mrPotatoHead.transform.position.x - this.transform.position.x, 0, 0);
+			rigidbody.velocity = direction * stepSpeed;
+		}
+		else
+		{
+			rigidbody.velocity = new Vector3(0,0,0);
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
 		if(!shooting && Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= 40)
 		{
 			nextFire = Time.time + fireRate;
@@ -52,6 +75,11 @@ public class FlyingRedEtController : MonoBehaviour {
 			}
 			print (shot.GetComponent<ProjectileController>().targetPos);
 		}
+	}
+	
+	private Vector3 nextVelocity()
+	{
+		return new Vector3(Random.Range(center.x - radius, center.x + radius), Random.Range(center.y - radius, center.y + radius), 0);
 	}
 	
 	private float distance(Vector3 a, Vector3 b)
