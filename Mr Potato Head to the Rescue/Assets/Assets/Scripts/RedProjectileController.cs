@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ProjectileController : MonoBehaviour {
+public class RedProjectileController : MonoBehaviour {
 	public float speed;
 	public Vector3 targetPos;
 	public int type;
@@ -11,7 +11,7 @@ public class ProjectileController : MonoBehaviour {
 	void Start () {
 		this.calculateProjectileRotation();
 	}
-
+	
 	void OnTriggerEnter(Collider other) {
 		if(other.GetComponent<ProjectileController>() == null || other.GetComponent<RedProjectileController>() == null
 		   || other.GetComponent<RedEtController>() == null || other.GetComponent<FlyingRedEtController>() == null
@@ -31,12 +31,12 @@ public class ProjectileController : MonoBehaviour {
 		}
 		this.rigidbody.velocity = direction * speed;
 	}
-
+	
 	private float toEulerDegrees(float radians)
 	{
 		return radians * (180 / Mathf.PI);
 	}
-
+	
 	private float scalarProduct(Vector3 a, Vector3 b)
 	{
 		return a.x * b.x + a.y * b.y + a.z * b.z;
