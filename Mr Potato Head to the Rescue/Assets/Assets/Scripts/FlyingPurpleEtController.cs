@@ -2,11 +2,6 @@
 using System.Collections;
 
 public class FlyingPurpleEtController : MonoBehaviour {
-
-	public bool moves = true; // se o objeto vai se mover
-	public int maxIncrementPos = 10; // quantidade maxima que vai andar
-	public float stepSpeed = 1; // valor a se mover
-	public bool initialyFacingForward = true;
 	public GameObject shot;
 	public Transform shotSpawn;
 	
@@ -26,9 +21,6 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		//originalXScale = modelTransform.localScale.x;
-		originalXPos = transform.localPosition.x;
-		movingfForward = initialyFacingForward;
 		if(mrPotatoHead == null)
 			mrPotatoHead = GameObject.Find("MrPotatoHead");
 	}

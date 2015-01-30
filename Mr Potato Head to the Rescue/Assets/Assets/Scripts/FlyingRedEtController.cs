@@ -2,16 +2,10 @@ using UnityEngine;
 using System.Collections;
 
 public class FlyingRedEtController : MonoBehaviour {
-	public bool moves = true; // se o objeto vai se mover
-	public int maxIncrementPos = 10; // quantidade maxima que vai andar
-	public bool initialyFacingForward = true;
 	public GameObject shot;
 	public Transform shotSpawn;
-	private float fireRate = 4F;
 	
-	private float originalXScale;
-	private float originalXPos;
-	private bool movingfForward;
+	private float fireRate = 2.5F;
 	private float nextFire;
 	private float nextBurstFire;
 	private bool shooting = false;
@@ -19,15 +13,12 @@ public class FlyingRedEtController : MonoBehaviour {
 	private GameObject mrPotatoHead;
 	
 	private bool turnAround = false;
-	private float sweepSpeed = 10f;
+	private float sweepSpeed = 15f;
 	private bool seek = false;
 	private float maxDistance = 40f;
 	
 	// Use this for initialization
 	void Start () {
-		//originalXScale = modelTransform.localScale.x;
-		originalXPos = transform.localPosition.x;
-		movingfForward = initialyFacingForward;
 		if(mrPotatoHead == null)
 			mrPotatoHead = GameObject.Find("MrPotatoHead");
 	}
