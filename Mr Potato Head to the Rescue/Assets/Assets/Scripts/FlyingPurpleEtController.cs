@@ -18,9 +18,11 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	private GameObject mrPotatoHead;
 	
 	private Vector3 center = new Vector3(59,30,0);
-	private float radius = 5f;
+	private float radius = 6.5f;
 	private float wanderRefreshRate = 1f;
 	private float nextWanderRefresh;
+	private float minDistance = 15f;
+	private float maxDistance = 25f;
 	
 	// Use this for initialization
 	void Start () {
@@ -33,12 +35,12 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		if(distance (mrPotatoHead.transform.position, this.transform.position) <= 15)
+		if(distance (mrPotatoHead.transform.position, this.transform.position) <= minDistance)
 		{
 			Vector3 direction = new Vector3(this.transform.position.x - mrPotatoHead.transform.position.x, 0, 0);
 			rigidbody.velocity = direction * stepSpeed;
 		}
-		else if(distance (mrPotatoHead.transform.position, this.transform.position) >= 25)
+		else if(distance (mrPotatoHead.transform.position, this.transform.position) >= maxDistance)
 		{
 			Vector3 direction = new Vector3(mrPotatoHead.transform.position.x - this.transform.position.x, 0, 0);
 			rigidbody.velocity = direction * stepSpeed;

@@ -4,11 +4,10 @@ using System.Collections;
 public class FlyingRedEtController : MonoBehaviour {
 	public bool moves = true; // se o objeto vai se mover
 	public int maxIncrementPos = 10; // quantidade maxima que vai andar
-	public float stepSpeed = 1; // valor a se mover
 	public bool initialyFacingForward = true;
 	public GameObject shot;
 	public Transform shotSpawn;
-	private float fireRate = 6F;
+	private float fireRate = 4F;
 	
 	private float originalXScale;
 	private float originalXPos;
@@ -19,10 +18,10 @@ public class FlyingRedEtController : MonoBehaviour {
 	private int shots = 3;
 	private GameObject mrPotatoHead;
 	
-	private Vector3 center = new Vector3(59,17,0);
-	private float radius = 1.5f;
-	private float wanderRefreshRate = 2f;
-	private float nextWanderRefresh;
+	private bool turnAround = false;
+	private float sweepSpeed = 10f;
+	private bool seek = false;
+	private float maxDistance = 40f;
 	
 	// Use this for initialization
 	void Start () {
@@ -35,25 +34,27 @@ public class FlyingRedEtController : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		if(distance (mrPotatoHead.transform.position, this.transform.position) <= 10)
+		if(distance(mrPotatoHead.transform.position, this.transform.position) <= maxDistance && !seek)
 		{
-			Vector3 direction = new Vector3(this.transform.position.x - mrPotatoHead.transform.position.x, 0, 0);
-			rigidbody.velocity = direction * stepSpeed;
+			this.rigidbody.velocity = new Vector3(-1,0,0) * sweepSpeed;
+			seek = true;
 		}
-		else if(distance (mrPotatoHead.transform.position, this.transform.position) >= 20)
+		else if(distance(mrPotatoHead.transform.position, this.transform.position) > maxDistance && !turnAround && seek)
 		{
-			Vector3 direction = new Vector3(mrPotatoHead.transform.position.x - this.transform.position.x, 0, 0);
-			rigidbody.velocity = direction * stepSpeed;
+			turnAround = true;
 		}
-		else
+		else if(turnAround)
 		{
-			rigidbody.velocity = new Vector3(0,0,0);
+			if(distance(mrPotatoHead.transform.position, this.transform.position) <= maxDistance + 1)
+				this.rigidbody.velocity = new Vector3(1,0,0) * sweepSpeed;
+			else
+				Destroy(gameObject);
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(!shooting && Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= 40)
+		if(!shooting && Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= maxDistance)
 		{
 			nextFire = Time.time + fireRate;
 			Vector3 target = new Vector3(mrPotatoHead.transform.position.x, mrPotatoHead.transform.position.y, mrPotatoHead.transform.position.z);
@@ -75,11 +76,6 @@ public class FlyingRedEtController : MonoBehaviour {
 			}
 			print (shot.GetComponent<ProjectileController>().targetPos);
 		}
-	}
-	
-	private Vector3 nextVelocity()
-	{
-		return new Vector3(Random.Range(center.x - radius, center.x + radius), Random.Range(center.y - radius, center.y + radius), 0);
 	}
 	
 	private float distance(Vector3 a, Vector3 b)
