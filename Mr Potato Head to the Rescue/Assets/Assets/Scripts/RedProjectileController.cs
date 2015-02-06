@@ -17,7 +17,16 @@ public class RedProjectileController : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other) {
 		if(other.GetComponent<ProjectileController>() == null || other.GetComponent<RedProjectileController>() == null)
+		{
+			if(other.gameObject.tag == "Player")
+			{
+				Object.Destroy (other.gameObject);
+				//GameObject P = (GameObject)GameObject.Instantiate (player, spawnPoint.position, player.transform.rotation);
+				MainCameraController c = Camera.main.GetComponent <MainCameraController>();
+				//c.target = P.transform;
+			}
 			Destroy(gameObject);
+		}
 	}
 	
 	void Update()

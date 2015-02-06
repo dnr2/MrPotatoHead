@@ -25,6 +25,8 @@ public class FlyingRedEtController : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
+		if(mrPotatoHead == null)
+			mrPotatoHead = GameObject.Find("MrPotatoHead");
 		if(distance(mrPotatoHead.transform.position, this.transform.position) <= maxDistance && !seek)
 		{
 			this.rigidbody.velocity = new Vector3(-1,0,0) * sweepSpeed;
@@ -45,6 +47,8 @@ public class FlyingRedEtController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(mrPotatoHead == null)
+			mrPotatoHead = GameObject.Find("MrPotatoHead");
 		if(!shooting && Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= maxDistance)
 		{
 			nextFire = Time.time + fireRate;

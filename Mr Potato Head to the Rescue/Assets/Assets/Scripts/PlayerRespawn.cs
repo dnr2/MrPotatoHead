@@ -9,10 +9,14 @@ using System.Collections;
 	public PlayerRespawn (){}
 
 	void OnTriggerEnter(Collider other){
+		bool replace = (other.gameObject.GetComponent<CharacterController>() != null);
 		Object.Destroy (other.gameObject);
-		GameObject P = (GameObject)GameObject.Instantiate (player, spawnPoint.position, player.transform.rotation);
-		MainCameraController c = Camera.main.GetComponent <MainCameraController>();
-		c.target = P.transform;
+		if(replace)
+		{
+			GameObject P = (GameObject)GameObject.Instantiate (player, spawnPoint.position, player.transform.rotation);
+			MainCameraController c = Camera.main.GetComponent <MainCameraController>();
+			c.target = P.transform;
+		}
 	}
 
 }

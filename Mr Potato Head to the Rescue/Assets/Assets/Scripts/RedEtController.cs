@@ -19,6 +19,8 @@ public class RedEtController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(mrPotatoHead == null)
+			mrPotatoHead = GameObject.Find("MrPotatoHead");
 		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) < maxDistance)
 		{
 			nextFire = Time.time + fireRate;

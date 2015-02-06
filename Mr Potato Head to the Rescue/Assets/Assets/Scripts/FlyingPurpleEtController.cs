@@ -8,11 +8,11 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	private float fireRate = 3F;
 	private float nextFire;
 	private GameObject mrPotatoHead;
-	private float flyingSpeed = 1f;
+	private float flyingSpeed = 0.5f;
 	
 	private Vector3 center = new Vector3(59,30,0);
-	private float radius = 4f;
-	private float wanderRefreshRate = 1f;
+	private float radius = 3f;
+	private float wanderRefreshRate = 2f;
 	private float nextWanderRefresh;
 	private float minDistance = 15f;
 	private float maxDistance = 25f;
@@ -26,15 +26,17 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		center = new Vector3(mrPotatoHead.transform.position.x,mrPotatoHead.transform.position.y+15,0);
+		if(mrPotatoHead == null)
+			mrPotatoHead = GameObject.Find("MrPotatoHead");
+		
 		if(distance (mrPotatoHead.transform.position, this.transform.position) <= minDistance)
 		{
-			Vector3 direction = new Vector3(this.transform.position.x - mrPotatoHead.transform.position.x, 0, 0);
+			Vector3 direction = new Vector3(this.transform.position.x - mrPotatoHead.transform.position.x, this.transform.position.y - mrPotatoHead.transform.position.y, 0);
 			rigidbody.velocity = direction * flyingSpeed;
 		}
 		else if(distance (mrPotatoHead.transform.position, this.transform.position) >= maxDistance)
 		{
-			Vector3 direction = new Vector3(mrPotatoHead.transform.position.x - this.transform.position.x, 0, 0);
+			Vector3 direction = new Vector3(mrPotatoHead.transform.position.x - this.transform.position.x, mrPotatoHead.transform.position.y - this.transform.position.y, 0);
 			rigidbody.velocity = direction * flyingSpeed;
 		}
 		else
@@ -49,6 +51,8 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(mrPotatoHead == null)
+			mrPotatoHead = GameObject.Find("MrPotatoHead");
 		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= 40)
 		{
 			nextFire = Time.time + fireRate;
@@ -68,7 +72,11 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	
 	private Vector3 nextVelocity()
 	{
-		return new Vector3(Random.Range(center.x - radius, center.x + radius), Random.Range(center.y - radius, center.y + radius), 0);
+		center = new Vector3(mrPotatoHead.transform.position.x,mrPotatoHead.transform.position.y+15,0);
+		print (center);
+		Vector3 dsda = new Vector3(Random.Range(center.x - radius, center.x + radius), Random.Range(center.y - radius, center.y + radius), 0);
+		//print (dsda);
+		return dsda;
 	}
 
 }
