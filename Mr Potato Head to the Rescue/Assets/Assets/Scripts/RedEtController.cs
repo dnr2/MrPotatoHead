@@ -2,37 +2,33 @@
 using System.Collections;
 
 public class RedEtController : MonoBehaviour {
-	public bool moves = true; // se o objeto vai se mover
-	public int maxIncrementPos = 10; // quantidade maxima que vai andar
-	public float stepSpeed = 1; // valor a se mover
-	public bool initialyFacingForward = true;
 	public GameObject shot;
 	public Transform shotSpawn;
-	public float fireRate = 5F;
+	public float fireRate = 1F;
 	
-	private float originalXScale;
-	private float originalXPos;
-	private bool movingfForward;
+	private Vector3 YAxis = new Vector3(0,1,0);
 	private float nextFire;
 	private GameObject mrPotatoHead;
+	private float maxDistance = 40f;
 	
 	// Use this for initialization
 	void Start () {
-		//originalXScale = modelTransform.localScale.x;
-		originalXPos = transform.localPosition.x;
-		movingfForward = initialyFacingForward;
+		if(mrPotatoHead == null)
+			mrPotatoHead = GameObject.Find("MrPotatoHead");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Time.time > nextFire)
+		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) < maxDistance)
 		{
 			nextFire = Time.time + fireRate;
-			if(mrPotatoHead == null)
-				mrPotatoHead = GameObject.Find("MrPotatoHead");
 			shot.GetComponent<RedProjectileController>().targetPos = mrPotatoHead.transform.position;
-			shot.GetComponent<RedProjectileController>().speed = 20F;
 			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
 		}
+	}
+	
+	private float distance(Vector3 a, Vector3 b)
+	{
+		return Mathf.Sqrt (Mathf.Pow (a.x - b.x, 2) + Mathf.Pow (a.y - b.y, 2) + Mathf.Pow (a.z - b.z, 2));
 	}
 }

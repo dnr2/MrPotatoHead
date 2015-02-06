@@ -2,20 +2,27 @@
 using System.Collections;
 
 public class RedProjectileController : MonoBehaviour {
-	public float speed;
 	public Vector3 targetPos;
 	public int type;
+	
+	private float speed = 20f;
+	private Vector3 startPos;
 	private Vector3 XAxis = new Vector3(1,0,0);
 	private Vector3 ZAxis = new Vector3(0,0,1);
 	// Use this for initialization
 	void Start () {
 		this.calculateProjectileRotation();
+		startPos = this.transform.position;
 	}
 	
 	void OnTriggerEnter(Collider other) {
-		if(other.GetComponent<ProjectileController>() == null || other.GetComponent<RedProjectileController>() == null
-		   || other.GetComponent<RedEtController>() == null || other.GetComponent<FlyingRedEtController>() == null
-		   || other.GetComponent<PurpleEtController>() == null || other.GetComponent<FlyingPurpleEtController>() == null)
+		if(other.GetComponent<ProjectileController>() == null || other.GetComponent<RedProjectileController>() == null)
+			Destroy(gameObject);
+	}
+	
+	void Update()
+	{
+		if(distance(startPos, transform.position) > 200)
 			Destroy(gameObject);
 	}
 	
@@ -45,5 +52,10 @@ public class RedProjectileController : MonoBehaviour {
 	private float norm(Vector3 a)
 	{
 		return Mathf.Sqrt(scalarProduct(a,a));
+	}
+	
+	private float distance(Vector3 a, Vector3 b)
+	{
+		return Mathf.Sqrt (Mathf.Pow (a.x - b.x, 2) + Mathf.Pow (a.y - b.y, 2) + Mathf.Pow (a.z - b.z, 2));
 	}
 }
