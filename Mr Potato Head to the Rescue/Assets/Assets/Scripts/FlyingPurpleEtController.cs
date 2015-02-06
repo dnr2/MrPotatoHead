@@ -21,10 +21,12 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	void Start () {
 		if(mrPotatoHead == null)
 			mrPotatoHead = GameObject.Find("MrPotatoHead");
+		center = new Vector3(mrPotatoHead.transform.position.x,mrPotatoHead.transform.position.y+15,0);
 	}
 	
 	void FixedUpdate()
 	{
+		center = new Vector3(mrPotatoHead.transform.position.x,mrPotatoHead.transform.position.y+15,0);
 		if(distance (mrPotatoHead.transform.position, this.transform.position) <= minDistance)
 		{
 			Vector3 direction = new Vector3(this.transform.position.x - mrPotatoHead.transform.position.x, 0, 0);
@@ -51,11 +53,11 @@ public class FlyingPurpleEtController : MonoBehaviour {
 		{
 			nextFire = Time.time + fireRate;
 			shot.GetComponent<ProjectileController>().targetPos = new Vector3(mrPotatoHead.transform.position.x - 15, mrPotatoHead.transform.position.y, 0);
-			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
+			Instantiate(shot, new Vector3(shotSpawn.transform.position.x-1,shotSpawn.transform.position.y,shotSpawn.transform.position.z), shotSpawn.transform.rotation);
 			shot.GetComponent<ProjectileController>().targetPos = mrPotatoHead.transform.position;
-			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
+			Instantiate(shot, new Vector3(shotSpawn.transform.position.x,shotSpawn.transform.position.y,shotSpawn.transform.position.z), shotSpawn.transform.rotation);
 			shot.GetComponent<ProjectileController>().targetPos = new Vector3(mrPotatoHead.transform.position.x + 15, mrPotatoHead.transform.position.y, 0);;
-			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
+			Instantiate(shot, new Vector3(shotSpawn.transform.position.x+1,shotSpawn.transform.position.y,shotSpawn.transform.position.z), shotSpawn.transform.rotation);
 		}
 	}
 

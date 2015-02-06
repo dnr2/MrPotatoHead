@@ -17,7 +17,9 @@ public class ProjectileController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if(other.GetComponent<ProjectileController>() == null || other.GetComponent<RedProjectileController>() == null)
+		{
 			Destroy(gameObject);
+		}
 	}
 	
 	void Update()
