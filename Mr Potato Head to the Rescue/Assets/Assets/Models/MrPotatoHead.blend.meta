@@ -77,6 +77,15 @@ ModelImporter:
     100142: upper_arm_R
     100144: upper_arm_R_001
     100146: upper_arm_R_002
+    100148: Laser
+    100150: sobrancelha_l
+    100152: sobrancelha_l_001
+    100154: sobrancelha_l_002
+    100156: sobrancelha_l_003
+    100158: sobrancelha_r
+    100160: sobrancelha_r_001
+    100162: sobrancelha_r_002
+    100164: sobrancelha_r_003
     400000: BezierCircle
     400002: Chapeu
     400004: ChapeuBone
@@ -151,11 +160,21 @@ ModelImporter:
     400142: upper_arm_R
     400144: upper_arm_R_001
     400146: upper_arm_R_002
+    400148: Laser
+    400150: sobrancelha_l
+    400152: sobrancelha_l_001
+    400154: sobrancelha_l_002
+    400156: sobrancelha_l_003
+    400158: sobrancelha_r
+    400160: sobrancelha_r_001
+    400162: sobrancelha_r_002
+    400164: sobrancelha_r_003
     2300000: BezierCircle
     3300000: BezierCircle
     4300000: BezierCircle
     4300002: Potato_Low_final
     4300004: Chapeu
+    4300006: Laser
     7400000: Default Take
     7400002: AtaqueCompleto
     7400004: Idle
@@ -166,6 +185,7 @@ ModelImporter:
     9500000: //RootNode
     13700000: Chapeu
     13700002: Potato_Low_final
+    13700004: Laser
   materials:
     importMaterials: 1
     materialName: 0
