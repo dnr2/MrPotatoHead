@@ -20,7 +20,7 @@ public class ZurgController : MonoBehaviour {
 		if(Time.time > nextFire)
 		{
 			nextFire = Time.time + fireRate;
-			target = new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z);
+			target = new Vector3(this.shotSpawn.transform.position.x - 1, this.shotSpawn.transform.position.y, this.shotSpawn.transform.position.z);
 			tennisBall.GetComponent<TennisBallController>().targetPos = target;
 			Instantiate(tennisBall, shotSpawn.transform.position, shotSpawn.transform.rotation);
 		}
