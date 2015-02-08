@@ -6,6 +6,10 @@ public class ZurgController : MonoBehaviour {
 	public GameObject heatSeekingMissile;
 	public GameObject flyingPurpleET;
 	public GameObject shotSpawn;
+	
+	private float fireRate = 1F;
+	private float nextFire;
+	private Vector3 target;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,6 +17,12 @@ public class ZurgController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(Time.time > nextFire)
+		{
+			nextFire = Time.time + fireRate;
+			target = new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z);
+			tennisBall.GetComponent<TennisBallController>().targetPos = target;
+			Instantiate(tennisBall, shotSpawn.transform.position, shotSpawn.transform.rotation);
+		}
 	}
 }
