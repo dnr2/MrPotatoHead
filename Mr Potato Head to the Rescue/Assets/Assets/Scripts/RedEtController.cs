@@ -5,7 +5,8 @@ public class RedEtController : MonoBehaviour {
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate = 1F;
-	
+	private Animator anim;
+
 	private Vector3 YAxis = new Vector3(0,1,0);
 	private float nextFire;
 	private GameObject mrPotatoHead;
@@ -15,6 +16,8 @@ public class RedEtController : MonoBehaviour {
 	void Start () {
 		if(mrPotatoHead == null)
 			mrPotatoHead = GameObject.FindWithTag("Player");
+			anim = GetComponent<Animator>();
+			anim.SetBool("IsAttacking", false);
 	}
 	
 	// Update is called once per frame
@@ -23,6 +26,7 @@ public class RedEtController : MonoBehaviour {
 			mrPotatoHead = GameObject.FindWithTag("Player");
 		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) < maxDistance)
 		{
+			anim.SetBool ("IsAttacking", true);		
 			if(this.transform.position.x < mrPotatoHead.transform.position.x)
 				this.transform.rotation = new Quaternion(0,180,0,0);
 			else
@@ -30,6 +34,8 @@ public class RedEtController : MonoBehaviour {
 			nextFire = Time.time + fireRate;
 			shot.GetComponent<RedProjectileController>().targetPos = mrPotatoHead.transform.position;
 			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
+		}else {
+			anim.SetBool("IsAttacking", false);
 		}
 	}
 	
