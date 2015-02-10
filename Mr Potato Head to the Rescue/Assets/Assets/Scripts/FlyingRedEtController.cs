@@ -20,17 +20,21 @@ public class FlyingRedEtController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
+			mrPotatoHead = GameObject.FindWithTag("Player");
 	}
 	
 	void FixedUpdate()
 	{
 		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
+			mrPotatoHead = GameObject.FindWithTag("Player");
 		if(distance(mrPotatoHead.transform.position, this.transform.position) <= maxDistance && !seek)
 		{
 			this.rigidbody.velocity = new Vector3(-1,0,0) * sweepSpeed;
 			seek = true;
+			if(this.rigidbody.velocity.x > 0)
+				this.transform.rotation = new Quaternion(0,180,0,0);
+			else
+				this.transform.rotation = new Quaternion(0,0,0,0);
 		}
 		else if(distance(mrPotatoHead.transform.position, this.transform.position) > maxDistance && !turnAround && seek)
 		{
@@ -39,7 +43,13 @@ public class FlyingRedEtController : MonoBehaviour {
 		else if(turnAround)
 		{
 			if(distance(mrPotatoHead.transform.position, this.transform.position) <= maxDistance + 1)
+			{
 				this.rigidbody.velocity = new Vector3(1,0,0) * sweepSpeed;
+				if(this.rigidbody.velocity.x > 0)
+					this.transform.rotation = new Quaternion(0,180,0,0);
+				else
+					this.transform.rotation = new Quaternion(0,0,0,0);
+			}
 			else
 				Destroy(gameObject);
 		}
@@ -48,7 +58,7 @@ public class FlyingRedEtController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
+			mrPotatoHead = GameObject.FindWithTag("Player");
 		if(!shooting && Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= maxDistance)
 		{
 			nextFire = Time.time + fireRate;

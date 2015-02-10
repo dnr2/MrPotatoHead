@@ -14,15 +14,19 @@ public class PurpleEtController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
+			mrPotatoHead = GameObject.FindWithTag("Player");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
+			mrPotatoHead = GameObject.FindWithTag("Player");
 		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) < maxDistance)
 		{
+			if(this.transform.position.x < mrPotatoHead.transform.position.x)
+				this.transform.rotation = new Quaternion(0,180,0,0);
+			else
+				this.transform.rotation = new Quaternion(0,0,0,0);
 			nextFire = Time.time + fireRate;
 			shot.GetComponent<ProjectileController>().targetPos = mrPotatoHead.transform.position;
 			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);

@@ -20,14 +20,14 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
+			mrPotatoHead = GameObject.FindWithTag("Player");
 		center = new Vector3(mrPotatoHead.transform.position.x,mrPotatoHead.transform.position.y+15,0);
 	}
 	
 	void FixedUpdate()
 	{
 		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
+			mrPotatoHead = GameObject.FindWithTag("Player");
 		
 		if(distance (mrPotatoHead.transform.position, this.transform.position) <= minDistance)
 		{
@@ -52,7 +52,7 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(mrPotatoHead == null)
-			mrPotatoHead = GameObject.Find("MrPotatoHead");
+			mrPotatoHead = GameObject.FindWithTag("Player");
 		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= 40)
 		{
 			nextFire = Time.time + fireRate;
@@ -73,10 +73,8 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	private Vector3 nextVelocity()
 	{
 		center = new Vector3(mrPotatoHead.transform.position.x,mrPotatoHead.transform.position.y+15,0);
-		print (center);
-		Vector3 dsda = new Vector3(Random.Range(center.x - radius, center.x + radius), Random.Range(center.y - radius, center.y + radius), 0);
-		//print (dsda);
-		return dsda;
+		Vector3 randomPoint = new Vector3(Random.Range(center.x - radius, center.x + radius), Random.Range(center.y - radius, center.y + radius), 0);
+		//print (randomPoint);
+		return randomPoint;
 	}
-
 }
