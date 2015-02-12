@@ -11,7 +11,7 @@ public class EnemyDamage : MonoBehaviour {
 
 	public int life = 1; // Vida do inimigo
 	public int playerDamage = 1; // dano causado TODO: isso deve mudar pois cada arma causa dano diferente
-	public GameObject enemyReference;
+	public GameObject enemyReference; //Referencia do inimigo (apontar para objeto dentro da cena)
 	private bool isDead = false;
 
 	void Start(){
@@ -27,6 +27,8 @@ public class EnemyDamage : MonoBehaviour {
 	//TODO inportar o script com as informacoes das armas, para saber quanto de dano elas infligem.
 	void OnTriggerEnter( Collider collider )
 	{
+		Debug.Log ("aqui");
+		Debug.Log (collider.gameObject.tag);
 		if (collider.gameObject.tag == "Player") {
 			life -= playerDamage;
 			runHitAnimation();			

@@ -26,22 +26,30 @@ public class PurpleEtController : MonoBehaviour {
 			mrPotatoHead = GameObject.FindWithTag("Player");
 		if (Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) < maxDistance) {
 			anim.SetBool ("IsAttacking", true);			
-			if (this.transform.position.x < mrPotatoHead.transform.position.x)
-								this.transform.rotation = new Quaternion (0, 180, 0, 0);
-						else
-								this.transform.rotation = new Quaternion (0, 0, 0, 0);
-						nextFire = Time.time + fireRate;
-						shot.GetComponent<ProjectileController> ().targetPos = mrPotatoHead.transform.position;
-						
-						Instantiate (shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
+			flipScale();
+			nextFire = Time.time + fireRate;
+			shot.GetComponent<ProjectileController> ().targetPos = mrPotatoHead.transform.position;
+			
+			Instantiate (shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
 
-				} else {
-					anim.SetBool("IsAttacking", false);
-				}
+		} else {
+			anim.SetBool("IsAttacking", false);
+		}
 	}
 	
 	private float distance(Vector3 a, Vector3 b)
 	{
 		return Mathf.Sqrt (Mathf.Pow (a.x - b.x, 2) + Mathf.Pow (a.y - b.y, 2) + Mathf.Pow (a.z - b.z, 2));
+	}
+
+	private void flipScale(){
+		Vector3 newScale;
+		newScale = this.transform.localScale;
+		if(this.transform.position.x < mrPotatoHead.transform.position.x){
+			newScale.x = -Mathf.Abs(newScale.x);
+		} else {
+			newScale.x = Mathf.Abs(newScale.x);
+		}
+		this.transform.localScale = newScale;
 	}
 }

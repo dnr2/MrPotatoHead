@@ -27,10 +27,7 @@ public class RedEtController : MonoBehaviour {
 		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) < maxDistance)
 		{
 			anim.SetBool ("IsAttacking", true);		
-			if(this.transform.position.x < mrPotatoHead.transform.position.x)
-				this.transform.rotation = new Quaternion(0,180,0,0);
-			else
-				this.transform.rotation = new Quaternion(0,0,0,0);
+			flipScale();
 			nextFire = Time.time + fireRate;
 			shot.GetComponent<RedProjectileController>().targetPos = mrPotatoHead.transform.position;
 			Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
@@ -43,4 +40,16 @@ public class RedEtController : MonoBehaviour {
 	{
 		return Mathf.Sqrt (Mathf.Pow (a.x - b.x, 2) + Mathf.Pow (a.y - b.y, 2) + Mathf.Pow (a.z - b.z, 2));
 	}
+
+	private void flipScale(){
+		Vector3 newScale;
+		newScale = this.transform.localScale;
+		if(this.transform.position.x < mrPotatoHead.transform.position.x){
+			newScale.x = -Mathf.Abs(newScale.x);
+		} else {
+			newScale.x = Mathf.Abs(newScale.x);
+		}
+		this.transform.localScale = newScale;
+	}
+
 }
