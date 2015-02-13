@@ -19,9 +19,11 @@ public class EnemyDamage : MonoBehaviour {
 	}
 
 	void Update(){
-
-		if (isDead && (audio == null || !audio.isPlaying) ) {
-			Destroy(enemyReference);
+		if (isDead) {
+			if ( audio == null || !audio.isPlaying ) {
+				Destroy(enemyReference);
+			}
+			renderer.enabled = false; 
 		}
 	}
 
