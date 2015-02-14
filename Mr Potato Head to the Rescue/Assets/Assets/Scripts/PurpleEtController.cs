@@ -6,8 +6,7 @@ public class PurpleEtController : MonoBehaviour {
 	public Transform shotSpawn;
 	public float fireRate = 1F;
 	private Animator anim;
-	
-	private Vector3 YAxis = new Vector3(0,1,0);
+
 	private float nextFire;
 	private GameObject mrPotatoHead;
 	private float maxDistance = 40f;

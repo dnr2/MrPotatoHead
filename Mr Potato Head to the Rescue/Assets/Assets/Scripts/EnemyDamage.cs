@@ -11,6 +11,7 @@ public class EnemyDamage : MonoBehaviour {
 
 	public int life = 1; // Vida do inimigo
 	public int playerDamage = 1; // dano causado TODO: isso deve mudar pois cada arma causa dano diferente
+	public GameObject enemyMeshObject = null; // coloque o mesh do inimigo para que ele desaparece assim que morrer
 	private GameObject enemyReference; //Referencia do inimigo (apontar para objeto dentro da cena)
 	private bool isDead = false;
 
@@ -23,7 +24,9 @@ public class EnemyDamage : MonoBehaviour {
 			if ( audio == null || !audio.isPlaying ) {
 				Destroy(enemyReference);
 			}
-			renderer.enabled = false; 
+			if( enemyMeshObject != null ){
+				enemyMeshObject.active = false;
+			}
 		}
 	}
 
@@ -32,12 +35,14 @@ public class EnemyDamage : MonoBehaviour {
 	{	
 
 		if (collider.gameObject.tag == "Player") {
-			life -= playerDamage;
-			runHitAnimation();			
+			if( !isDead ){
+				life -= playerDamage;
+				runHitAnimation();			
 
-			if( life <= 0 ){
-				runDeathAnimation();
-				isDead = true;
+				if( life <= 0 ){
+					runDeathAnimation();
+					isDead = true;
+				}
 			}
 		}
 	}
