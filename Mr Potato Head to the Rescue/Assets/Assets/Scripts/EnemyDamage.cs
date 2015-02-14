@@ -3,7 +3,8 @@ using System.Collections;
 
 /*
  * Usar esse script em um objeto com collider e trigger ativado
- * Colocar a referencia do Objeto raiz do inimigo em enemyReference
+ * Como esse script pode estar acoplado a um objeto que e filho do objeto real, 
+ * entao colocar a referencia do Objeto raiz do inimigo em enemyReference
  */
 
 

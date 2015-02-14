@@ -79,7 +79,7 @@ public class FlyingRedEtController : MonoBehaviour {
 				Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
 				--shots;
 			}
-			print (shot.GetComponent<ProjectileController>().targetPos);
+			//print (shot.GetComponent<ProjectileController>().targetPos);
 		}
 	}
 	

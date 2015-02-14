@@ -7,7 +7,7 @@ public class MenuController : MonoBehaviour {
 	public float timeDelay = 0.5f;
 	public int startState;
 	public List<Text> texts;
-	public string InitialScene = "PizzaPlanet";
+	public string InitialScene = "FirstScene";
 
 	private int state;
 	private int numStates;
