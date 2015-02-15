@@ -7,6 +7,9 @@ TagManager:
   - enemy
   - PotatoLifeText
   - weapon
+  - hpItem
+  - continueItem
+  - lifeItem
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
