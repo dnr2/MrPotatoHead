@@ -10,6 +10,7 @@ public class PotatoLifeController : MonoBehaviour {
 
 	private bool isDead = false;
 	private int lifePoints ;
+	private bool invincible = false;
 
 
 	// Use this for initialization
@@ -72,10 +73,34 @@ public class PotatoLifeController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.tag == "laserbean") {
-			causeDamage(1);
-			Destroy(other.gameObject);
+		Debug.Log ("INVICIBLE IS " + invincible + " TAG is "  + other.tag);
+		if (!invincible) {
+			if (other.tag == "laserbean") {
+				causeDamage (1);
+				StartCoroutine (myWait (2));
+				Destroy (other.gameObject);
+			} else if (other.tag == "enemy") {
+				causeDamage (1);
+				playSound();
+				StartCoroutine (myWait (2));
+			}
 		}
+	}
+
+	void playSound(){
+		
+		//ira tentar tocar Audio Source componente (ver documentacao do Unity)
+		if (audio != null) {
+			AudioSource.PlayClipAtPoint(audio.clip, this.gameObject.transform.position );
+		}
+	}
+	
+	IEnumerator myWait(int seconds) {
+		Debug.Log("IVUNERAVIU");
+		invincible = true;
+		yield return new WaitForSeconds(seconds);
+		invincible = false;
+		Debug.Log("VUNERAVIU");
 	}
 
 	void PlayDeathAnimation(){
