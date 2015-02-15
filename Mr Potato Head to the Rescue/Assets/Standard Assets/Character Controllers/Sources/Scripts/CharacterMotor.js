@@ -607,6 +607,15 @@ function SetBackwardSpeed(speed : float) {
 function GetBackwardSpeed() : float {
 	return movement.maxBackwardsSpeed;
 }
+
+function SetBaseHeight( baseHeight : float ){
+	jumping.baseHeight = baseHeight;
+}
+
+function SetExtraHeight( extraBaseHeight : float ){
+	jumping.extraHeight = extraBaseHeight;
+}
+
 // Require a character controller to be attached to the same game object
 @script RequireComponent (CharacterController)
 @script AddComponentMenu ("Character/Character Motor")
