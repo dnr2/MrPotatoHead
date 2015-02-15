@@ -24,7 +24,6 @@ public class PotatoLifeController : MonoBehaviour {
 
 
 	void causeDamage(int val){
-		Debug.Log( "aqui" );
 		if (!isDead) {
 			Debug.Log( "atingido" );
 			lifePoints -= val;

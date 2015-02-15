@@ -26,7 +26,7 @@ public class EnemyDamage : MonoBehaviour {
 				Destroy(enemyReference);
 			}
 			if( enemyMeshObject != null ){
-				enemyMeshObject.active = false;
+				enemyMeshObject.SetActive( false );
 			}
 		}
 	}

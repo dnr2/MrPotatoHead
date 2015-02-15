@@ -592,6 +592,9 @@ function SetVelocity (velocity : Vector3) {
 	SendMessage("OnExternalVelocity");
 }
 
+
+// === GETTERS AND SETTERS by dnr2@cin.ufpe.br === //
+
 function SetForwardSpeed(speed : float) {
 	movement.maxForwardSpeed = speed;
 }
@@ -612,8 +615,16 @@ function SetBaseHeight( baseHeight : float ){
 	jumping.baseHeight = baseHeight;
 }
 
+function GetBaseHeight( ) : float {
+	return jumping.baseHeight;
+}
+
 function SetExtraHeight( extraBaseHeight : float ){
 	jumping.extraHeight = extraBaseHeight;
+}
+
+function GetExtraHeight( ) : float {
+	return jumping.extraHeight;
 }
 
 // Require a character controller to be attached to the same game object
