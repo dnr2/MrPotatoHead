@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WheelsController {
+public class WheelsController : MonoBehaviour {
 
 	public float speed = 40;
 
@@ -9,9 +9,7 @@ public class WheelsController {
 	private float originalForwardSpeed = 10;
 	private float originalBackwardSpeed = 10;
 
-	void Awake (CharacterMotor motor) {
-		this.motor = motor;
-	}
+
 
 	// Use this for initialization
 	public WheelsController(CharacterMotor motor) {
@@ -21,7 +19,7 @@ public class WheelsController {
 	}
 	
 	// Update is called once per frame
-	void Update (bool activated) {
+	public void update(bool activated) {
 
 		if (activated) {			
 			motor.SetForwardSpeed (speed);

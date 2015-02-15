@@ -22,13 +22,7 @@ public class EnemyDamage : MonoBehaviour {
 
 	void Update(){
 		if (isDead) {
-
-			if ( audio == null || !audio.isPlaying ) {
-				Destroy(enemyReference);
-			}
-			if( enemyMeshObject != null ){
-				enemyMeshObject.SetActive( false );
-			}
+			Destroy(enemyReference);
 		}
 	}
 

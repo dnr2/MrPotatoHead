@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MolaController {
+public class MolaController : MonoBehaviour {
 	
 	public float jumpHeight = 6;
 	public float extraJumpEHeight = 6;
@@ -18,7 +18,7 @@ public class MolaController {
 	}
 	
 	// Update is called once per frame
-	void Update (bool activated) {
+	public void update(bool activated) {
 
 		if (activated) {			
 			motor.SetBaseHeight(jumpHeight);

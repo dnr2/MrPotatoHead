@@ -45,17 +45,17 @@ public class EquipmentController : MonoBehaviour {
 		if (oldEquipID != equipID) {
 
 			if( oldEquipID == 1 ){
-			
+				mola.update( false );
 			}
 			else if( oldEquipID == 2 ){
-			
+				rodas.update( false );
 			}
 
 			if( equipID == 1 ){
-			
+				mola.update(true);
 			}
 			else if( equipID == 2 ){
-				
+				rodas.update(true);
 			}
 
 		}
