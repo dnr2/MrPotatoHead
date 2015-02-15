@@ -22,6 +22,7 @@ public class EnemyDamage : MonoBehaviour {
 
 	void Update(){
 		if (isDead) {
+
 			if ( audio == null || !audio.isPlaying ) {
 				Destroy(enemyReference);
 			}
@@ -52,7 +53,7 @@ public class EnemyDamage : MonoBehaviour {
 
 		//ira tentar tocar Audio Source componente (ver documentacao do Unity)
 		if (audio != null) {
-			audio.Play();		
+			AudioSource.PlayClipAtPoint(audio.clip, this.gameObject.transform.position );
 		}
 	}
 
