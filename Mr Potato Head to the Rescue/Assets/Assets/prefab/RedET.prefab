@@ -748,7 +748,7 @@ GameObject:
   - 95: {fileID: 9500000}
   m_Layer: 0
   m_Name: ToyStoryAlienRed
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -782,7 +782,7 @@ GameObject:
   - 54: {fileID: 5400000}
   m_Layer: 0
   m_Name: RedET
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -802,6 +802,22 @@ GameObject:
   m_Layer: 0
   m_Name: DamageHandler
   m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &118470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 418470}
+  - 65: {fileID: 6518470}
+  m_Layer: 0
+  m_Name: DamageDealer
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1474,12 +1490,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50.8659363, y: -49.0329704, z: 59.1875}
+  m_LocalPosition: {x: -50.8699989, y: -52.2299995, z: 59.1899986}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 400100}
   - {fileID: 400104}
   - {fileID: 400098}
+  - {fileID: 418470}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &400104
@@ -1489,11 +1506,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -.0500000007, y: -.0299999993, z: 0}
+  m_LocalScale: {x: 1.30999994, y: .889999986, z: .800000012}
   m_Children: []
   m_Father: {fileID: 400102}
   m_RootOrder: 1
+--- !u!4 &418470
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0909999982, y: 0, z: -.0299999993}
+  m_LocalScale: {x: 2.01999998, y: .829999983, z: .800000012}
+  m_Children: []
+  m_Father: {fileID: 400102}
+  m_RootOrder: 3
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -1546,7 +1575,19 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .964056492, y: 2, z: 1.5}
+  m_Size: {x: .899999976, y: 2, z: 1.5}
+  m_Center: {x: -.0136260986, y: .819999933, z: 0}
+--- !u!65 &6518470
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .569999993, y: 2, z: 1.5}
   m_Center: {x: -.0136260986, y: .819999933, z: 0}
 --- !u!82 &8200000
 AudioSource:

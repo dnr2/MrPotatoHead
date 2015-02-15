@@ -782,25 +782,41 @@ GameObject:
   - 54: {fileID: 5400000}
   m_Layer: 0
   m_Name: FlyingRedET
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &100104
+--- !u!1 &156670
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 400104}
-  - 65: {fileID: 6500002}
-  - 114: {fileID: 11400002}
-  - 82: {fileID: 8200000}
+  - 4: {fileID: 456670}
+  - 65: {fileID: 6556670}
+  - 114: {fileID: 11456672}
+  - 82: {fileID: 8256672}
   m_Layer: 0
   m_Name: DamageHandler
   m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &156672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 456672}
+  - 65: {fileID: 6556672}
+  m_Layer: 0
+  m_Name: DamageDealer
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,22 +1493,35 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 400100}
-  - {fileID: 400104}
+  - {fileID: 456670}
   - {fileID: 400048}
+  - {fileID: 456672}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &400104
+--- !u!4 &456670
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100104}
+  m_GameObject: {fileID: 156670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 0, y: -.0199999996, z: 0}
+  m_LocalScale: {x: 2.33999991, y: 2.42000008, z: .839999974}
   m_Children: []
   m_Father: {fileID: 400102}
   m_RootOrder: 1
+--- !u!4 &456672
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0900000036, y: .0299999993, z: -.0299999993}
+  m_LocalScale: {x: 6.03999996, y: .430000007, z: 1.97000003}
+  m_Children: []
+  m_Father: {fileID: 400102}
+  m_RootOrder: 3
 --- !u!23 &2300000
 Renderer:
   m_ObjectHideFlags: 1
@@ -1547,24 +1576,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.99371099, y: 1.72643518, z: 1.53757524}
   m_Center: {x: -.181251526, y: .737039566, z: 0}
---- !u!65 &6500002
+--- !u!65 &6556670
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100104}
+  m_GameObject: {fileID: 156670}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.44947147, y: .723374248, z: 1.53757513}
   m_Center: {x: -.0306828823, y: .268407196, z: 0}
---- !u!82 &8200000
+--- !u!65 &6556672
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .569999993, y: 2, z: 1.5}
+  m_Center: {x: -.0136260986, y: .819999933, z: 0}
+--- !u!82 &8256672
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100104}
+  m_GameObject: {fileID: 156670}
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 1ea49072479d8cf4eade1bdf9244f486, type: 3}
@@ -1645,12 +1686,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shot: {fileID: 100000, guid: c54afad784e65334ea69c2c0fd4404d6, type: 2}
   shotSpawn: {fileID: 400100}
---- !u!114 &11400002
+--- !u!114 &11456672
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100104}
+  m_GameObject: {fileID: 156670}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dc8ed12997838141973e2020c70eeff, type: 3}

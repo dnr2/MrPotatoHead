@@ -30,7 +30,7 @@ public class EnemyDamage : MonoBehaviour {
 	void OnTriggerEnter( Collider collider )
 	{	
 
-		if (collider.gameObject.tag == "Player") {
+		if (collider.gameObject.tag == "weapon") {
 			if( !isDead ){
 				life -= playerDamage;
 				runHitAnimation();			

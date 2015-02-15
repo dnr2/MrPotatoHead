@@ -1,0 +1,135 @@
+[1mdiff --cc Mr Potato Head to the Rescue/Assets/Assets/Scenes/FirstScene.unity[m
+[1mindex 31dc4bc,e4f31aa..0000000[m
+Binary files differ
+[1mdiff --cc Mr Potato Head to the Rescue/ProjectSettings/TagManager.asset[m
+[1mindex 8ffde10,49bcf3b..0000000[m
+Binary files differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Animations/ThrowingHatAnimation.anim b/Mr Potato Head to the Rescue/Assets/Assets/Animations/ThrowingHatAnimation.anim[m
+[1mindex 5b36c2e..03a4ef8 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Animations/ThrowingHatAnimation.anim and b/Mr Potato Head to the Rescue/Assets/Assets/Animations/ThrowingHatAnimation.anim differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Animators/AlienController.controller b/Mr Potato Head to the Rescue/Assets/Assets/Animators/AlienController.controller[m
+[1mindex 63702b6..ac365d2 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Animators/AlienController.controller and b/Mr Potato Head to the Rescue/Assets/Assets/Animators/AlienController.controller differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Animators/PotatoController.controller b/Mr Potato Head to the Rescue/Assets/Assets/Animators/PotatoController.controller[m
+[1mindex bc8b856..0d4eec0 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Animators/PotatoController.controller and b/Mr Potato Head to the Rescue/Assets/Assets/Animators/PotatoController.controller differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Animators/PotatoMolaController.controller b/Mr Potato Head to the Rescue/Assets/Assets/Animators/PotatoMolaController.controller[m
+[1mindex 02ed938..ed68c00 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Animators/PotatoMolaController.controller and b/Mr Potato Head to the Rescue/Assets/Assets/Animators/PotatoMolaController.controller differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Animators/ThrowingHatController.controller b/Mr Potato Head to the Rescue/Assets/Assets/Animators/ThrowingHatController.controller[m
+[1mindex 2403ec7..d52304c 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Animators/ThrowingHatController.controller and b/Mr Potato Head to the Rescue/Assets/Assets/Animators/ThrowingHatController.controller differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Arcade.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Arcade.mat[m
+[1mindex 6abee96..39ab910 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Arcade.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Arcade.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Bigode.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Bigode.mat[m
+[1mindex d618c3f..4712400 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Bigode.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Bigode.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Boca.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Boca.mat[m
+[1mindex 00ca134..28cf780 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Boca.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Boca.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Bracos.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Bracos.mat[m
+[1mindex 3ed5538..a8a1f91 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Bracos.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Bracos.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Chapeu.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Chapeu.mat[m
+[1mindex aaa7e81..99bdd2e 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Chapeu.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Chapeu.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Corpo.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Corpo.mat[m
+[1mindex 8f2d32f..092f899 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Corpo.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Corpo.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Floor.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Floor.mat[m
+[1mindex 06c8eb6..01fd7dc 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Floor.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Floor.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/MainManuBackground.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/MainManuBackground.mat[m
+[1mindex 0abb82a..587b01b 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/MainManuBackground.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/MainManuBackground.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Mati_LoaderDefaultMat.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Mati_LoaderDefaultMat.mat[m
+[1mindex 911ea38..6a7d0ac 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Mati_LoaderDefaultMat.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Mati_LoaderDefaultMat.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Nariz.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Nariz.mat[m
+[1mindex 351a08f..cd70ad3 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Nariz.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Nariz.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Olhos.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Olhos.mat[m
+[1mindex 3bb9e7e..c8a9747 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Olhos.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Olhos.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Orelhas.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Orelhas.mat[m
+[1mindex aa9b293..c6ab3d6 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Orelhas.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Orelhas.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/PlataformaArcade.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/PlataformaArcade.mat[m
+[1mindex b4c9a9f..40d8519 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/PlataformaArcade.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/PlataformaArcade.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/PotatoLife.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/PotatoLife.mat[m
+[1mindex 9c8563b..239e79e 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/PotatoLife.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/PotatoLife.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Qualdriculado.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Qualdriculado.mat[m
+[1mindex 5ab0e39..9e32b75 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Qualdriculado.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Qualdriculado.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Sapato.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Sapato.mat[m
+[1mindex a4f548b..389cce2 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Sapato.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Sapato.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Sobrancelhas.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Sobrancelhas.mat[m
+[1mindex fd742ea..7285c6f 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/Sobrancelhas.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/Sobrancelhas.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/SpaceAndStarBackground.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/SpaceAndStarBackground.mat[m
+[1mindex 569f56e..3f9820b 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/SpaceAndStarBackground.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/SpaceAndStarBackground.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/backgorund_image_texture.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/backgorund_image_texture.mat[m
+[1mindex a67097e..f79d7dc 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/backgorund_image_texture.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/backgorund_image_texture.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/boxtexture.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/boxtexture.mat[m
+[1mindex 14dad38..f6b2947 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/boxtexture.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/boxtexture.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/defaultMat.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/defaultMat.mat[m
+[1mindex ce27b20..e4d884a 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/defaultMat.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/defaultMat.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/madeira.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/madeira.mat[m
+[1mindex eb77a07..e48b8d8 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/madeira.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/madeira.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Materials/walltexture.mat b/Mr Potato Head to the Rescue/Assets/Assets/Materials/walltexture.mat[m
+[1mindex 2817a9d..38dc64c 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Materials/walltexture.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Materials/walltexture.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/Arma.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/Arma.mat[m
+[1mindex c513cc0..2fec186 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/Arma.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/Arma.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/ArmaRed.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/ArmaRed.mat[m
+[1mindex f031d01..fad699f 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/ArmaRed.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/ArmaRed.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BordaCamisa.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BordaCamisa.mat[m
+[1mindex 53da098..4ad20a7 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BordaCamisa.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BordaCamisa.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BordaCamisaRed.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BordaCamisaRed.mat[m
+[1mindex 8d02db6..cf226a6 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BordaCamisaRed.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BordaCamisaRed.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BurguerBox.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BurguerBox.mat[m
+[1mindex abece00..bc8ee0d 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BurguerBox.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/BurguerBox.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CintoESapatos.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CintoESapatos.mat[m
+[1mindex 9781771..f9db302 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CintoESapatos.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CintoESapatos.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CintoESapatosRed.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CintoESapatosRed.mat[m
+[1mindex 070a05b..8d4e1ce 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CintoESapatosRed.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CintoESapatosRed.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/Copo.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/Copo.mat[m
+[1mindex b2d2f1d..00c94c7 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/Copo.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/Copo.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CopoAberto.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CopoAberto.mat[m
+[1mindex 95cd0c1..252e5eb 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CopoAberto.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CopoAberto.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CorpoAlien.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CorpoAlien.mat[m
+[1mindex f8986bd..8c7607b 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CorpoAlien.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CorpoAlien.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CorpoMola.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CorpoMola.mat[m
+[1mindex 957df93..437e85e 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CorpoMola.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/CorpoMola.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/GunTexture.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/GunTexture.mat[m
+[1mindex f78e534..93bd2af 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/GunTexture.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/GunTexture.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzBranco.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzBranco.mat[m
+[1mindex 7d3d34b..d5c84a0 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzBranco.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzBranco.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzVerde.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzVerde.mat[m
+[1mindex 643330a..f1dc8e8 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzVerde.mat and b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzVerde.mat differ
+[1mdiff --git a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzVermelho.mat b/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/LaserBuzzVermelho.mat[m
+[1mindex 52e9721..06690bc 100644[m
+Binary files a/Mr Potato Head to the Rescue/Assets/Assets/Models/Materials/L
