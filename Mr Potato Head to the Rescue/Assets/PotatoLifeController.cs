@@ -87,6 +87,7 @@ public class PotatoLifeController : MonoBehaviour {
 		if (!invincible) {
 			if (other.tag == "laserbean") {
 				causeDamage (1);
+				playSound();
 				StartCoroutine (myWait (2));
 				Destroy (other.gameObject);
 			} else if (other.tag == "enemy") {
