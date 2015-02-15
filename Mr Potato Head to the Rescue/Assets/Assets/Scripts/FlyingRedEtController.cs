@@ -25,6 +25,8 @@ public class FlyingRedEtController : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
+		flipScale();
+
 		if(mrPotatoHead == null)
 			mrPotatoHead = GameObject.FindWithTag("Player");
 		if(distance(mrPotatoHead.transform.position, this.transform.position) <= maxDistance && !seek)
@@ -68,6 +70,7 @@ public class FlyingRedEtController : MonoBehaviour {
 		}
 		else if(shooting)
 		{
+
 			if(shots == 0)
 			{
 				shots = 3;
@@ -86,6 +89,17 @@ public class FlyingRedEtController : MonoBehaviour {
 	private float distance(Vector3 a, Vector3 b)
 	{
 		return Mathf.Sqrt (Mathf.Pow (a.x - b.x, 2) + Mathf.Pow (a.y - b.y, 2) + Mathf.Pow (a.z - b.z, 2));
+	}
+
+	private void flipScale(){
+		Vector3 newScale;
+		newScale = this.transform.localScale;
+		if(this.transform.position.x < mrPotatoHead.transform.position.x){
+			newScale.x = -Mathf.Abs(newScale.x);
+		} else {
+			newScale.x = Mathf.Abs(newScale.x);
+		}
+		this.transform.localScale = newScale;
 	}
 
 }

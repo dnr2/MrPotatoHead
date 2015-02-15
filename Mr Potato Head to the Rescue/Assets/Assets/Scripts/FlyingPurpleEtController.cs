@@ -26,6 +26,8 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
+		flipScale ();
+
 		if(mrPotatoHead == null)
 			mrPotatoHead = GameObject.FindWithTag("Player");
 		
@@ -77,4 +79,16 @@ public class FlyingPurpleEtController : MonoBehaviour {
 		//print (randomPoint);
 		return randomPoint;
 	}
+
+	private void flipScale(){
+		Vector3 newScale;
+		newScale = this.transform.localScale;
+		if(this.transform.position.x < mrPotatoHead.transform.position.x){
+			newScale.x = -Mathf.Abs(newScale.x);
+		} else {
+			newScale.x = Mathf.Abs(newScale.x);
+		}
+		this.transform.localScale = newScale;
+	}
+
 }
