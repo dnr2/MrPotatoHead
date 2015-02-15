@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PotatoLifeController : MonoBehaviour {
@@ -7,19 +8,27 @@ public class PotatoLifeController : MonoBehaviour {
 	public int lives = 1;
 	public static int continues = 1;
 	public Transform spawnPoint;
-
+	public Text textoVida;
+	
 	private bool isDead = false;
 	private int lifePoints ;
 
 
 	// Use this for initialization
-	void Start () {
+	void Start () {	
+		textoVida = GameObject.FindGameObjectWithTag("PotatoLifeText").GetComponent <Text>();
+		textoVida.text = "x"+lives;
+		Debug.Log("Texto = "+textoVida.text);
 		lifePoints = initialLifePoints;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+	
+	}
+	
+	void changeVidas(int vidas){
+		textoVida.text = "x"+vidas;
 	}
 
 
@@ -40,9 +49,10 @@ public class PotatoLifeController : MonoBehaviour {
 		if (lives > 0) {
 
 			Debug.Log( "morreu.." );
-
+	
 			lives--;
-
+			changeVidas (lives);
+			
 			lifePoints = initialLifePoints;
 			isDead = false;
 
