@@ -3,18 +3,20 @@ using System.Collections;
 
 public class ThrowHat : MonoBehaviour {
 
-	private Animator animator;
+	public Animator animator;
 	private bool attacking;
 	private int attackingState;
 	private Animator throwingHatAnimator;
 	private GameObject throwingHatClone;
 	private Vector3 offset;
-	public GameObject throwingHatPrefab;
-	public SkinnedMeshRenderer stationaryHatMesh;
+	public GameObject throwingHatPrefab;  // the prefab that will be instantiated 
+	public SkinnedMeshRenderer stationaryHatMesh;  // The hat on the model head
 
 	// Use this for initialization
 	void Start () {
-		animator = GetComponent<Animator>();
+		if (animator == null) {
+			animator = GetComponent<Animator> ();
+		}
 		animator.SetBool("isAttack", false);
 		attacking = false;
 		throwingHatClone = null;
@@ -80,9 +82,6 @@ public class ThrowHat : MonoBehaviour {
 				throwingHatAnimator =  GameObject.Find("ThrowingHatPhysics").GetComponent<Animator>();
 				throwingHatAnimator.SetBool ("throwing", false);
 
-
-
-
 				animator.SetBool("isAttack", true);
 				attacking = true;
 				attackingState = 0;
@@ -91,4 +90,13 @@ public class ThrowHat : MonoBehaviour {
 		
 
 	}
+
+	public void setAnimator( Animator newAnim ){
+		this.animator = newAnim;
+	}
+
+	public void setStationaryHatMesh( SkinnedMeshRenderer stationaryHatMesh){ 
+		this.stationaryHatMesh = stationaryHatMesh;
+	}
+
 }

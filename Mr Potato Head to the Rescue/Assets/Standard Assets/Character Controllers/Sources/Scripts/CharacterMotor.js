@@ -13,7 +13,9 @@ var useFixedUpdate : boolean = true;
 // The current global direction we want the character to move in.
 @System.NonSerialized
 var inputMoveDirection : Vector3 = Vector3.zero;
+
 var anim : Animator;
+
 // Is the jump button held down? We use this interface instead of checking
 // for the jump button directly so this script can also be used by AIs.
 @System.NonSerialized
@@ -21,7 +23,9 @@ var inputJump : boolean = false;
 
 function Start () 
 {
-    anim = GetComponent("Animator");
+    if( anim == null ){
+    	anim = GetComponent("Animator");
+    }
     anim.SetBool("Jump", false);
 }
 
@@ -625,6 +629,10 @@ function SetExtraHeight( extraBaseHeight : float ){
 
 function GetExtraHeight( ) : float {
 	return jumping.extraHeight;
+}
+
+function setAnimator ( newAnim : Animator) {
+	this.anim = newAnim;
 }
 
 // Require a character controller to be attached to the same game object

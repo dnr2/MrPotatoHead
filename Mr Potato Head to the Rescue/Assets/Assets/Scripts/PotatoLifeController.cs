@@ -35,7 +35,7 @@ public class PotatoLifeController : MonoBehaviour {
 
 	void causeDamage(int val){
 		if (!isDead) {
-			Debug.Log( "atingido" );
+			//Debug.Log( "atingido" );
 			lifePoints -= val;
 			if( lifePoints <= 0){
 				PlayDeathAnimation();
@@ -49,7 +49,7 @@ public class PotatoLifeController : MonoBehaviour {
 		//if still has lives.
 		if (lives > 0) {
 
-			Debug.Log( "morreu.." );
+			//Debug.Log( "morreu.." );
 	
 			lives--;
 			changeVidas (lives);
@@ -62,7 +62,7 @@ public class PotatoLifeController : MonoBehaviour {
 
 		} else if (PotatoLifeController.continues > 0) {
 
-			Debug.Log( "usando coninue.." );
+			//Debug.Log( "usando coninue.." );
 
 			//restart the level;
 			PotatoLifeController.continues--;
@@ -83,7 +83,7 @@ public class PotatoLifeController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log ("INVICIBLE IS " + invincible + " TAG is "  + other.tag);
+		//Debug.Log ("INVICIBLE IS " + invincible + " TAG is "  + other.tag);
 		if (!invincible) {
 			if (other.tag == "laserbean") {
 				causeDamage (1);
@@ -107,11 +107,11 @@ public class PotatoLifeController : MonoBehaviour {
 	}
 	
 	IEnumerator myWait(int seconds) {
-		Debug.Log("IVUNERAVIU");
+		//Debug.Log("IVUNERAVIU");
 		invincible = true;
 		yield return new WaitForSeconds(seconds);
 		invincible = false;
-		Debug.Log("VUNERAVIU");
+		//Debug.Log("VUNERAVIU");
 	}
 
 	void PlayDeathAnimation(){
