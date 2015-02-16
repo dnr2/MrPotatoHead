@@ -5,6 +5,8 @@ public class PurpleEtController : MonoBehaviour {
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate = 1F;
+	public float offsetPotatoY = 5;
+
 	private Animator anim;
 
 	private float nextFire;
@@ -27,7 +29,9 @@ public class PurpleEtController : MonoBehaviour {
 			anim.SetBool ("IsAttacking", true);			
 			flipScale();
 			nextFire = Time.time + fireRate;
-			shot.GetComponent<ProjectileController> ().targetPos = mrPotatoHead.transform.position;
+			Vector3 target = mrPotatoHead.transform.position;
+			target.y += offsetPotatoY;
+			shot.GetComponent<ProjectileController> ().targetPos = target;
 			
 			Instantiate (shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
 

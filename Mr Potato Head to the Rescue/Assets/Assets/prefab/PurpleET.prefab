@@ -1489,7 +1489,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -83.7159348, y: -39.7429695, z: 59.1875}
+  m_LocalPosition: {x: -83.7200012, y: -39.5400009, z: 59.1899986}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 400100}
@@ -1505,7 +1505,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0399999991, y: .219999999, z: -.0599999987}
+  m_LocalPosition: {x: -.0399999991, y: .219999999, z: 0}
   m_LocalScale: {x: 1.10000002, y: .879999995, z: .800000012}
   m_Children: []
   m_Father: {fileID: 400102}
@@ -1675,6 +1675,7 @@ MonoBehaviour:
   shot: {fileID: 100000, guid: c54afad784e65334ea69c2c0fd4404d6, type: 2}
   shotSpawn: {fileID: 400100}
   fireRate: 1
+  offsetPotatoY: 3
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

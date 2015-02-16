@@ -4,7 +4,8 @@ using System.Collections;
 public class FlyingPurpleEtController : MonoBehaviour {
 	public GameObject shot;
 	public Transform shotSpawn;
-	
+	public float offsetPotatoY = 5;
+
 	private float fireRate = 3F;
 	private float nextFire;
 	private GameObject mrPotatoHead;
@@ -58,11 +59,16 @@ public class FlyingPurpleEtController : MonoBehaviour {
 		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= 40)
 		{
 			nextFire = Time.time + fireRate;
-			shot.GetComponent<ProjectileController>().targetPos = new Vector3(mrPotatoHead.transform.position.x - 15, mrPotatoHead.transform.position.y, 0);
+			Vector3 target = mrPotatoHead.transform.position;
+			target.y += offsetPotatoY;
+			target.x -= 15;
+			shot.GetComponent<ProjectileController>().targetPos = target;
 			Instantiate(shot, new Vector3(shotSpawn.transform.position.x-1,shotSpawn.transform.position.y,shotSpawn.transform.position.z), shotSpawn.transform.rotation);
-			shot.GetComponent<ProjectileController>().targetPos = mrPotatoHead.transform.position;
+			target.x += 15;
+			shot.GetComponent<ProjectileController>().targetPos = target;
 			Instantiate(shot, new Vector3(shotSpawn.transform.position.x,shotSpawn.transform.position.y,shotSpawn.transform.position.z), shotSpawn.transform.rotation);
-			shot.GetComponent<ProjectileController>().targetPos = new Vector3(mrPotatoHead.transform.position.x + 15, mrPotatoHead.transform.position.y, 0);;
+			target.x += 15;
+			shot.GetComponent<ProjectileController>().targetPos = target;
 			Instantiate(shot, new Vector3(shotSpawn.transform.position.x+1,shotSpawn.transform.position.y,shotSpawn.transform.position.z), shotSpawn.transform.rotation);
 		}
 	}

@@ -1675,6 +1675,7 @@ MonoBehaviour:
   shot: {fileID: 124848, guid: 6d638860128818843afce1c0056b3626, type: 2}
   shotSpawn: {fileID: 400100}
   fireRate: 1
+  offsetPotatoY: 3
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

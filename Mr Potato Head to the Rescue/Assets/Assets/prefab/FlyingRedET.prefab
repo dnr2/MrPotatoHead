@@ -1686,6 +1686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shot: {fileID: 100000, guid: c54afad784e65334ea69c2c0fd4404d6, type: 2}
   shotSpawn: {fileID: 400100}
+  offsetPotatoY: 3
 --- !u!114 &11456672
 MonoBehaviour:
   m_ObjectHideFlags: 1

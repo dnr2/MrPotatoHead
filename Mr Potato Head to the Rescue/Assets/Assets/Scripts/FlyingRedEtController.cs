@@ -4,7 +4,8 @@ using System.Collections;
 public class FlyingRedEtController : MonoBehaviour {
 	public GameObject shot;
 	public Transform shotSpawn;
-	
+	public float offsetPotatoY = 5;
+
 	private float fireRate = 2.5F;
 	private float nextFire;
 	private float nextBurstFire;
@@ -64,7 +65,7 @@ public class FlyingRedEtController : MonoBehaviour {
 		if(!shooting && Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= maxDistance)
 		{
 			nextFire = Time.time + fireRate;
-			Vector3 target = new Vector3(mrPotatoHead.transform.position.x, mrPotatoHead.transform.position.y, mrPotatoHead.transform.position.z);
+			Vector3 target = new Vector3(mrPotatoHead.transform.position.x, mrPotatoHead.transform.position.y + offsetPotatoY, mrPotatoHead.transform.position.z);
 			shot.GetComponent<ProjectileController>().targetPos = target;
 			shooting = true;
 		}
