@@ -31,7 +31,8 @@ public class MainCameraController : MonoBehaviour {
 		else {
 			newPosition.y = transform.position.y;
 		}
-				
+
+
 		if (newPosition.x - transform.position.x > thresholdX) {
 			newPosition.x = newPosition.x - thresholdX;
 		} else if (newPosition.x - transform.position.x < (-1)*thresholdX){
@@ -40,6 +41,10 @@ public class MainCameraController : MonoBehaviour {
 		else {
 			newPosition.x = transform.position.x;
 		}
+
+
+		//newPosition.x = transform.position.x;
+
 		newPosition.z -= distance;
 
 		transform.position = newPosition;
