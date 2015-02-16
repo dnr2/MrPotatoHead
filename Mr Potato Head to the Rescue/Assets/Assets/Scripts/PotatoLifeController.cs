@@ -28,7 +28,7 @@ public class PotatoLifeController : MonoBehaviour {
 	
 	}
 	
-	void changeVidas(int vidas){
+	void updateLives(int vidas){
 		textoVida.text = "x"+vidas;
 	}
 
@@ -51,8 +51,7 @@ public class PotatoLifeController : MonoBehaviour {
 
 			//Debug.Log( "morreu.." );
 	
-			lives--;
-			changeVidas (lives);
+			updateLives (--lives);
 			
 			lifePoints = initialLifePoints;
 			isDead = false;
@@ -92,14 +91,28 @@ public class PotatoLifeController : MonoBehaviour {
 				Destroy (other.gameObject);
 			} else if (other.tag == "enemy") {
 				causeDamage (1);
-				playSound();
-				StartCoroutine (myWait (2));
+				Destroy (other.gameObject);
+			}
+			else if (other.tag == "hpItem") {
+				causeDamage (1);
+				lifePoints++;
+				Destroy (other.gameObject);
+			}
+			else if (other.tag == "lifeItem") {
+				causeDamage (1);
+				updateLives(++lives);
+				Destroy (other.gameObject);
+			}
+			else if (other.tag == "continueItem") {
+				causeDamage (1);
+				continues++;
+				Destroy (other.gameObject);
 			}
 		}
 	}
 
 	void playSound(){
-		
+
 		//ira tentar tocar Audio Source componente (ver documentacao do Unity)
 		if (audio != null) {
 			AudioSource.PlayClipAtPoint(audio.clip, this.gameObject.transform.position );
