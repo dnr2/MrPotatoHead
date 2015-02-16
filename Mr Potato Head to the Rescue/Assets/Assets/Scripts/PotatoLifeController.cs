@@ -19,7 +19,7 @@ public class PotatoLifeController : MonoBehaviour {
 	void Start () {	
 		textoVida = GameObject.FindGameObjectWithTag("PotatoLifeText").GetComponent <Text>();
 		textoVida.text = "x"+lives;
-		Debug.Log("Texto = "+textoVida.text);
+		//Debug.Log("Texto = "+textoVida.text);
 		lifePoints = initialLifePoints;
 	}
 	
