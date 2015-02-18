@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: c7b8ab4a60464f347910f25eb25bc04c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Easy_Wheel_Cylinder
+    100004: Easy_Wheel_Cylinder_1
+    100006: Easy_Wheel_HyperNURBS Cube5
+    100008: Easy_Wheel_HyperNURBS_1 Cube2
+    100010: Easy_Wheel_HyperNURBS_2 Cube1
+    100012: Easy_Wheel_HyperNURBS_3 Cube4
+    100014: Easy_Wheel_HyperNURBS_4 Cube7
+    100016: Easy_Wheel_HyperNURBS_5 Cube
+    100018: Easy_Wheel_HyperNURBS_6 Cube6
+    100020: Easy_Wheel_HyperNURBS_7 Cube3
+    100022: Easy_Wheel_Tube
+    100024: Easy_Wheel_Tube_1
+    400000: //RootNode
+    400002: Easy_Wheel_Cylinder
+    400004: Easy_Wheel_Cylinder_1
+    400006: Easy_Wheel_HyperNURBS Cube5
+    400008: Easy_Wheel_HyperNURBS_1 Cube2
+    400010: Easy_Wheel_HyperNURBS_2 Cube1
+    400012: Easy_Wheel_HyperNURBS_3 Cube4
+    400014: Easy_Wheel_HyperNURBS_4 Cube7
+    400016: Easy_Wheel_HyperNURBS_5 Cube
+    400018: Easy_Wheel_HyperNURBS_6 Cube6
+    400020: Easy_Wheel_HyperNURBS_7 Cube3
+    400022: Easy_Wheel_Tube
+    400024: Easy_Wheel_Tube_1
+    2300000: Easy_Wheel_Cylinder
+    2300002: Easy_Wheel_Cylinder_1
+    2300004: Easy_Wheel_HyperNURBS Cube5
+    2300006: Easy_Wheel_HyperNURBS_1 Cube2
+    2300008: Easy_Wheel_HyperNURBS_2 Cube1
+    2300010: Easy_Wheel_HyperNURBS_3 Cube4
+    2300012: Easy_Wheel_HyperNURBS_4 Cube7
+    2300014: Easy_Wheel_HyperNURBS_5 Cube
+    2300016: Easy_Wheel_HyperNURBS_6 Cube6
+    2300018: Easy_Wheel_HyperNURBS_7 Cube3
+    2300020: Easy_Wheel_Tube
+    2300022: Easy_Wheel_Tube_1
+    3300000: Easy_Wheel_Cylinder
+    3300002: Easy_Wheel_Cylinder_1
+    3300004: Easy_Wheel_HyperNURBS Cube5
+    3300006: Easy_Wheel_HyperNURBS_1 Cube2
+    3300008: Easy_Wheel_HyperNURBS_2 Cube1
+    3300010: Easy_Wheel_HyperNURBS_3 Cube4
+    3300012: Easy_Wheel_HyperNURBS_4 Cube7
+    3300014: Easy_Wheel_HyperNURBS_5 Cube
+    3300016: Easy_Wheel_HyperNURBS_6 Cube6
+    3300018: Easy_Wheel_HyperNURBS_7 Cube3
+    3300020: Easy_Wheel_Tube
+    3300022: Easy_Wheel_Tube_1
+    4300000: Easy_Wheel_Cylinder
+    4300002: Easy_Wheel_Cylinder_1
+    4300004: Easy_Wheel_HyperNURBS Cube5
+    4300006: Easy_Wheel_HyperNURBS_1 Cube2
+    4300008: Easy_Wheel_HyperNURBS_2 Cube1
+    4300010: Easy_Wheel_HyperNURBS_3 Cube4
+    4300012: Easy_Wheel_HyperNURBS_4 Cube7
+    4300014: Easy_Wheel_HyperNURBS_5 Cube
+    4300016: Easy_Wheel_HyperNURBS_6 Cube6
+    4300018: Easy_Wheel_HyperNURBS_7 Cube3
+    4300020: Easy_Wheel_Tube
+    4300022: Easy_Wheel_Tube_1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

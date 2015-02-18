@@ -1,13 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface PlayerAnimationInterface 
+public class PlayerAnimationInterface : MonoBehaviour
 {
-	void update(bool active);
-	Animator getAnimator();
-	void setAnimator(Animator anim);
-	void setCharacterMotor( CharacterMotor motor);
-	void setAnimatorObj( GameObject obj );
-	void setHatObj( SkinnedMeshRenderer obj );
-	SkinnedMeshRenderer getHatObj( );
+	public virtual void update(bool active){}
+	public virtual void setCharacterMotor( CharacterMotor motor){}
+	public virtual Animator getAnimator(){ return null; }
+	public virtual SkinnedMeshRenderer getHatObj( ) { return null; }
 }

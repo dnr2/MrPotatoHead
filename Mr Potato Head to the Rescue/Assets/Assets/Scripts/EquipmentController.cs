@@ -5,64 +5,33 @@ using System.Collections.Generic;
 
 public class EquipmentController : MonoBehaviour {
 
-	// os equipamentos vao ficar numa lista(array).
+	// os equipamentos vao ficar numa lista(array). O equipamento que ja vem equipado deve ficar habilitado e os demais desabilitado 
+	// (habilitar / desabilitar) o checkbox no canto superior esquerdo na aba inspector dos objetos 
 
 
 	public int equipID = 0; //Initial iquipment to be used
-	public List<Animator> playerAnimator; //List of Player Animators
-	public List<GameObject> playerAnimatorObj; 
-	public List<SkinnedMeshRenderer> stationaryHatObj; //The hat on the top of the model to be used
 
-	private PlayerAnimationInterface[] animations;
+	public PlayerAnimationInterface[] animations;
 	private int animSize;
-	private CharacterMotor motor;
-	private ThrowHat hat;
+	private CharacterMotor motor; //script motor que controla movimento
+	private ThrowHat hat; //script que controla o ataque do chapeu
 
 
 	// Use this for initialization
 	void Start () {
 		motor = GetComponent<CharacterMotor> ();
 		hat = GetComponent<ThrowHat> ();
-		PlayerAnimationInterface whellsController = new WheelsController();
-		PlayerAnimationInterface molaController = new MolaController();
+		animSize = animations.Length;
 
-		animSize = Math.Min( this.playerAnimator.Count, Math.Min(
-		                     this.playerAnimatorObj.Count, 
-		                     this.stationaryHatObj.Count ));
-
-		if( this.playerAnimator.Count != this.playerAnimatorObj.Count ){
-			Debug.LogWarning( "Animators and Objects list should have the same size!!!");
+		foreach(PlayerAnimationInterface anim in animations ){
+			anim.setCharacterMotor( motor );
 		}
-
-		this.animations = new PlayerAnimationInterface[10];
-
-		if( animSize > 0) this.animations[0] = whellsController;
-		if( animSize > 1) this.animations[1] = molaController;
-
-		int pos = 0;
-		foreach(Animator anim in this.playerAnimator ){
-			this.animations[pos].setAnimator( anim );
-			this.animations[pos].setCharacterMotor( motor );
-			pos++;
-		}
-
-		pos = 0;
-		foreach (GameObject obj in this.playerAnimatorObj) {
-			this.animations[pos].setAnimatorObj( obj );	
-			pos++;
-		}
-
-		pos = 0;
-		foreach (SkinnedMeshRenderer obj in this.stationaryHatObj) {
-			this.animations[pos].setHatObj( obj );	
-			pos++;
-		}
+		
+		if( this.animations[equipID].getAnimator() != null ) motor.setAnimator( this.animations[equipID].getAnimator() );
+		if( this.animations[equipID].getAnimator() != null ) hat.setAnimator( this.animations[equipID].getAnimator() );
 
 		//initialize
 		this.animations[equipID].update( true );
-		
-		motor.setAnimator( this.animations[equipID].getAnimator() );
-		hat.setAnimator( this.animations[equipID].getAnimator() );
 
 	}
 	
@@ -77,13 +46,11 @@ public class EquipmentController : MonoBehaviour {
 		if (Input.GetKey (KeyCode.C) && animSize > 1) {
 			equipID = 1;
 		}
+		if (Input.GetKey (KeyCode.V) && animSize > 2) {
+			equipID = 2;
+		}
 
-
-
-		if (oldEquipID != equipID) {
-
-			Debug.Log (oldEquipID);
-			Debug.Log( equipID );
+		if (oldEquipID != equipID) {		
 
 			this.animations[oldEquipID].update( false );
 			this.animations[equipID].update( true );

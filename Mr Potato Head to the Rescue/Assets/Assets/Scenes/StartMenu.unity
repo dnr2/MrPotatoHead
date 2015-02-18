@@ -484,15 +484,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400072, guid: 720ab5e0577993c488beb3dccef8c941, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.36999989
+      value: 6.17000008
       objectReference: {fileID: 0}
     - target: {fileID: 400072, guid: 720ab5e0577993c488beb3dccef8c941, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.79999995
       objectReference: {fileID: 0}
     - target: {fileID: 400072, guid: 720ab5e0577993c488beb3dccef8c941, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400072, guid: 720ab5e0577993c488beb3dccef8c941, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1189,6 +1189,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 539898802}
   - 95: {fileID: 539898803}
+  - 114: {fileID: 539898804}
   m_Layer: 0
   m_Name: MrPotatoHead
   m_TagString: Untagged
@@ -1203,7 +1204,7 @@ Transform:
   m_PrefabInternal: {fileID: 248601851}
   m_GameObject: {fileID: 539898801}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: 4.36999989, y: 0, z: -0}
+  m_LocalPosition: {x: 6.17000008, y: -1.79999995, z: 0}
   m_LocalScale: {x: 1.29999995, y: 1.29999995, z: 1.29999995}
   m_Children:
   - {fileID: 1889248884}
@@ -1228,6 +1229,22 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &539898804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539898801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1a8f22f12311c4385655649c66041e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potatoLowFinal: {fileID: 1222115676}
+  openTexture: {fileID: 2800000, guid: 0f68caef56532364aa70d79947785d85, type: 3}
+  blinkTexture: {fileID: 2800000, guid: bcc37344b03bcb34cbb0a71204b3aa91, type: 3}
+  framesPerSecond: .5
+  time: 0
 --- !u!1 &551016151
 GameObject:
   m_ObjectHideFlags: 0
