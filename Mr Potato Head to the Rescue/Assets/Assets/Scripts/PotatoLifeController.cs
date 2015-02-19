@@ -135,17 +135,14 @@ public class PotatoLifeController : MonoBehaviour {
 				Destroy (other.gameObject);
 			}
 			else if (other.tag == "hpItem") {
-				causeDamage (1);
 				lifePoints++;
 				Destroy (other.gameObject);
 			}
 			else if (other.tag == "lifeItem") {
-				causeDamage (1);
 				updateLives(++lives);
 				Destroy (other.gameObject);
 			}
 			else if (other.tag == "continueItem") {
-				causeDamage (1);
 				continues++;
 				Destroy (other.gameObject);
 			}
