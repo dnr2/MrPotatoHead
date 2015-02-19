@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,22 @@ public class EquipmentController : MonoBehaviour {
 	private int animSize;
 	private CharacterMotor motor; //script motor que controla movimento
 	private ThrowHat hat; //script que controla o ataque do chapeu
+	
+	private RawImage direcional;
+	private RawImage roda;
+	private RawImage mola;
+	private RawImage laser;
+	private RawImage caudaTrex;
+	
+	public Texture2D roda1;
+	public Texture2D mola1;
+	public Texture2D laser1;
+	public Texture2D caudaTrex1;
+	public Texture2D roda2;
+	public Texture2D mola2;
+	public Texture2D laser2;
+	public Texture2D caudaTrex2;
+
 
 
 	// Use this for initialization
@@ -32,6 +49,11 @@ public class EquipmentController : MonoBehaviour {
 
 		//initialize
 		this.animations[equipID].update( true );
+		direcional = GameObject.FindGameObjectWithTag("direcional").GetComponent <RawImage>();
+		roda = GameObject.FindGameObjectWithTag("roda").GetComponent <RawImage>();
+		mola = GameObject.FindGameObjectWithTag("mola").GetComponent <RawImage>();
+		laser = GameObject.FindGameObjectWithTag("laser").GetComponent <RawImage>();
+		caudaTrex = GameObject.FindGameObjectWithTag("caudaTrex").GetComponent <RawImage>();
 
 	}
 	
@@ -56,13 +78,43 @@ public class EquipmentController : MonoBehaviour {
 		}
 
 		if (oldEquipID != equipID) {		
-
 			this.animations[oldEquipID].update( false );
 			this.animations[equipID].update( true );
 
 			motor.setAnimator( this.animations[equipID].getAnimator() );
 			hat.setAnimator( this.animations[equipID].getAnimator() );
 			hat.setStationaryHatMesh( this.animations[equipID].getHatObj() );
+			
+			//Setando a imagem para a nao selecionada
+			switch(oldEquipID){
+				case 1:
+				mola.texture =  mola1;
+					break;
+				case 2:
+				roda.texture =  roda1;
+					break;
+				case 3:
+				laser.texture =  laser1;
+					break;
+				case 4:
+				caudaTrex.texture =  caudaTrex1;
+					break;
+			}
+			
+			switch(equipID){
+				case 1:
+				mola.texture =  mola2;
+					break;
+				case 2:
+				roda.texture =  roda2;
+					break;
+				case 3:
+				laser.texture =  laser2;
+					break;
+				case 4:
+				caudaTrex.texture =  caudaTrex2;
+					break;
+			}
 		}
 
 	}

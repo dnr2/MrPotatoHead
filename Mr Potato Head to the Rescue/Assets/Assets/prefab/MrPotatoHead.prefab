@@ -7604,6 +7604,14 @@ MonoBehaviour:
   - {fileID: 11400020}
   - {fileID: 11400016}
   - {fileID: 11400018}
+  roda1: {fileID: 2800000, guid: 904d6b00105e92c49ae326ced78d0d39, type: 3}
+  mola1: {fileID: 2800000, guid: 510f9abc38eb8c94591125353ad5a59e, type: 3}
+  laser1: {fileID: 2800000, guid: 25c6190c6c09cbf46a30e6a39fde5b5b, type: 3}
+  caudaTrex1: {fileID: 2800000, guid: cf5620bd8270b744a92bc804526d8bab, type: 3}
+  roda2: {fileID: 2800000, guid: 38a51245b91b77a41958194f6bd53454, type: 3}
+  mola2: {fileID: 2800000, guid: 801c2797983f93b43b02f5a8f2691256, type: 3}
+  laser2: {fileID: 2800000, guid: 7bf3d1b5086068f4989e804bf965bda6, type: 3}
+  caudaTrex2: {fileID: 2800000, guid: a18f08e9dc108c54f95a761a087f9110, type: 3}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
