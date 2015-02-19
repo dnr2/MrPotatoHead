@@ -9,8 +9,9 @@ public class PotatoLifeController : MonoBehaviour {
 	public static int continues = 1;
 	public Transform spawnPoint;
 	public Text textoVida;
-	public float flashSpeed = 5f;
-	public Color flashColor = new Color(1f, 0f, 0f, 0.1f);
+	public float flashSpeed = 10f;
+	public Color flashColor = new Color(1f, 0f, 0f, 0.5f);
+	public GameObject prefabHpDiv;
 	
 	private bool isDead = false;
 	private int lifePoints ;
@@ -32,13 +33,20 @@ public class PotatoLifeController : MonoBehaviour {
 		HpBar.value = lifePoints;
 		damageImage = GameObject.FindGameObjectWithTag("damageImg").GetComponent <Image>();
 		
-		/*
-		for(int i = 1; i <= initialLifePoints; i++){
-			GameObject prefab = (GameObject)Instantiate(Resources.Load("../prefab/hpDiv"));
-			Debug.Log("HPBar = "+Resources.Load("hpDiv"));
-			prefab.transform.parent = HpBar.transform;
+		Vector3 HpBarPosition = HpBar.transform.position;
+		float HpBarSizeWidth = HpBar.fillRect.rect.width;
+		float HpBarSizeHeight = HpBar.fillRect.rect.height;
+		
+		for(int i = 1; i < initialLifePoints; i++){
+			Vector3 position;
+			position.x = HpBarPosition.x + i*(HpBarSizeWidth/initialLifePoints);
+			position.y = HpBarPosition.y + (HpBarSizeHeight);
+			position.z = HpBarPosition.z;
+			GameObject prefab = (GameObject)Instantiate(prefabHpDiv, position, Quaternion.identity);
+			prefab.transform.SetParent(HpBar.transform);
+			prefab.transform.position = position;
 		}
-		*/
+		
 	}
 	
 	// Update is called once per frame
