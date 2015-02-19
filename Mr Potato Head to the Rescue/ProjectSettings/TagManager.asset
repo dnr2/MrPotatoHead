@@ -10,6 +10,9 @@ TagManager:
   - hpItem
   - continueItem
   - lifeItem
+  - hpSlider
+  - damageImg
+  - hpDiv
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
