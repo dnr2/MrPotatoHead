@@ -13,6 +13,11 @@ TagManager:
   - hpSlider
   - damageImg
   - hpDiv
+  - roda
+  - mola
+  - laser
+  - caudaTrex
+  - direcional
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

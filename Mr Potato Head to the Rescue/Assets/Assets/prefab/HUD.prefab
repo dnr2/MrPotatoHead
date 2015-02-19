@@ -92,7 +92,7 @@ GameObject:
   - 114: {fileID: 11426360}
   m_Layer: 5
   m_Name: Roda
-  m_TagString: Untagged
+  m_TagString: roda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,7 +162,7 @@ GameObject:
   - 114: {fileID: 11426370}
   m_Layer: 5
   m_Name: Mola
-  m_TagString: Untagged
+  m_TagString: mola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,7 +198,7 @@ GameObject:
   - 114: {fileID: 11426378}
   m_Layer: 5
   m_Name: Direcional
-  m_TagString: Untagged
+  m_TagString: direcional
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,7 +215,7 @@ GameObject:
   - 114: {fileID: 11426380}
   m_Layer: 5
   m_Name: CaudaTrex
-  m_TagString: Untagged
+  m_TagString: caudaTrex
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,7 +297,7 @@ GameObject:
   - 114: {fileID: 11426388}
   m_Layer: 5
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

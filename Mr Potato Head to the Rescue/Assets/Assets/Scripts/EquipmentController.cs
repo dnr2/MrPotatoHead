@@ -39,7 +39,12 @@ public class EquipmentController : MonoBehaviour {
 	void Update () {
 
 		int oldEquipID = equipID;
-
+		
+		/*
+		X = Nada
+		C = Mola
+		V = Roda
+		*/
 		if (Input.GetKey (KeyCode.X) && animSize > 0) {
 			equipID = 0;
 		}
