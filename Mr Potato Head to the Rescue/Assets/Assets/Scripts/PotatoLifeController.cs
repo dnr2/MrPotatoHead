@@ -28,10 +28,17 @@ public class PotatoLifeController : MonoBehaviour {
 		lifePoints = initialLifePoints;
 
 		HpBar = GameObject.FindGameObjectWithTag("hpSlider").GetComponent <Slider>();
-		Debug.Log("HPBar = "+HpBar);
 		HpBar.maxValue = lifePoints;
 		HpBar.value = lifePoints;
 		damageImage = GameObject.FindGameObjectWithTag("damageImg").GetComponent <Image>();
+		
+		/*
+		for(int i = 1; i <= initialLifePoints; i++){
+			GameObject prefab = (GameObject)Instantiate(Resources.Load("../prefab/hpDiv"));
+			Debug.Log("HPBar = "+Resources.Load("hpDiv"));
+			prefab.transform.parent = HpBar.transform;
+		}
+		*/
 	}
 	
 	// Update is called once per frame
