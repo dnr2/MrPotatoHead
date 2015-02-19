@@ -1376,7 +1376,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &103471785
 GameObject:
   m_ObjectHideFlags: 0
@@ -6681,7 +6681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d3256ff7d2ddb4fb2ec425fcea693a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialLifePoints: 5
+  initialLifePoints: 3
   lives: 1
   spawnPoint: {fileID: 665238748}
   textoVida: {fileID: 1025363113}
@@ -7806,7 +7806,7 @@ Prefab:
       objectReference: {fileID: 1025363113}
     - target: {fileID: 11400012, guid: 6acb5bbeef9fb4c499c0f0059591192f, type: 2}
       propertyPath: initialLifePoints
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6acb5bbeef9fb4c499c0f0059591192f, type: 2}
