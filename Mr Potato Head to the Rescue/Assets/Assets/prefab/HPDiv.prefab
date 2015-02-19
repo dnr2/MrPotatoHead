@@ -11,7 +11,7 @@ GameObject:
   - 222: {fileID: 22270646}
   - 114: {fileID: 11470646}
   m_Layer: 5
-  m_Name: hpDiv
+  m_Name: HPDiv
   m_TagString: hpDiv
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
