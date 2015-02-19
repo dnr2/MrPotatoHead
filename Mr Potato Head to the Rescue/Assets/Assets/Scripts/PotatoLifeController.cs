@@ -9,10 +9,15 @@ public class PotatoLifeController : MonoBehaviour {
 	public static int continues = 1;
 	public Transform spawnPoint;
 	public Text textoVida;
+	public float flashSpeed = 5f;
+	public Color flashColor = new Color(1f, 0f, 0f, 0.1f);
 	
 	private bool isDead = false;
 	private int lifePoints ;
 	private bool invincible = false;
+	private Slider HpBar;
+	private Image damageImage;
+	private bool damaged = false;
 
 
 	// Use this for initialization
@@ -21,11 +26,29 @@ public class PotatoLifeController : MonoBehaviour {
 		textoVida.text = "x"+lives;
 		//Debug.Log("Texto = "+textoVida.text);
 		lifePoints = initialLifePoints;
+
+		HpBar = GameObject.FindGameObjectWithTag("hpSlider").GetComponent <Slider>();
+		Debug.Log("HPBar = "+HpBar);
+		HpBar.maxValue = lifePoints;
+		HpBar.value = lifePoints;
+		damageImage = GameObject.FindGameObjectWithTag("damageImg").GetComponent <Image>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(damaged)
+		{
+			// ... set the colour of the damageImage to the flash colour.
+			damageImage.color = flashColor;
+		}
+		// Otherwise...
+		else
+		{
+			// ... transition the colour back to clear.
+			damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+		}
+		// Reset the damaged flag.
+		damaged = false;
 	}
 	
 	void updateLives(int vidas){
@@ -34,9 +57,11 @@ public class PotatoLifeController : MonoBehaviour {
 
 
 	void causeDamage(int val){
+		damaged = true;
 		if (!isDead) {
 			//Debug.Log( "atingido" );
 			lifePoints -= val;
+			HpBar.value -= val;
 			if( lifePoints <= 0){
 				PlayDeathAnimation();
 				isDead = true;
@@ -54,6 +79,7 @@ public class PotatoLifeController : MonoBehaviour {
 			updateLives (--lives);
 			
 			lifePoints = initialLifePoints;
+			HpBar.value = initialLifePoints;
 			isDead = false;
 
 			this.transform.position = spawnPoint.position;
