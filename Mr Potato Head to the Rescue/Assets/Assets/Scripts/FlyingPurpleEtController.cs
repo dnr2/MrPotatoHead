@@ -18,7 +18,7 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	private float minDistance = 15f;
 	private float maxDistance = 25f;
 	
-	private float seekDistance = 40f;
+	private float seekDistance = 25f;
 	private bool seek = false;
 	
 	// Use this for initialization

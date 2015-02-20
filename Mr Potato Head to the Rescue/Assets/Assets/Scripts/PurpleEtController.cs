@@ -11,7 +11,7 @@ public class PurpleEtController : MonoBehaviour {
 
 	private float nextFire;
 	private GameObject mrPotatoHead;
-	private float maxDistance = 40f;
+	private float maxDistance = 25f;
 
 	// Use this for initialization
 	void Start () {
