@@ -4,7 +4,7 @@ using System.Collections;
 public class RedEtController : MonoBehaviour {
 	public GameObject shot;
 	public Transform shotSpawn;
-	public float fireRate = 1F;
+	public float fireRate = 4F;
 	public float offsetPotatoY = 5;
 
 	private Animator anim;

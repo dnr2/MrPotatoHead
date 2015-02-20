@@ -6,7 +6,7 @@ public class FlyingRedEtController : MonoBehaviour {
 	public Transform shotSpawn;
 	public float offsetPotatoY = 5;
 
-	private float fireRate = 2.5F;
+	private float fireRate = 4.5F;
 	private float nextFire;
 	private float nextBurstFire;
 	private bool shooting = false;
@@ -71,7 +71,6 @@ public class FlyingRedEtController : MonoBehaviour {
 		}
 		else if(shooting)
 		{
-
 			if(shots == 0)
 			{
 				shots = 3;
@@ -83,7 +82,6 @@ public class FlyingRedEtController : MonoBehaviour {
 				Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
 				--shots;
 			}
-			//print (shot.GetComponent<ProjectileController>().targetPos);
 		}
 	}
 	

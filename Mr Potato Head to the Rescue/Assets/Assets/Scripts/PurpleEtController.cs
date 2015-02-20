@@ -4,7 +4,7 @@ using System.Collections;
 public class PurpleEtController : MonoBehaviour {
 	public GameObject shot;
 	public Transform shotSpawn;
-	public float fireRate = 1F;
+	public float fireRate = 3F;
 	public float offsetPotatoY = 5;
 
 	private Animator anim;

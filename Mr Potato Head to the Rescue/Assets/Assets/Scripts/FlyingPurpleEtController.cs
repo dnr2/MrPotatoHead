@@ -6,7 +6,7 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	public Transform shotSpawn;
 	public float offsetPotatoY = 5;
 
-	private float fireRate = 3F;
+	private float fireRate = 6F;
 	private float nextFire;
 	private GameObject mrPotatoHead;
 	private float flyingSpeed = 0.5f;
@@ -17,6 +17,9 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	private float nextWanderRefresh;
 	private float minDistance = 15f;
 	private float maxDistance = 25f;
+	
+	private float seekDistance = 40f;
+	private bool seek = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -31,23 +34,30 @@ public class FlyingPurpleEtController : MonoBehaviour {
 
 		if(mrPotatoHead == null)
 			mrPotatoHead = GameObject.FindWithTag("Player");
-		
-		if(distance (mrPotatoHead.transform.position, this.transform.position) <= minDistance)
+		if(!seek)
 		{
-			Vector3 direction = new Vector3(this.transform.position.x - mrPotatoHead.transform.position.x, this.transform.position.y - mrPotatoHead.transform.position.y, 0);
-			rigidbody.velocity = direction * flyingSpeed;
-		}
-		else if(distance (mrPotatoHead.transform.position, this.transform.position) >= maxDistance)
-		{
-			Vector3 direction = new Vector3(mrPotatoHead.transform.position.x - this.transform.position.x, mrPotatoHead.transform.position.y - this.transform.position.y, 0);
-			rigidbody.velocity = direction * flyingSpeed;
+			if(distance(mrPotatoHead.transform.position, this.transform.position) <= seekDistance)
+				seek = true;
 		}
 		else
 		{
-			if(Time.time > nextWanderRefresh)
+			if(distance (mrPotatoHead.transform.position, this.transform.position) <= minDistance)
 			{
-				nextWanderRefresh = Time.time + wanderRefreshRate;
-				rigidbody.velocity = (center - nextVelocity());
+				Vector3 direction = new Vector3(this.transform.position.x - mrPotatoHead.transform.position.x, this.transform.position.y - mrPotatoHead.transform.position.y, 0);
+				rigidbody.velocity = direction * flyingSpeed;
+			}
+			else if(distance (mrPotatoHead.transform.position, this.transform.position) >= maxDistance)
+			{
+				Vector3 direction = new Vector3(mrPotatoHead.transform.position.x - this.transform.position.x, mrPotatoHead.transform.position.y - this.transform.position.y, 0);
+				rigidbody.velocity = direction * flyingSpeed;
+			}
+			else
+			{
+				if(Time.time > nextWanderRefresh)
+				{
+					nextWanderRefresh = Time.time + wanderRefreshRate;
+					rigidbody.velocity = (center - nextVelocity());
+				}
 			}
 		}
 	}
@@ -56,7 +66,7 @@ public class FlyingPurpleEtController : MonoBehaviour {
 	void Update () {
 		if(mrPotatoHead == null)
 			mrPotatoHead = GameObject.FindWithTag("Player");
-		if(Time.time > nextFire && distance (mrPotatoHead.transform.position, this.transform.position) <= 40)
+		if(Time.time > nextFire && seek)
 		{
 			nextFire = Time.time + fireRate;
 			Vector3 target = mrPotatoHead.transform.position;
