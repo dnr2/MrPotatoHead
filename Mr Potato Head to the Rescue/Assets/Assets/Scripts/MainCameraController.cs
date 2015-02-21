@@ -4,7 +4,7 @@ using System.Collections;
 public class MainCameraController : MonoBehaviour {
 
 	public Transform target;
-	public float distance = 3.0f;
+	public float distance = 155.0f;
 	public float height = 3.0f;
 	public float width = 3.0f;
 	public float damping = 5.0f;
@@ -12,7 +12,7 @@ public class MainCameraController : MonoBehaviour {
 	public float rotationDamping = 10.0f;
 	public float thresholdYtop = 5.0f;
 	public float thresholdYbot = 10.0f;
-	public float thresholdX = 10.0f;
+	public float thresholdX = 85.0f;
 
 	// Use this for initialization
 	void Start () {
