@@ -17755,6 +17755,7 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2015949069}
   m_GameObject: {fileID: 559433645}
+  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
@@ -17771,7 +17772,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -34532,8 +34532,8 @@ MonoBehaviour:
   smoothRotation: 1
   rotationDamping: 10
   thresholdYtop: 5
-  thresholdYbot: 10
-  thresholdX: 10
+  thresholdYbot: 5
+  thresholdX: 0
 --- !u!108 &1094966593
 Light:
   m_ObjectHideFlags: 0
@@ -38284,6 +38284,14 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1288621012}
+    - target: {fileID: 11400000, guid: f0f2514c44835f0488d010ff8acc04d1, type: 2}
+      propertyPath: thresholdX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f0f2514c44835f0488d010ff8acc04d1, type: 2}
+      propertyPath: thresholdYbot
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0f2514c44835f0488d010ff8acc04d1, type: 2}
   m_RootGameObject: {fileID: 1094966591}
@@ -62154,6 +62162,22 @@ Prefab:
     - target: {fileID: 22426370, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426368, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426368, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426384, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426384, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
