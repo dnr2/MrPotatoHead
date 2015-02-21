@@ -125,6 +125,7 @@ public class PotatoLifeController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
+
 		//Debug.Log ("INVICIBLE IS " + invincible + " TAG is "  + other.tag);
 		if (!invincible) {
 			if (other.tag == "laserbean") {
@@ -144,10 +145,10 @@ public class PotatoLifeController : MonoBehaviour {
 				manaPoints++;
 				Destroy (other.gameObject);
 			}
-			else if (other.tag == "estrela") {
-				points++;
-				Destroy (other.gameObject);
-			}
+			//else if (other.tag == "estrela") {
+			//	points++;
+			//	Destroy (other.gameObject);
+			//}
 			else if (other.tag == "lifeItem") {
 				updateLives(++lives);
 				Destroy (other.gameObject);
