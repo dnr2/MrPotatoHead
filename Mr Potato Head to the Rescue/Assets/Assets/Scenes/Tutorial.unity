@@ -6069,7 +6069,7 @@ GameObject:
   - 114: {fileID: 179519335}
   m_Layer: 5
   m_Name: Roda
-  m_TagString: Untagged
+  m_TagString: roda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17755,6 +17755,7 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2015949069}
   m_GameObject: {fileID: 559433645}
+  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
@@ -17771,7 +17772,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -19097,7 +19097,7 @@ GameObject:
   - 114: {fileID: 612319238}
   m_Layer: 5
   m_Name: CaudaTrex
-  m_TagString: Untagged
+  m_TagString: caudaTrex
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26403,7 +26403,7 @@ GameObject:
   - 114: {fileID: 815488330}
   m_Layer: 5
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30617,6 +30617,8 @@ GameObject:
   - 33: {fileID: 975307538}
   - 23: {fileID: 975307537}
   - 95: {fileID: 975307536}
+  - 64: {fileID: 975307540}
+  - 64: {fileID: 975307539}
   m_Layer: 0
   m_Name: CopoAberto
   m_TagString: Untagged
@@ -30680,6 +30682,33 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 232136206}
   m_GameObject: {fileID: 975307534}
+  m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
+--- !u!64 &975307539
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 975307534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
+--- !u!64 &975307540
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6400000, guid: 488c78cfd131b5b41b09a90120ae2325,
+    type: 2}
+  m_PrefabInternal: {fileID: 232136206}
+  m_GameObject: {fileID: 975307534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
 --- !u!1 &978863028
 GameObject:
@@ -34503,8 +34532,8 @@ MonoBehaviour:
   smoothRotation: 1
   rotationDamping: 10
   thresholdYtop: 5
-  thresholdYbot: 10
-  thresholdX: 10
+  thresholdYbot: 5
+  thresholdX: 0
 --- !u!108 &1094966593
 Light:
   m_ObjectHideFlags: 0
@@ -37781,6 +37810,8 @@ GameObject:
   - 33: {fileID: 1198835265}
   - 23: {fileID: 1198835264}
   - 95: {fileID: 1198835263}
+  - 64: {fileID: 1198835267}
+  - 64: {fileID: 1198835266}
   m_Layer: 0
   m_Name: CopoAberto
   m_TagString: Untagged
@@ -37844,6 +37875,33 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 198972115}
   m_GameObject: {fileID: 1198835261}
+  m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
+--- !u!64 &1198835266
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198835261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
+--- !u!64 &1198835267
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6400000, guid: 488c78cfd131b5b41b09a90120ae2325,
+    type: 2}
+  m_PrefabInternal: {fileID: 198972115}
+  m_GameObject: {fileID: 1198835261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
 --- !u!1 &1199831923
 GameObject:
@@ -38226,6 +38284,14 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1288621012}
+    - target: {fileID: 11400000, guid: f0f2514c44835f0488d010ff8acc04d1, type: 2}
+      propertyPath: thresholdX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f0f2514c44835f0488d010ff8acc04d1, type: 2}
+      propertyPath: thresholdYbot
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0f2514c44835f0488d010ff8acc04d1, type: 2}
   m_RootGameObject: {fileID: 1094966591}
@@ -39008,6 +39074,14 @@ MonoBehaviour:
   - {fileID: 353505238}
   - {fileID: 78603083}
   - {fileID: 821284847}
+  roda1: {fileID: 2800000, guid: 904d6b00105e92c49ae326ced78d0d39, type: 3}
+  mola1: {fileID: 2800000, guid: 510f9abc38eb8c94591125353ad5a59e, type: 3}
+  laser1: {fileID: 2800000, guid: 25c6190c6c09cbf46a30e6a39fde5b5b, type: 3}
+  caudaTrex1: {fileID: 2800000, guid: cf5620bd8270b744a92bc804526d8bab, type: 3}
+  roda2: {fileID: 2800000, guid: 38a51245b91b77a41958194f6bd53454, type: 3}
+  mola2: {fileID: 2800000, guid: 801c2797983f93b43b02f5a8f2691256, type: 3}
+  laser2: {fileID: 2800000, guid: 7bf3d1b5086068f4989e804bf965bda6, type: 3}
+  caudaTrex2: {fileID: 2800000, guid: a18f08e9dc108c54f95a761a087f9110, type: 3}
 --- !u!114 &1252946866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40330,7 +40404,7 @@ GameObject:
   - 114: {fileID: 1294157883}
   m_Layer: 5
   m_Name: Direcional
-  m_TagString: Untagged
+  m_TagString: direcional
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43925,6 +43999,8 @@ GameObject:
   - 33: {fileID: 1402656745}
   - 23: {fileID: 1402656744}
   - 95: {fileID: 1402656743}
+  - 64: {fileID: 1402656747}
+  - 64: {fileID: 1402656746}
   m_Layer: 0
   m_Name: CopoAberto
   m_TagString: Untagged
@@ -43988,6 +44064,33 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 192110306}
   m_GameObject: {fileID: 1402656741}
+  m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
+--- !u!64 &1402656746
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1402656741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
+--- !u!64 &1402656747
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6400000, guid: 488c78cfd131b5b41b09a90120ae2325,
+    type: 2}
+  m_PrefabInternal: {fileID: 192110306}
+  m_GameObject: {fileID: 1402656741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 6f67dda73adf93840b9ee6f9049470e1, type: 3}
 --- !u!1 &1403363119
 GameObject:
@@ -62060,6 +62163,22 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 22426368, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426368, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426384, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426384, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1a1d9f8e2191204d8dd876f51e2e036, type: 2}
   m_RootGameObject: {fileID: 559433645}
@@ -63103,7 +63222,7 @@ GameObject:
   - 114: {fileID: 2043700668}
   m_Layer: 5
   m_Name: Mola
-  m_TagString: Untagged
+  m_TagString: mola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

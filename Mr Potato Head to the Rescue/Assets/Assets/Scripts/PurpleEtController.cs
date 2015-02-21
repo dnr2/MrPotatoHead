@@ -4,14 +4,14 @@ using System.Collections;
 public class PurpleEtController : MonoBehaviour {
 	public GameObject shot;
 	public Transform shotSpawn;
-	public float fireRate = 1F;
+	public float fireRate = 3F;
 	public float offsetPotatoY = 5;
 
 	private Animator anim;
 
 	private float nextFire;
 	private GameObject mrPotatoHead;
-	private float maxDistance = 40f;
+	private float maxDistance = 25f;
 
 	// Use this for initialization
 	void Start () {
