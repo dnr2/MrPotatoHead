@@ -274,6 +274,7 @@ GameObject:
   - 135: {fileID: 2275028}
   - 23: {fileID: 2275027}
   - 54: {fileID: 2275031}
+  - 114: {fileID: 2275032}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -313,7 +314,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &2275029
 MeshFilter:
@@ -331,7 +332,7 @@ Transform:
   m_GameObject: {fileID: 2275026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 366.209991, y: 11.9499998, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 46
@@ -351,6 +352,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &2275032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2004808030}
+  m_GameObject: {fileID: 2275026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3342763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1062,7 @@ GameObject:
   - 135: {fileID: 18906744}
   - 23: {fileID: 18906743}
   - 54: {fileID: 18906747}
+  - 114: {fileID: 18906748}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -1088,7 +1102,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &18906745
 MeshFilter:
@@ -1106,7 +1120,7 @@ Transform:
   m_GameObject: {fileID: 18906742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 78.8099976, y: 3.97000003, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
@@ -1126,6 +1140,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &18906748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1158777050}
+  m_GameObject: {fileID: 18906742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &19658203
 Prefab:
   m_ObjectHideFlags: 0
@@ -1239,6 +1265,7 @@ GameObject:
   - 135: {fileID: 25778349}
   - 23: {fileID: 25778348}
   - 54: {fileID: 25778352}
+  - 114: {fileID: 25778353}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -1278,7 +1305,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &25778350
 MeshFilter:
@@ -1296,7 +1323,7 @@ Transform:
   m_GameObject: {fileID: 25778347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 103.629997, y: 4.65999985, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
@@ -1316,6 +1343,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &25778353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1373536145}
+  m_GameObject: {fileID: 25778347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &27856465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,6 +2797,7 @@ GameObject:
   - 135: {fileID: 61264784}
   - 23: {fileID: 61264783}
   - 54: {fileID: 61264787}
+  - 114: {fileID: 61264788}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -2797,7 +2837,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &61264785
 MeshFilter:
@@ -2815,7 +2855,7 @@ Transform:
   m_GameObject: {fileID: 61264782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 244.979996, y: 19.8999996, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 34
@@ -2835,6 +2875,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &61264788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 98606059}
+  m_GameObject: {fileID: 61264782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &62068952
 GameObject:
   m_ObjectHideFlags: 0
@@ -5612,6 +5664,7 @@ GameObject:
   - 135: {fileID: 148113436}
   - 23: {fileID: 148113435}
   - 54: {fileID: 148113439}
+  - 114: {fileID: 148113440}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -5651,7 +5704,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &148113437
 MeshFilter:
@@ -5669,7 +5722,7 @@ Transform:
   m_GameObject: {fileID: 148113434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 414.890015, y: 6.23999977, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 51
@@ -5689,6 +5742,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &148113440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 368140073}
+  m_GameObject: {fileID: 148113434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &149966974
 GameObject:
   m_ObjectHideFlags: 0
@@ -6574,6 +6639,7 @@ GameObject:
   - 135: {fileID: 176352489}
   - 23: {fileID: 176352488}
   - 54: {fileID: 176352492}
+  - 114: {fileID: 176352493}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -6613,7 +6679,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &176352490
 MeshFilter:
@@ -6631,7 +6697,7 @@ Transform:
   m_GameObject: {fileID: 176352487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 103.629997, y: 7.6500001, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
@@ -6651,6 +6717,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &176352493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1585025820}
+  m_GameObject: {fileID: 176352487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &176593859
 GameObject:
   m_ObjectHideFlags: 0
@@ -7654,6 +7732,7 @@ GameObject:
   - 135: {fileID: 203530257}
   - 23: {fileID: 203530256}
   - 54: {fileID: 203530260}
+  - 114: {fileID: 203530261}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -7693,7 +7772,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &203530258
 MeshFilter:
@@ -7711,7 +7790,7 @@ Transform:
   m_GameObject: {fileID: 203530255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 182.100006, y: 15.3999996, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 28
@@ -7731,6 +7810,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &203530261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1667896192}
+  m_GameObject: {fileID: 203530255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &204459781
 GameObject:
   m_ObjectHideFlags: 0
@@ -7771,6 +7862,7 @@ GameObject:
   - 135: {fileID: 204516859}
   - 23: {fileID: 204516858}
   - 54: {fileID: 204516862}
+  - 114: {fileID: 204516863}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -7810,7 +7902,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &204516860
 MeshFilter:
@@ -7828,7 +7920,7 @@ Transform:
   m_GameObject: {fileID: 204516857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 244.979996, y: 22.5, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 32
@@ -7848,6 +7940,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &204516863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 313561635}
+  m_GameObject: {fileID: 204516857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &206046501
 GameObject:
   m_ObjectHideFlags: 0
@@ -11748,6 +11852,7 @@ GameObject:
   - 135: {fileID: 318680759}
   - 23: {fileID: 318680758}
   - 54: {fileID: 318680762}
+  - 114: {fileID: 318680763}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -11787,7 +11892,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &318680760
 MeshFilter:
@@ -11805,7 +11910,7 @@ Transform:
   m_GameObject: {fileID: 318680757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 463.48999, y: 9.23999977, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 57
@@ -11825,6 +11930,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &318680763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 924469393}
+  m_GameObject: {fileID: 318680757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &322252657
 GameObject:
   m_ObjectHideFlags: 0
@@ -12767,50 +12884,6 @@ Transform:
   - {fileID: 382812659}
   m_Father: {fileID: 1153555300}
   m_RootOrder: 0
---- !u!1001 &354021459
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 182.100006
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 18.3999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_RootOrder
-      value: 27
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-  m_RootGameObject: {fileID: 626157154}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &354872578
 GameObject:
   m_ObjectHideFlags: 0
@@ -14315,6 +14388,7 @@ GameObject:
   - 135: {fileID: 396935375}
   - 23: {fileID: 396935374}
   - 54: {fileID: 396935378}
+  - 114: {fileID: 396935379}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -14354,7 +14428,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &396935376
 MeshFilter:
@@ -14372,7 +14446,7 @@ Transform:
   m_GameObject: {fileID: 396935373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 71, y: 8.77000046, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -14392,6 +14466,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &396935379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 432743522}
+  m_GameObject: {fileID: 396935373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &397794218
 GameObject:
   m_ObjectHideFlags: 0
@@ -15208,6 +15294,7 @@ GameObject:
   - 135: {fileID: 424896754}
   - 23: {fileID: 424896753}
   - 54: {fileID: 424896757}
+  - 114: {fileID: 424896758}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -15247,7 +15334,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &424896755
 MeshFilter:
@@ -15265,7 +15352,7 @@ Transform:
   m_GameObject: {fileID: 424896752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 124.480003, y: 5.15999985, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 26
@@ -15285,6 +15372,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &424896758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 364730133}
+  m_GameObject: {fileID: 424896752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &426984740
 GameObject:
   m_ObjectHideFlags: 0
@@ -15297,6 +15396,7 @@ GameObject:
   - 135: {fileID: 426984742}
   - 23: {fileID: 426984741}
   - 54: {fileID: 426984745}
+  - 114: {fileID: 426984746}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -15336,7 +15436,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &426984743
 MeshFilter:
@@ -15354,7 +15454,7 @@ Transform:
   m_GameObject: {fileID: 426984740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 327.170013, y: 11.4300003, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 40
@@ -15374,6 +15474,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &426984746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1276051179}
+  m_GameObject: {fileID: 426984740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &430241944
 GameObject:
   m_ObjectHideFlags: 0
@@ -15966,6 +16078,50 @@ Transform:
   - {fileID: 1792310217}
   m_Father: {fileID: 773366268}
   m_RootOrder: 0
+--- !u!1001 &438461566
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 37.6199989
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 14.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -.540000021
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+  m_RootGameObject: {fileID: 1237769487}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &438916212
 GameObject:
   m_ObjectHideFlags: 0
@@ -16266,6 +16422,7 @@ GameObject:
   - 135: {fileID: 449203000}
   - 23: {fileID: 449202999}
   - 54: {fileID: 449203003}
+  - 114: {fileID: 449203004}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -16305,7 +16462,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &449203001
 MeshFilter:
@@ -16323,7 +16480,7 @@ Transform:
   m_GameObject: {fileID: 449202998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 103.629997, y: 17.0900002, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
@@ -16343,6 +16500,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &449203004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1957602311}
+  m_GameObject: {fileID: 449202998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &450833763
 GameObject:
   m_ObjectHideFlags: 0
@@ -18006,6 +18175,7 @@ GameObject:
   - 135: {fileID: 511633824}
   - 23: {fileID: 511633823}
   - 54: {fileID: 511633827}
+  - 114: {fileID: 511633828}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -18045,7 +18215,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &511633825
 MeshFilter:
@@ -18063,7 +18233,7 @@ Transform:
   m_GameObject: {fileID: 511633822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 103.629997, y: 10.5299997, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
@@ -18083,6 +18253,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &511633828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 259821092}
+  m_GameObject: {fileID: 511633822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &514323325
 GameObject:
   m_ObjectHideFlags: 0
@@ -18337,6 +18519,50 @@ Transform:
   - {fileID: 412471947}
   m_Father: {fileID: 1527256432}
   m_RootOrder: 0
+--- !u!1001 &523344716
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 182.100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 18.3999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
+  m_RootGameObject: {fileID: 626157154}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &524065660
 GameObject:
   m_ObjectHideFlags: 0
@@ -21215,6 +21441,7 @@ GameObject:
   - 135: {fileID: 617929408}
   - 23: {fileID: 617929407}
   - 54: {fileID: 617929411}
+  - 114: {fileID: 617929412}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -21254,7 +21481,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &617929409
 MeshFilter:
@@ -21272,7 +21499,7 @@ Transform:
   m_GameObject: {fileID: 617929406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.6199989, y: 7.6500001, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -21292,6 +21519,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &617929412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1317962315}
+  m_GameObject: {fileID: 617929406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &618699928
 GameObject:
   m_ObjectHideFlags: 0
@@ -21547,7 +21786,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 130744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-  m_PrefabInternal: {fileID: 354021459}
+  m_PrefabInternal: {fileID: 523344716}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 626157158}
@@ -21555,6 +21794,7 @@ GameObject:
   - 135: {fileID: 626157156}
   - 23: {fileID: 626157155}
   - 54: {fileID: 626157159}
+  - 114: {fileID: 626157160}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -21567,7 +21807,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2330744, guid: eda8536c41bef1c44a74a6d85d7f74a1,
     type: 2}
-  m_PrefabInternal: {fileID: 354021459}
+  m_PrefabInternal: {fileID: 523344716}
   m_GameObject: {fileID: 626157154}
   m_Enabled: 1
   m_CastShadows: 1
@@ -21588,31 +21828,31 @@ SphereCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13530744, guid: eda8536c41bef1c44a74a6d85d7f74a1,
     type: 2}
-  m_PrefabInternal: {fileID: 354021459}
+  m_PrefabInternal: {fileID: 523344716}
   m_GameObject: {fileID: 626157154}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &626157157
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3330744, guid: eda8536c41bef1c44a74a6d85d7f74a1,
     type: 2}
-  m_PrefabInternal: {fileID: 354021459}
+  m_PrefabInternal: {fileID: 523344716}
   m_GameObject: {fileID: 626157154}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &626157158
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-  m_PrefabInternal: {fileID: 354021459}
+  m_PrefabInternal: {fileID: 523344716}
   m_GameObject: {fileID: 626157154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 182.100006, y: 18.3999996, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 27
@@ -21621,7 +21861,7 @@ Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5423040, guid: eda8536c41bef1c44a74a6d85d7f74a1,
     type: 2}
-  m_PrefabInternal: {fileID: 354021459}
+  m_PrefabInternal: {fileID: 523344716}
   m_GameObject: {fileID: 626157154}
   serializedVersion: 2
   m_Mass: 1.00000001e-07
@@ -21632,6 +21872,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &626157160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 523344716}
+  m_GameObject: {fileID: 626157154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &627801398
 GameObject:
   m_ObjectHideFlags: 0
@@ -23225,6 +23477,7 @@ GameObject:
   - 135: {fileID: 660773869}
   - 23: {fileID: 660773868}
   - 54: {fileID: 660773872}
+  - 114: {fileID: 660773873}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -23264,7 +23517,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &660773870
 MeshFilter:
@@ -23282,7 +23535,7 @@ Transform:
   m_GameObject: {fileID: 660773867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 414.890015, y: 11.8400002, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 52
@@ -23302,6 +23555,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &660773873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 487305318}
+  m_GameObject: {fileID: 660773867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &661681127
 GameObject:
   m_ObjectHideFlags: 0
@@ -24020,6 +24285,7 @@ GameObject:
   - 135: {fileID: 681058644}
   - 23: {fileID: 681058643}
   - 54: {fileID: 681058647}
+  - 114: {fileID: 681058648}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -24059,7 +24325,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &681058645
 MeshFilter:
@@ -24077,7 +24343,7 @@ Transform:
   m_GameObject: {fileID: 681058642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 460.369995, y: 9.23999977, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 55
@@ -24097,6 +24363,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &681058648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1964326001}
+  m_GameObject: {fileID: 681058642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &681986851
 GameObject:
   m_ObjectHideFlags: 0
@@ -24337,6 +24615,7 @@ GameObject:
   - 135: {fileID: 685752498}
   - 23: {fileID: 685752497}
   - 54: {fileID: 685752501}
+  - 114: {fileID: 685752502}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -24376,7 +24655,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &685752499
 MeshFilter:
@@ -24394,7 +24673,7 @@ Transform:
   m_GameObject: {fileID: 685752496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 103.629997, y: 19.7199993, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
@@ -24414,6 +24693,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &685752502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1139918582}
+  m_GameObject: {fileID: 685752496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &686324409
 GameObject:
   m_ObjectHideFlags: 0
@@ -24601,6 +24892,7 @@ GameObject:
   - 135: {fileID: 689375905}
   - 23: {fileID: 689375904}
   - 54: {fileID: 689375908}
+  - 114: {fileID: 689375909}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -24640,7 +24932,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &689375906
 MeshFilter:
@@ -24658,7 +24950,7 @@ Transform:
   m_GameObject: {fileID: 689375903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 450.5, y: 9.23999977, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 50
@@ -24678,6 +24970,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &689375909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1272888119}
+  m_GameObject: {fileID: 689375903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &689707482
 GameObject:
   m_ObjectHideFlags: 0
@@ -25779,6 +26083,7 @@ GameObject:
   - 135: {fileID: 717830581}
   - 23: {fileID: 717830580}
   - 54: {fileID: 717830584}
+  - 114: {fileID: 717830585}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -25818,7 +26123,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &717830582
 MeshFilter:
@@ -25836,7 +26141,7 @@ Transform:
   m_GameObject: {fileID: 717830579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 456.98999, y: 9.23999977, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 56
@@ -25856,6 +26161,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &717830585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1015751778}
+  m_GameObject: {fileID: 717830579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &718015818
 GameObject:
   m_ObjectHideFlags: 0
@@ -26673,6 +26990,7 @@ GameObject:
   - 135: {fileID: 741135284}
   - 23: {fileID: 741135283}
   - 54: {fileID: 741135287}
+  - 114: {fileID: 741135288}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -26712,7 +27030,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &741135285
 MeshFilter:
@@ -26730,7 +27048,7 @@ Transform:
   m_GameObject: {fileID: 741135282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 182.100006, y: 21, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 29
@@ -26750,6 +27068,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &741135288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1836146237}
+  m_GameObject: {fileID: 741135282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &741736930
 Prefab:
   m_ObjectHideFlags: 0
@@ -28394,6 +28724,7 @@ GameObject:
   - 135: {fileID: 787654303}
   - 23: {fileID: 787654302}
   - 54: {fileID: 787654306}
+  - 114: {fileID: 787654307}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -28433,7 +28764,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &787654304
 MeshFilter:
@@ -28451,7 +28782,7 @@ Transform:
   m_GameObject: {fileID: 787654301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.6199989, y: 1.09000003, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -28471,6 +28802,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &787654307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2053219458}
+  m_GameObject: {fileID: 787654301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &789394766
 GameObject:
   m_ObjectHideFlags: 0
@@ -32048,6 +32391,7 @@ GameObject:
   - 135: {fileID: 900546557}
   - 23: {fileID: 900546556}
   - 54: {fileID: 900546560}
+  - 114: {fileID: 900546561}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -32087,7 +32431,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &900546558
 MeshFilter:
@@ -32105,7 +32449,7 @@ Transform:
   m_GameObject: {fileID: 900546555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 453.880005, y: 9.23999977, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 54
@@ -32125,6 +32469,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &900546561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1992299417}
+  m_GameObject: {fileID: 900546555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &900926528
 GameObject:
   m_ObjectHideFlags: 0
@@ -33578,6 +33934,7 @@ GameObject:
   - 135: {fileID: 961185070}
   - 23: {fileID: 961185069}
   - 54: {fileID: 961185073}
+  - 114: {fileID: 961185074}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -33617,7 +33974,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &961185071
 MeshFilter:
@@ -33635,7 +33992,7 @@ Transform:
   m_GameObject: {fileID: 961185068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 71, y: 11.3999996, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -33655,6 +34012,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &961185074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1269577447}
+  m_GameObject: {fileID: 961185068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &965549968
 GameObject:
   m_ObjectHideFlags: 0
@@ -34135,6 +34504,7 @@ GameObject:
   - 135: {fileID: 981774763}
   - 23: {fileID: 981774762}
   - 54: {fileID: 981774766}
+  - 114: {fileID: 981774767}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -34174,7 +34544,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &981774764
 MeshFilter:
@@ -34192,7 +34562,7 @@ Transform:
   m_GameObject: {fileID: 981774761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 327.170013, y: 8.82999992, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 38
@@ -34212,6 +34582,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &981774767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1091364915}
+  m_GameObject: {fileID: 981774761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &983367990
 GameObject:
   m_ObjectHideFlags: 0
@@ -34376,6 +34758,7 @@ GameObject:
   - 135: {fileID: 985961114}
   - 23: {fileID: 985961113}
   - 54: {fileID: 985961117}
+  - 114: {fileID: 985961118}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -34415,7 +34798,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &985961115
 MeshFilter:
@@ -34433,7 +34816,7 @@ Transform:
   m_GameObject: {fileID: 985961112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 333.920013, y: 16.8899994, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 42
@@ -34453,6 +34836,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &985961118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 871550899}
+  m_GameObject: {fileID: 985961112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &986175005
 GameObject:
   m_ObjectHideFlags: 0
@@ -34547,6 +34942,7 @@ GameObject:
   - 135: {fileID: 988261811}
   - 23: {fileID: 988261810}
   - 54: {fileID: 988261814}
+  - 114: {fileID: 988261815}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -34586,7 +34982,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &988261812
 MeshFilter:
@@ -34604,7 +35000,7 @@ Transform:
   m_GameObject: {fileID: 988261809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 206.300003, y: 15.3999996, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 31
@@ -34624,6 +35020,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &988261815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1223784454}
+  m_GameObject: {fileID: 988261809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &989861974
 GameObject:
   m_ObjectHideFlags: 0
@@ -35303,6 +35711,7 @@ GameObject:
   - 135: {fileID: 1017561478}
   - 23: {fileID: 1017561477}
   - 54: {fileID: 1017561481}
+  - 114: {fileID: 1017561482}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -35342,7 +35751,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1017561479
 MeshFilter:
@@ -35360,7 +35769,7 @@ Transform:
   m_GameObject: {fileID: 1017561476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 294.019989, y: .699999988, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 37
@@ -35380,6 +35789,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1017561482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 756058074}
+  m_GameObject: {fileID: 1017561476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1018818638
 GameObject:
   m_ObjectHideFlags: 0
@@ -40501,6 +40922,7 @@ GameObject:
   - 135: {fileID: 1155019816}
   - 23: {fileID: 1155019815}
   - 54: {fileID: 1155019819}
+  - 114: {fileID: 1155019820}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -40540,7 +40962,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1155019817
 MeshFilter:
@@ -40558,7 +40980,7 @@ Transform:
   m_GameObject: {fileID: 1155019814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.6199989, y: 4.65999985, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -40578,6 +41000,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1155019820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 369184304}
+  m_GameObject: {fileID: 1155019814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1156005100
 GameObject:
   m_ObjectHideFlags: 0
@@ -42268,6 +42702,7 @@ GameObject:
   - 135: {fileID: 1216761317}
   - 23: {fileID: 1216761316}
   - 54: {fileID: 1216761320}
+  - 114: {fileID: 1216761321}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -42307,7 +42742,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1216761318
 MeshFilter:
@@ -42325,7 +42760,7 @@ Transform:
   m_GameObject: {fileID: 1216761315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 291.320007, y: .699999988, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 36
@@ -42345,6 +42780,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1216761321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1983691139}
+  m_GameObject: {fileID: 1216761315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1221844214
 GameObject:
   m_ObjectHideFlags: 0
@@ -42568,6 +43015,7 @@ GameObject:
   - 135: {fileID: 1226890126}
   - 23: {fileID: 1226890125}
   - 54: {fileID: 1226890129}
+  - 114: {fileID: 1226890130}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -42607,7 +43055,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1226890127
 MeshFilter:
@@ -42625,7 +43073,7 @@ Transform:
   m_GameObject: {fileID: 1226890124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 333.920013, y: 22.4899998, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 41
@@ -42645,6 +43093,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1226890130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 891417551}
+  m_GameObject: {fileID: 1226890124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1227207603
 GameObject:
   m_ObjectHideFlags: 0
@@ -42768,6 +43228,7 @@ GameObject:
   - 135: {fileID: 1230106634}
   - 23: {fileID: 1230106633}
   - 54: {fileID: 1230106637}
+  - 114: {fileID: 1230106638}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -42807,7 +43268,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1230106635
 MeshFilter:
@@ -42825,7 +43286,7 @@ Transform:
   m_GameObject: {fileID: 1230106632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 71, y: 5.78000021, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -42845,6 +43306,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1230106638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 579370661}
+  m_GameObject: {fileID: 1230106632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1232233142
 GameObject:
   m_ObjectHideFlags: 0
@@ -43019,7 +43492,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 130744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-  m_PrefabInternal: {fileID: 1844307921}
+  m_PrefabInternal: {fileID: 438461566}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1237769491}
@@ -43027,6 +43500,7 @@ GameObject:
   - 135: {fileID: 1237769489}
   - 23: {fileID: 1237769488}
   - 54: {fileID: 1237769492}
+  - 114: {fileID: 1237769493}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -43039,7 +43513,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2330744, guid: eda8536c41bef1c44a74a6d85d7f74a1,
     type: 2}
-  m_PrefabInternal: {fileID: 1844307921}
+  m_PrefabInternal: {fileID: 438461566}
   m_GameObject: {fileID: 1237769487}
   m_Enabled: 1
   m_CastShadows: 1
@@ -43060,31 +43534,31 @@ SphereCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13530744, guid: eda8536c41bef1c44a74a6d85d7f74a1,
     type: 2}
-  m_PrefabInternal: {fileID: 1844307921}
+  m_PrefabInternal: {fileID: 438461566}
   m_GameObject: {fileID: 1237769487}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1237769490
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3330744, guid: eda8536c41bef1c44a74a6d85d7f74a1,
     type: 2}
-  m_PrefabInternal: {fileID: 1844307921}
+  m_PrefabInternal: {fileID: 438461566}
   m_GameObject: {fileID: 1237769487}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1237769491
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-  m_PrefabInternal: {fileID: 1844307921}
+  m_PrefabInternal: {fileID: 438461566}
   m_GameObject: {fileID: 1237769487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.6199989, y: 14.1000004, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -43093,7 +43567,7 @@ Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5423040, guid: eda8536c41bef1c44a74a6d85d7f74a1,
     type: 2}
-  m_PrefabInternal: {fileID: 1844307921}
+  m_PrefabInternal: {fileID: 438461566}
   m_GameObject: {fileID: 1237769487}
   serializedVersion: 2
   m_Mass: 1.00000001e-07
@@ -43104,6 +43578,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1237769493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 438461566}
+  m_GameObject: {fileID: 1237769487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1237948033
 GameObject:
   m_ObjectHideFlags: 0
@@ -43933,6 +44419,7 @@ GameObject:
   - 135: {fileID: 1262050829}
   - 23: {fileID: 1262050828}
   - 54: {fileID: 1262050832}
+  - 114: {fileID: 1262050833}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -43972,7 +44459,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1262050830
 MeshFilter:
@@ -43990,7 +44477,7 @@ Transform:
   m_GameObject: {fileID: 1262050827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 44.7299995, y: 17.9400005, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -44010,6 +44497,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1262050833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1820105577}
+  m_GameObject: {fileID: 1262050827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1262331459
 GameObject:
   m_ObjectHideFlags: 0
@@ -44394,6 +44893,7 @@ GameObject:
   - 135: {fileID: 1271263141}
   - 23: {fileID: 1271263140}
   - 54: {fileID: 1271263144}
+  - 114: {fileID: 1271263145}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -44433,7 +44933,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1271263142
 MeshFilter:
@@ -44451,7 +44951,7 @@ Transform:
   m_GameObject: {fileID: 1271263139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.6199989, y: 17.0900002, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -44471,6 +44971,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1271263145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1464577277}
+  m_GameObject: {fileID: 1271263139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1272888119
 Prefab:
   m_ObjectHideFlags: 0
@@ -44906,6 +45418,7 @@ GameObject:
   - 135: {fileID: 1284867279}
   - 23: {fileID: 1284867278}
   - 54: {fileID: 1284867282}
+  - 114: {fileID: 1284867283}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -44945,7 +45458,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1284867280
 MeshFilter:
@@ -44963,7 +45476,7 @@ Transform:
   m_GameObject: {fileID: 1284867277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 327.170013, y: 5.82999992, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
@@ -44983,6 +45496,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1284867283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1072021267}
+  m_GameObject: {fileID: 1284867277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1285431277
 GameObject:
   m_ObjectHideFlags: 0
@@ -45050,6 +45575,7 @@ GameObject:
   - 135: {fileID: 1285929234}
   - 23: {fileID: 1285929233}
   - 54: {fileID: 1285929237}
+  - 114: {fileID: 1285929238}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -45089,7 +45615,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1285929235
 MeshFilter:
@@ -45107,7 +45633,7 @@ Transform:
   m_GameObject: {fileID: 1285929232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.97999954, y: 7.11000013, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -45127,6 +45653,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1285929238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1787463867}
+  m_GameObject: {fileID: 1285929232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1288621011
 GameObject:
   m_ObjectHideFlags: 0
@@ -47002,6 +47540,7 @@ GameObject:
   - 135: {fileID: 1341000246}
   - 23: {fileID: 1341000245}
   - 54: {fileID: 1341000249}
+  - 114: {fileID: 1341000250}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -47041,7 +47580,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1341000247
 MeshFilter:
@@ -47059,7 +47598,7 @@ Transform:
   m_GameObject: {fileID: 1341000244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 371.820007, y: .430000007, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 48
@@ -47079,6 +47618,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1341000250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1053999426}
+  m_GameObject: {fileID: 1341000244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1342259797
 GameObject:
   m_ObjectHideFlags: 0
@@ -50478,6 +51029,7 @@ GameObject:
   - 135: {fileID: 1442735729}
   - 23: {fileID: 1442735728}
   - 54: {fileID: 1442735732}
+  - 114: {fileID: 1442735733}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -50517,7 +51069,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1442735730
 MeshFilter:
@@ -50535,7 +51087,7 @@ Transform:
   m_GameObject: {fileID: 1442735727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 103.629997, y: 14.1000004, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
@@ -50555,6 +51107,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1442735733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 741736930}
+  m_GameObject: {fileID: 1442735727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1442986578
 GameObject:
   m_ObjectHideFlags: 0
@@ -50757,6 +51321,7 @@ GameObject:
   - 135: {fileID: 1445649253}
   - 23: {fileID: 1445649252}
   - 54: {fileID: 1445649256}
+  - 114: {fileID: 1445649257}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -50796,7 +51361,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1445649254
 MeshFilter:
@@ -50814,7 +51379,7 @@ Transform:
   m_GameObject: {fileID: 1445649251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 366.209991, y: 9.35000038, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 44
@@ -50834,6 +51399,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1445649257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 475102699}
+  m_GameObject: {fileID: 1445649251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1446241302
 GameObject:
   m_ObjectHideFlags: 0
@@ -51697,6 +52274,7 @@ GameObject:
   - 135: {fileID: 1468672071}
   - 23: {fileID: 1468672070}
   - 54: {fileID: 1468672074}
+  - 114: {fileID: 1468672075}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -51736,7 +52314,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1468672072
 MeshFilter:
@@ -51754,7 +52332,7 @@ Transform:
   m_GameObject: {fileID: 1468672069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 177.369995, y: 5.5, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 30
@@ -51774,6 +52352,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1468672075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 798264714}
+  m_GameObject: {fileID: 1468672069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1468760211
 GameObject:
   m_ObjectHideFlags: 0
@@ -55753,6 +56343,7 @@ GameObject:
   - 135: {fileID: 1569191433}
   - 23: {fileID: 1569191432}
   - 54: {fileID: 1569191436}
+  - 114: {fileID: 1569191437}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -55792,7 +56383,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1569191434
 MeshFilter:
@@ -55810,7 +56401,7 @@ Transform:
   m_GameObject: {fileID: 1569191431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 371.820007, y: 3.43000007, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 49
@@ -55830,6 +56421,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1569191437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1992835611}
+  m_GameObject: {fileID: 1569191431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1570680049
 GameObject:
   m_ObjectHideFlags: 0
@@ -56087,6 +56690,7 @@ GameObject:
   - 135: {fileID: 1576088499}
   - 23: {fileID: 1576088498}
   - 54: {fileID: 1576088502}
+  - 114: {fileID: 1576088503}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -56126,7 +56730,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1576088500
 MeshFilter:
@@ -56144,7 +56748,7 @@ Transform:
   m_GameObject: {fileID: 1576088497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 366.209991, y: 6.3499999, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 45
@@ -56164,6 +56768,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1576088503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 241754853}
+  m_GameObject: {fileID: 1576088497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1579571119
 Prefab:
   m_ObjectHideFlags: 0
@@ -60190,6 +60806,7 @@ GameObject:
   - 135: {fileID: 1708823146}
   - 23: {fileID: 1708823145}
   - 54: {fileID: 1708823149}
+  - 114: {fileID: 1708823150}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -60229,7 +60846,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1708823147
 MeshFilter:
@@ -60247,7 +60864,7 @@ Transform:
   m_GameObject: {fileID: 1708823144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 244.979996, y: 25.0900002, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 35
@@ -60267,6 +60884,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1708823150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1061182760}
+  m_GameObject: {fileID: 1708823144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1710329883
 GameObject:
   m_ObjectHideFlags: 0
@@ -60949,6 +61578,7 @@ GameObject:
   - 135: {fileID: 1733450270}
   - 23: {fileID: 1733450269}
   - 54: {fileID: 1733450273}
+  - 114: {fileID: 1733450274}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -60988,7 +61618,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1733450271
 MeshFilter:
@@ -61006,7 +61636,7 @@ Transform:
   m_GameObject: {fileID: 1733450268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 103.629997, y: 1.09000003, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 25
@@ -61026,6 +61656,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1733450274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 558226004}
+  m_GameObject: {fileID: 1733450268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1734136680
 GameObject:
   m_ObjectHideFlags: 0
@@ -63394,6 +64036,7 @@ GameObject:
   - 135: {fileID: 1826934483}
   - 23: {fileID: 1826934482}
   - 54: {fileID: 1826934486}
+  - 114: {fileID: 1826934487}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -63433,7 +64076,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1826934484
 MeshFilter:
@@ -63451,7 +64094,7 @@ Transform:
   m_GameObject: {fileID: 1826934481}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 78.8099976, y: .980000019, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
@@ -63471,6 +64114,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1826934487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 848678327}
+  m_GameObject: {fileID: 1826934481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1828311155
 GameObject:
   m_ObjectHideFlags: 0
@@ -63941,50 +64596,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1426134568}
   m_RootOrder: 0
---- !u!1001 &1844307921
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 37.6199989
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 14.1000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -.540000021
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 430744, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: eda8536c41bef1c44a74a6d85d7f74a1, type: 2}
-  m_RootGameObject: {fileID: 1237769487}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1847508604
 GameObject:
   m_ObjectHideFlags: 0
@@ -64641,6 +65252,7 @@ GameObject:
   - 135: {fileID: 1866864887}
   - 23: {fileID: 1866864886}
   - 54: {fileID: 1866864890}
+  - 114: {fileID: 1866864891}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -64680,7 +65292,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1866864888
 MeshFilter:
@@ -64698,7 +65310,7 @@ Transform:
   m_GameObject: {fileID: 1866864885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 371.820007, y: 6.03000021, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 47
@@ -64718,6 +65330,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1866864891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 103259922}
+  m_GameObject: {fileID: 1866864885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1866891666
 GameObject:
   m_ObjectHideFlags: 0
@@ -65189,6 +65813,7 @@ GameObject:
   - 135: {fileID: 1882750474}
   - 23: {fileID: 1882750473}
   - 54: {fileID: 1882750477}
+  - 114: {fileID: 1882750478}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -65228,7 +65853,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1882750475
 MeshFilter:
@@ -65246,7 +65871,7 @@ Transform:
   m_GameObject: {fileID: 1882750472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.6199989, y: 10.5299997, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -65266,6 +65891,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1882750478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 544823074}
+  m_GameObject: {fileID: 1882750472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1883525003
 GameObject:
   m_ObjectHideFlags: 0
@@ -65278,6 +65915,7 @@ GameObject:
   - 135: {fileID: 1883525005}
   - 23: {fileID: 1883525004}
   - 54: {fileID: 1883525008}
+  - 114: {fileID: 1883525009}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -65317,7 +65955,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1883525006
 MeshFilter:
@@ -65335,7 +65973,7 @@ Transform:
   m_GameObject: {fileID: 1883525003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 418.269989, y: 11.8400002, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 53
@@ -65355,6 +65993,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1883525009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2087758090}
+  m_GameObject: {fileID: 1883525003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1883528964
 GameObject:
   m_ObjectHideFlags: 0
@@ -65609,6 +66259,7 @@ GameObject:
   - 135: {fileID: 1891596083}
   - 23: {fileID: 1891596082}
   - 54: {fileID: 1891596086}
+  - 114: {fileID: 1891596087}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -65648,7 +66299,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1891596084
 MeshFilter:
@@ -65666,7 +66317,7 @@ Transform:
   m_GameObject: {fileID: 1891596081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 333.920013, y: 19.8899994, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 43
@@ -65686,6 +66337,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1891596087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1410723654}
+  m_GameObject: {fileID: 1891596081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1892174309
 GameObject:
   m_ObjectHideFlags: 0
@@ -66919,6 +67582,7 @@ GameObject:
   - 135: {fileID: 1939701444}
   - 23: {fileID: 1939701443}
   - 54: {fileID: 1939701447}
+  - 114: {fileID: 1939701448}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -66958,7 +67622,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1939701445
 MeshFilter:
@@ -66976,7 +67640,7 @@ Transform:
   m_GameObject: {fileID: 1939701442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 244.979996, y: 16.8999996, z: -.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 33
@@ -66996,6 +67660,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1939701448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1202911689}
+  m_GameObject: {fileID: 1939701442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1943454890
 GameObject:
   m_ObjectHideFlags: 0
@@ -68206,6 +68882,7 @@ GameObject:
   - 135: {fileID: 1975786799}
   - 23: {fileID: 1975786798}
   - 54: {fileID: 1975786802}
+  - 114: {fileID: 1975786803}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -68245,7 +68922,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .522338867
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1975786800
 MeshFilter:
@@ -68263,7 +68940,7 @@ Transform:
   m_GameObject: {fileID: 1975786797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.6199989, y: 19.7199993, z: -.540000021}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -68283,6 +68960,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!114 &1975786803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11472016, guid: eda8536c41bef1c44a74a6d85d7f74a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 637891264}
+  m_GameObject: {fileID: 1975786797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1976481154
 GameObject:
   m_ObjectHideFlags: 0
