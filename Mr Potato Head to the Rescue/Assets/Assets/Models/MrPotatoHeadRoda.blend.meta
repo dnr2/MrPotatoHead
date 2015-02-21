@@ -89,6 +89,10 @@ ModelImporter:
     100166: upper_arm_R
     100168: upper_arm_R_001
     100170: upper_arm_R_002
+    100172: Eixo
+    100174: roda_l
+    100176: roda_r
+    100178: RodaEsq
     400000: BezierCircle
     400002: Chapeu
     400004: ChapeuBone
@@ -175,6 +179,10 @@ ModelImporter:
     400166: upper_arm_R
     400168: upper_arm_R_001
     400170: upper_arm_R_002
+    400172: Eixo
+    400174: roda_l
+    400176: roda_r
+    400178: RodaEsq
     2300000: BezierCircle
     2300002: Roda_High
     2300004: Roda_low
@@ -190,6 +198,7 @@ ModelImporter:
     4300008: Potato_Low_final
     4300010: Chapeu
     4300012: Laser
+    4300014: RodaEsq
     7400000: Default Take
     7400002: AtaqueCompleto
     7400004: Idle
@@ -199,10 +208,14 @@ ModelImporter:
     7400012: Running_With_Laser
     7400014: Walk
     7400016: Walk_With_Laser
+    7400018: IdleRoda
+    7400020: RunningRoda
+    7400022: WalkingRoda
     9500000: //RootNode
     13700000: Chapeu
     13700002: Laser
     13700004: Potato_Low_final
+    13700006: RodaEsq
   materials:
     importMaterials: 1
     materialName: 0
