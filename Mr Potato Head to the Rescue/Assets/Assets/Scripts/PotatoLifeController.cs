@@ -15,6 +15,8 @@ public class PotatoLifeController : MonoBehaviour {
 	
 	private bool isDead = false;
 	private int lifePoints ;
+	private int manaPoints ;
+	private int points ;
 	private bool invincible = false;
 	private Slider HpBar;
 	private Image damageImage;
@@ -138,6 +140,14 @@ public class PotatoLifeController : MonoBehaviour {
 				lifePoints++;
 				Destroy (other.gameObject);
 			}
+			else if (other.tag == "mpItem") {
+				manaPoints++;
+				Destroy (other.gameObject);
+			}
+			else if (other.tag == "estrela") {
+				points++;
+				Destroy (other.gameObject);
+			}
 			else if (other.tag == "lifeItem") {
 				updateLives(++lives);
 				Destroy (other.gameObject);
@@ -166,11 +176,9 @@ public class PotatoLifeController : MonoBehaviour {
 	}
 
 	void PlayDeathAnimation(){
-		
 	}
 
-	void playGameOverAnimation(){
-		
+	void playGameOverAnimation(){	
 	}
 
 }
