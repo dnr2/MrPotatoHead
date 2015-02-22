@@ -3,8 +3,8 @@ using System.Collections;
 
 public class MolaController : PlayerAnimationInterface  {
 	
-	public float jumpHeight = 6;
-	public float extraJumpEHeight = 10;
+	public float jumpHeight = 12;
+	public float extraJumpEHeight = 16;
 
 	public SkinnedMeshRenderer stationaryHat;
 

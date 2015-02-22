@@ -4672,7 +4672,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100136}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 105.639999, y: 49.5999985, z: -.400000006}
+  m_LocalPosition: {x: -471.399994, y: 6.0999999, z: -.400000006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400284}
@@ -7562,7 +7562,7 @@ MonoBehaviour:
     maxFallSpeed: 50
   jumping:
     enabled: 1
-    baseHeight: 6
+    baseHeight: 12
     extraHeight: 0
     perpAmount: 0
     steepPerpAmount: 0
@@ -7640,6 +7640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialLifePoints: 3
+  initialManaPoints: 50
   lives: 1
   spawnPoint: {fileID: 0}
   textoVida: {fileID: 0}
@@ -7668,8 +7669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfe63ad20d688b439633f7d28a59f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 6
-  extraJumpEHeight: 10
+  jumpHeight: 12
+  extraJumpEHeight: 16
   stationaryHat: {fileID: 13700004}
 --- !u!114 &11400018
 MonoBehaviour:
