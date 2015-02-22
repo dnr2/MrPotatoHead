@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3381712}
   - 23: {fileID: 2381712}
   - 95: {fileID: 9581712}
+  - 64: {fileID: 6495196}
   m_Layer: 0
   m_Name: Banco
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 180542}
   m_LocalRotation: {x: -.707106888, y: 0, z: -0, w: .707106769}
   m_LocalPosition: {x: 2.99848557, y: 0, z: 0}
-  m_LocalScale: {x: 2.70716119, y: 2.70716119, z: 2.70716119}
+  m_LocalScale: {x: 4, y: 4, z: 2.70716119}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,6 +59,19 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180542}
+  m_Mesh: {fileID: 4300006, guid: c9dac61719fb23d4795caa29bd01f842, type: 3}
+--- !u!64 &6495196
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
   m_Mesh: {fileID: 4300006, guid: c9dac61719fb23d4795caa29bd01f842, type: 3}
 --- !u!95 &9581712
 Animator:
