@@ -5,6 +5,7 @@ using System.Collections;
 public class PotatoLifeController : MonoBehaviour {
 
 	public int initialLifePoints = 1;
+	public int initialManaPoints = 50;
 	public int lives = 1;
 	public static int continues = 1;
 	public Transform spawnPoint;
@@ -19,6 +20,7 @@ public class PotatoLifeController : MonoBehaviour {
 	private int points ;
 	private bool invincible = false;
 	private Slider HpBar;
+	private Slider MpBar;
 	private Image damageImage;
 	private bool damaged = false;
 
@@ -29,10 +31,16 @@ public class PotatoLifeController : MonoBehaviour {
 		textoVida.text = "x"+lives;
 		//Debug.Log("Texto = "+textoVida.text);
 		lifePoints = initialLifePoints;
+		manaPoints = initialManaPoints;
 
 		HpBar = GameObject.FindGameObjectWithTag("hpSlider").GetComponent <Slider>();
 		HpBar.maxValue = lifePoints;
 		HpBar.value = lifePoints;
+		
+		MpBar = GameObject.FindGameObjectWithTag("mpSlider").GetComponent <Slider>();
+		MpBar.maxValue = manaPoints;
+		MpBar.value = manaPoints;
+		
 		damageImage = GameObject.FindGameObjectWithTag("damageImg").GetComponent <Image>();
 		
 		Vector3 HpBarPosition = HpBar.transform.position;
@@ -71,14 +79,23 @@ public class PotatoLifeController : MonoBehaviour {
 	void updateLives(int vidas){
 		textoVida.text = "x"+vidas;
 	}
+	
+	void updateLifePointsAndBar(int val){
+		lifePoints += val;
+		HpBar.value += val;
+	}
+	
+	void updateManaPointsAndBar(int val){
+		manaPoints += val;
+		MpBar.value += val;
+	}
 
 
 	void causeDamage(int val){
 		damaged = true;
 		if (!isDead) {
 			//Debug.Log( "atingido" );
-			lifePoints -= val;
-			HpBar.value -= val;
+			updateLifePointsAndBar(-val);
 			if( lifePoints <= 0){
 				PlayDeathAnimation();
 				isDead = true;
@@ -95,8 +112,8 @@ public class PotatoLifeController : MonoBehaviour {
 	
 			updateLives (--lives);
 			
-			lifePoints = initialLifePoints;
-			HpBar.value = initialLifePoints;
+			updateLifePointsAndBar(initialLifePoints);
+			updateManaPointsAndBar(initialManaPoints);
 			isDead = false;
 
 			this.transform.position = spawnPoint.position;
@@ -138,11 +155,11 @@ public class PotatoLifeController : MonoBehaviour {
 				Destroy (other.gameObject);
 			}
 			else if (other.tag == "hpItem") {
-				lifePoints++;
+				updateLifePointsAndBar(1);
 				Destroy (other.gameObject);
 			}
 			else if (other.tag == "mpItem") {
-				manaPoints++;
+				updateManaPointsAndBar(25);
 				Destroy (other.gameObject);
 			}
 			//else if (other.tag == "estrela") {
