@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class estrelaController : MonoBehaviour {
+public class StealthSpaceshipController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,9 +11,5 @@ public class estrelaController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-	}
-
-	void OnTriggerEnter(Collider other) {
-		Destroy(gameObject);
 	}
 }

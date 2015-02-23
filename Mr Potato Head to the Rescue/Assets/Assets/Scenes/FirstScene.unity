@@ -10861,6 +10861,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -10913,7 +10914,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 124561709}
   m_GameObject: {fileID: 926681982}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
@@ -18592,7 +18592,7 @@ Transform:
   - {fileID: 170591800}
   - {fileID: 292152207}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!1 &1478194649
 GameObject:
   m_ObjectHideFlags: 0
@@ -20428,7 +20428,7 @@ Transform:
   m_LocalScale: {x: 38.0292511, y: 1.26115263, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1 &1566488283
 GameObject:
   m_ObjectHideFlags: 0
