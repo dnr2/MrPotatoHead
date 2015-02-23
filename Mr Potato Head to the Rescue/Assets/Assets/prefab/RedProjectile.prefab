@@ -13,6 +13,7 @@ GameObject:
   - 23: {fileID: 2324848}
   - 114: {fileID: 11424848}
   - 54: {fileID: 5424848}
+  - 122: {fileID: 12200000}
   m_Layer: 0
   m_Name: RedProjectile
   m_TagString: laserbean
@@ -85,8 +86,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76146f56d6b21e541a2d73ea44ed39c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPos: {x: 215.370926, y: 2.07838869, z: -.165985107}
+  targetPos: {x: -242.745758, y: 44.0190086, z: -.400000006}
   type: 0
+--- !u!122 &12200000
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124848}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4291737855
+  m_Size: 1
 --- !u!136 &13624848
 CapsuleCollider:
   m_ObjectHideFlags: 1

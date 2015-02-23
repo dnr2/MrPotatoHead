@@ -13,6 +13,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
+  - 122: {fileID: 12200000}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: laserbean
@@ -85,9 +86,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3457a1d36c936144c83f8dd947bdb484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPos: {x: 105.639999, y: 38.852211, z: -.400000006}
+  targetPos: {x: -339.021576, y: 9.13364601, z: -.530850649}
   type: 0
   speed: 20
+--- !u!122 &12200000
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+  m_Size: .5
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
