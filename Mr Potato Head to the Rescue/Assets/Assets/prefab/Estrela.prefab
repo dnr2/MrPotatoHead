@@ -12,7 +12,6 @@ GameObject:
   - 135: {fileID: 13530744}
   - 23: {fileID: 2330744}
   - 54: {fileID: 5423040}
-  - 114: {fileID: 11472016}
   m_Layer: 0
   m_Name: Estrela
   m_TagString: estrela
@@ -74,17 +73,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
---- !u!114 &11472016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4934fc40e2003734da873936d5281410, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &13530744
 SphereCollider:
   m_ObjectHideFlags: 1

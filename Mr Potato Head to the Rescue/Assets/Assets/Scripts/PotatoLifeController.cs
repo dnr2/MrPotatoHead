@@ -86,7 +86,7 @@ public class PotatoLifeController : MonoBehaviour {
 	}
 	
 	void updateLifePointsAndBar(int val){
-		if(lifePoints < initialLifePoints){
+		if(lifePoints < initialLifePoints || val < 0){
 			lifePoints += val;
 			HpBar.value += val;
 		}
