@@ -18,6 +18,7 @@ public class TennisBallController : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
+		print(other.gameObject.name);
 		if(other.gameObject.GetComponent<HeatSeekingMissileController>() == null || other.gameObject.GetComponent<TennisBallController>() == null
 		   || other.gameObject.GetComponent<ProjectileController>() == null || other.gameObject.GetComponent<RedProjectileController>() == null
 		   || other.gameObject.GetComponent<ZurgController>() == null)
