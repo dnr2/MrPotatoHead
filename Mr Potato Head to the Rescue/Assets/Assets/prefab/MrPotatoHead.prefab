@@ -1041,6 +1041,8 @@ GameObject:
   - 114: {fileID: 11400012}
   - 114: {fileID: 11400008}
   - 82: {fileID: 8200000}
+  - 54: {fileID: 5400000}
+  - 114: {fileID: 11400026}
   m_Layer: 0
   m_Name: MrPotatoHead
   m_TagString: Player
@@ -4672,7 +4674,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100136}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -471.399994, y: 6.0999999, z: -.400000006}
+  m_LocalPosition: {x: -42, y: 6.0999999, z: -.400000006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400284}
@@ -7376,6 +7378,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100472}
   m_Mesh: {fileID: 4300000, guid: c7b8ab4a60464f347910f25eb25bc04c, type: 3}
+--- !u!54 &5400000
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100136}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -7407,8 +7424,8 @@ AudioSource:
       inSlope: 0
       outSlope: -1.00200403
       tangentMode: 0
-    - time: 1
-      value: .637305677
+    - time: .988764048
+      value: .833333313
       inSlope: -1.00200403
       outSlope: 0
       tangentMode: 0
@@ -7587,7 +7604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 9500004}
   throwingHatPrefab: {fileID: 100000, guid: 0a6d50a7a234db64d935d80dc8fdce54, type: 2}
-  stationaryHatMesh: {fileID: 13700008}
+  stationaryHatMesh: {fileID: 13741500}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7729,6 +7746,21 @@ MonoBehaviour:
   blinkTexture: {fileID: 2800000, guid: bcc37344b03bcb34cbb0a71204b3aa91, type: 3}
   framesPerSecond: .5
   time: 0
+--- !u!114 &11400026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3ec7b9c81a4c644872cae6c585fed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  skinWidth: .100000001
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
