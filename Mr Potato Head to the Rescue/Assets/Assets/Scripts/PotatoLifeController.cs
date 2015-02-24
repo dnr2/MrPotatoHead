@@ -86,7 +86,7 @@ public class PotatoLifeController : MonoBehaviour {
 	}
 	
 	void updateLifePointsAndBar(int val){
-		if(lifePoints <= initialLifePoints){
+		if(lifePoints < initialLifePoints){
 			lifePoints += val;
 			HpBar.value += val;
 		}
@@ -109,7 +109,7 @@ public class PotatoLifeController : MonoBehaviour {
 	void causeDamage(int val){
 		damaged = true;
 		if (!isDead) {
-			//Debug.Log( "atingido" );
+			Debug.Log( "atingido" );
 			updateLifePointsAndBar(-val);
 			if( lifePoints <= 0){
 				PlayDeathAnimation();
@@ -189,6 +189,10 @@ public class PotatoLifeController : MonoBehaviour {
 				continues++;
 				Destroy (other.gameObject);
 			}
+			else if (other.tag == "Acido") {
+				causeDamage(2);
+			}
+
 		}
 	}
 

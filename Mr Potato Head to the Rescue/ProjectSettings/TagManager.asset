@@ -24,6 +24,7 @@ TagManager:
   - PizzaCounterText
   - newGameImg
   - exitImg
+  - Acido
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
