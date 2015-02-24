@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ZurgTexure__NormalBaked_001
-  m_Shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: BGmenu
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -17,12 +17,8 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: c45f19fb738f2db40b0a4f2ae2915763, type: 3}
+          m_Texture: {fileID: 2800000, guid: e4d04ec80c6d41b4ab7a1227e6f58558, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats: {}
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: .800000012, g: .800000012, b: .800000012, a: 1}
+    m_Colors: {}
