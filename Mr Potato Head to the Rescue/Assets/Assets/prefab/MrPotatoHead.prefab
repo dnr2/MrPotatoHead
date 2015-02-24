@@ -693,7 +693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &100092
 GameObject:
   m_ObjectHideFlags: 1
@@ -1045,6 +1045,8 @@ GameObject:
   - 114: {fileID: 11400026}
   - 54: {fileID: 5400002}
   - 114: {fileID: 11400030}
+  - 54: {fileID: 5400004}
+  - 114: {fileID: 11400032}
   m_Layer: 0
   m_Name: MrPotatoHead
   m_TagString: Player
@@ -5186,7 +5188,7 @@ Transform:
   - {fileID: 400104}
   - {fileID: 400068}
   m_Father: {fileID: 400136}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &400092
 Transform:
   m_ObjectHideFlags: 1
@@ -5486,8 +5488,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400284}
-  - {fileID: 400090}
   - {fileID: 400454}
+  - {fileID: 400090}
   - {fileID: 400282}
   - {fileID: 400420}
   m_Father: {fileID: 0}
@@ -7550,7 +7552,7 @@ Transform:
   - {fileID: 400584}
   - {fileID: 400526}
   m_Father: {fileID: 400136}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &400456
 Transform:
   m_ObjectHideFlags: 1
@@ -8607,6 +8609,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!54 &5400004
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100136}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -8989,6 +9006,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stationaryHat: {fileID: 13700014}
 --- !u!114 &11400030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3ec7b9c81a4c644872cae6c585fed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  skinWidth: .100000001
+--- !u!114 &11400032
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
