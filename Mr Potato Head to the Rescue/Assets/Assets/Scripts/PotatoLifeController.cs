@@ -10,6 +10,7 @@ public class PotatoLifeController : MonoBehaviour {
 	public static int continues = 1;
 	public Transform spawnPoint;
 	public Text textoVida;
+	public Text textoPizza;
 	public float flashSpeed = 10f;
 	public Color flashColor = new Color(1f, 0f, 0f, 0.5f);
 	public GameObject prefabHpDiv;
@@ -17,7 +18,7 @@ public class PotatoLifeController : MonoBehaviour {
 	private bool isDead = false;
 	private int lifePoints ;
 	private int manaPoints ;
-	private int points ;
+	private int points = 0;
 	private bool invincible = false;
 	private Slider HpBar;
 	private Slider MpBar;
@@ -29,6 +30,8 @@ public class PotatoLifeController : MonoBehaviour {
 	void Start () {	
 		textoVida = GameObject.FindGameObjectWithTag("PotatoLifeText").GetComponent <Text>();
 		textoVida.text = "x"+lives;
+		textoPizza = GameObject.FindGameObjectWithTag("PizzaCounterText").GetComponent <Text>();
+		textoPizza.text = "x"+points;
 		//Debug.Log("Texto = "+textoVida.text);
 		lifePoints = initialLifePoints;
 		manaPoints = initialManaPoints;
@@ -78,7 +81,8 @@ public class PotatoLifeController : MonoBehaviour {
 	}
 	
 	void updateLives(int vidas){
-		textoVida.text = "x"+vidas;
+		lives += vidas;
+		textoVida.text = "x"+(lives);
 	}
 	
 	void updateLifePointsAndBar(int val){
@@ -89,6 +93,14 @@ public class PotatoLifeController : MonoBehaviour {
 	void updateManaPointsAndBar(int val){
 		manaPoints += val;
 		MpBar.value += val;
+	}
+	
+	void updatePizzaPointsAndText(int val){
+		points += val;
+		textoPizza.text = "x"+points;
+		if(points%25 == 0){
+			updateLives(1);
+		}
 	}
 
 
@@ -111,7 +123,7 @@ public class PotatoLifeController : MonoBehaviour {
 
 			//Debug.Log( "morreu.." );
 	
-			updateLives (--lives);
+			updateLives (-1);
 			
 			updateLifePointsAndBar(initialLifePoints);
 			updateManaPointsAndBar(initialManaPoints);
@@ -163,12 +175,12 @@ public class PotatoLifeController : MonoBehaviour {
 				updateManaPointsAndBar(25);
 				Destroy (other.gameObject);
 			}
-			//else if (other.tag == "estrela") {
-			//	points++;
-			//	Destroy (other.gameObject);
-			//}
+			else if (other.tag == "estrela") {
+				updatePizzaPointsAndText(1);
+				Destroy (other.gameObject);
+			}
 			else if (other.tag == "lifeItem") {
-				updateLives(++lives);
+				updateLives(1);
 				Destroy (other.gameObject);
 			}
 			else if (other.tag == "continueItem") {
