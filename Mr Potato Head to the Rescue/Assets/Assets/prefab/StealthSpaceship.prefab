@@ -2683,11 +2683,11 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 65c7f478658bdd344896abd8cf732284, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .219999999
+  m_Volume: .100000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 128
+  Priority: 55
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
