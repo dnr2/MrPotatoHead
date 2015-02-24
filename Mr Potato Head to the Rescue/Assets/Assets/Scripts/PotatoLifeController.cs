@@ -46,11 +46,12 @@ public class PotatoLifeController : MonoBehaviour {
 		Vector3 HpBarPosition = HpBar.transform.position;
 		float HpBarSizeWidth = HpBar.fillRect.rect.width;
 		float HpBarSizeHeight = HpBar.fillRect.rect.height;
+		Debug.Log(HpBarSizeHeight);
 		
 		for(int i = 1; i < initialLifePoints; i++){
 			Vector3 position;
 			position.x = HpBarPosition.x + i*(HpBarSizeWidth/initialLifePoints);
-			position.y = HpBarPosition.y + (HpBarSizeHeight);
+			position.y = HpBarPosition.y+(HpBarSizeHeight/2);
 			position.z = HpBarPosition.z;
 			GameObject prefab = (GameObject)Instantiate(prefabHpDiv, position, Quaternion.identity);
 			prefab.transform.SetParent(HpBar.transform);
