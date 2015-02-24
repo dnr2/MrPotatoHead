@@ -69,10 +69,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!114 &11480070
 MonoBehaviour:
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30c9a38504cffae47a1f7cfb4503fb96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPos: {x: 38.9199982, y: 0, z: 0}
+  targetPos: {x: -122.900002, y: 31.4399986, z: -.400000006}
   type: 0
 --- !u!136 &13680070
 CapsuleCollider:
