@@ -15,7 +15,7 @@ public class BuzzProjectileController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if(other.tag != "enemy" && other.gameObject.name != "Zwall")
+		if(other.tag != "enemy" && other.gameObject.name != "Zwall" && gameObject.tag != "estrela")
 		{
 			Destroy(gameObject);
 		}

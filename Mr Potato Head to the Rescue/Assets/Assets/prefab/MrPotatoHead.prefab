@@ -693,7 +693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &100092
 GameObject:
   m_ObjectHideFlags: 1
@@ -1043,12 +1043,6 @@ GameObject:
   - 82: {fileID: 8200000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400026}
-  - 54: {fileID: 5400002}
-  - 114: {fileID: 11400030}
-  - 54: {fileID: 5400004}
-  - 114: {fileID: 11400032}
-  - 54: {fileID: 5400006}
-  - 114: {fileID: 11400036}
   m_Layer: 0
   m_Name: MrPotatoHead
   m_TagString: Player
@@ -3460,7 +3454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &100456
 GameObject:
   m_ObjectHideFlags: 1
@@ -5206,7 +5200,7 @@ Transform:
   - {fileID: 400104}
   - {fileID: 400068}
   m_Father: {fileID: 400136}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &400092
 Transform:
   m_ObjectHideFlags: 1
@@ -5506,10 +5500,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400284}
-  - {fileID: 400454}
   - {fileID: 400090}
   - {fileID: 400282}
   - {fileID: 400420}
+  - {fileID: 400454}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &400138
@@ -6456,7 +6450,7 @@ Transform:
   - {fileID: 400276}
   - {fileID: 400274}
   m_Father: {fileID: 400136}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &400284
 Transform:
   m_ObjectHideFlags: 1
@@ -7351,7 +7345,7 @@ Transform:
   - {fileID: 400412}
   - {fileID: 400410}
   m_Father: {fileID: 400136}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &400422
 Transform:
   m_ObjectHideFlags: 1
@@ -7571,7 +7565,7 @@ Transform:
   - {fileID: 400526}
   - {fileID: 400586}
   m_Father: {fileID: 400136}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!4 &400456
 Transform:
   m_ObjectHideFlags: 1
@@ -8425,7 +8419,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.73000002, z: 3.6099999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400454}
@@ -8611,51 +8605,6 @@ MeshFilter:
   m_GameObject: {fileID: 100284}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &5400000
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100136}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
---- !u!54 &5400002
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100136}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
---- !u!54 &5400004
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100136}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
---- !u!54 &5400006
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -8895,9 +8844,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipID: 0
   animations:
-  - {fileID: 11400028}
+  - {fileID: 11400020}
   - {fileID: 11400016}
   - {fileID: 11400018}
+  - {fileID: 11400028}
   roda1: {fileID: 2800000, guid: 904d6b00105e92c49ae326ced78d0d39, type: 3}
   mola1: {fileID: 2800000, guid: 510f9abc38eb8c94591125353ad5a59e, type: 3}
   laser1: {fileID: 2800000, guid: 25c6190c6c09cbf46a30e6a39fde5b5b, type: 3}
@@ -9051,36 +9001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stationaryHat: {fileID: 13700014}
---- !u!114 &11400030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac3ec7b9c81a4c644872cae6c585fed8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  skinWidth: .100000001
---- !u!114 &11400032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac3ec7b9c81a4c644872cae6c585fed8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  skinWidth: .100000001
 --- !u!114 &11400034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9092,24 +9012,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f729186fd15ff469756222a8544cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 0}
-  shotSpawn: {fileID: 0}
-  fireRate: 3
---- !u!114 &11400036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac3ec7b9c81a4c644872cae6c585fed8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  skinWidth: .100000001
+  shot: {fileID: 124848, guid: 126a45c37988d5846aa30b415397fcbb, type: 2}
+  potatoObject: {fileID: 100136}
+  shotSpawn: {fileID: 400586}
+  potatoPosition: {fileID: 400454}
+  fireRate: .400000006
+  mpCost: 5
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
