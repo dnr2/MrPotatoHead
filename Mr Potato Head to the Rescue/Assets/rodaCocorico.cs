@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class estrelaController : MonoBehaviour {
+public class rodaCocorico : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,12 +10,7 @@ public class estrelaController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
-
-	void OnTriggerEnter(Collider other) {
-		if (other.tag == "player") {
-			Destroy (gameObject);
-		}
+		transform.Rotate(Vector3.right * 2);
+		transform.Rotate(Vector3.up * 2, Space.World);
 	}
 }

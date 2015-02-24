@@ -16,7 +16,7 @@ public class FlyingRedEtController : MonoBehaviour {
 	private bool turnAround = false;
 	private float sweepSpeed = 15f;
 	private bool seek = false;
-	private float maxDistance = 25f;
+	private float maxDistance = 35f;
 	
 	// Use this for initialization
 	void Start () {
