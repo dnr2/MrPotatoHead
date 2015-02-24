@@ -1047,6 +1047,8 @@ GameObject:
   - 114: {fileID: 11400030}
   - 54: {fileID: 5400004}
   - 114: {fileID: 11400032}
+  - 54: {fileID: 5400006}
+  - 114: {fileID: 11400036}
   m_Layer: 0
   m_Name: MrPotatoHead
   m_TagString: Player
@@ -3451,6 +3453,7 @@ GameObject:
   - 95: {fileID: 9500006}
   - 114: {fileID: 11400028}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400034}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -4430,6 +4433,21 @@ GameObject:
   - 4: {fileID: 400584}
   m_Layer: 0
   m_Name: metarig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100586
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400586}
+  m_Layer: 0
+  m_Name: LaserBeanSpawPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7551,6 +7569,7 @@ Transform:
   - {fileID: 400434}
   - {fileID: 400584}
   - {fileID: 400526}
+  - {fileID: 400586}
   m_Father: {fileID: 400136}
   m_RootOrder: 1
 --- !u!4 &400456
@@ -8399,6 +8418,18 @@ Transform:
   - {fileID: 400576}
   m_Father: {fileID: 400454}
   m_RootOrder: 2
+--- !u!4 &400586
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400454}
+  m_RootOrder: 4
 --- !u!4 &441484
 Transform:
   m_ObjectHideFlags: 1
@@ -8610,6 +8641,21 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 1
 --- !u!54 &5400004
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100136}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!54 &5400006
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -9021,6 +9067,35 @@ MonoBehaviour:
     m_Bits: 4294967295
   skinWidth: .100000001
 --- !u!114 &11400032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3ec7b9c81a4c644872cae6c585fed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  skinWidth: .100000001
+--- !u!114 &11400034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f729186fd15ff469756222a8544cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shot: {fileID: 0}
+  shotSpawn: {fileID: 0}
+  fireRate: 3
+--- !u!114 &11400036
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

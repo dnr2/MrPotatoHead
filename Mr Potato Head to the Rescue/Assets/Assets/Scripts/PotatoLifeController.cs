@@ -92,11 +92,17 @@ public class PotatoLifeController : MonoBehaviour {
 		}
 	}
 	
-	void updateManaPointsAndBar(int val){
+	public void updateManaPointsAndBar(int val){
 		manaPoints += val;
 		MpBar.value += val;
+		manaPoints = Mathf.Min(manaPoints, initialManaPoints);
+		MpBar.value = Mathf.Min(MpBar.value, initialManaPoints);
 	}
-	
+
+	public int getMP(){
+		return this.manaPoints;
+	}
+
 	void updatePizzaPointsAndText(int val){
 		points += val;
 		textoPizza.text = "x"+points;

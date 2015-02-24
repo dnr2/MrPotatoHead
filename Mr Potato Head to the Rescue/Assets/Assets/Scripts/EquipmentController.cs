@@ -76,6 +76,9 @@ public class EquipmentController : MonoBehaviour {
 		if (Input.GetKey (KeyCode.V) && animSize > 2) {
 			equipID = 2;
 		}
+		if (Input.GetKey (KeyCode.B) && animSize > 3) {
+			equipID = 3;
+		}
 
 		if (oldEquipID != equipID) {		
 			this.animations[oldEquipID].update( false );
