@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class PotatoLifeController : MonoBehaviour {
 
@@ -24,10 +25,12 @@ public class PotatoLifeController : MonoBehaviour {
 	private Slider MpBar;
 	private Image damageImage;
 	private bool damaged = false;
+	private int frames;
 
 
 	// Use this for initialization
 	void Start () {	
+		frames = 0;
 		textoVida = GameObject.FindGameObjectWithTag("PotatoLifeText").GetComponent <Text>();
 		textoVida.text = "x"+lives;
 		textoPizza = GameObject.FindGameObjectWithTag("PizzaCounterText").GetComponent <Text>();
@@ -65,6 +68,11 @@ public class PotatoLifeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		frames += 1;
+		if(frames%150 == 0){
+			updateManaPointsAndBar(2);
+			frames = 0;
+		}
 		if(damaged)
 		{
 			// ... set the colour of the damageImage to the flash colour.
@@ -95,8 +103,8 @@ public class PotatoLifeController : MonoBehaviour {
 	public void updateManaPointsAndBar(int val){
 		manaPoints += val;
 		MpBar.value += val;
-		manaPoints = Mathf.Min(manaPoints, initialManaPoints);
-		MpBar.value = Mathf.Min(MpBar.value, initialManaPoints);
+		manaPoints = Math.Min(manaPoints, initialManaPoints);
+		MpBar.value = Math.Min(MpBar.value, initialManaPoints);
 	}
 
 	public int getMP(){
@@ -108,6 +116,7 @@ public class PotatoLifeController : MonoBehaviour {
 		textoPizza.text = "x"+points;
 		if(points%25 == 0){
 			updateLives(1);
+			updateManaPointsAndBar(10);
 		}
 	}
 
