@@ -124,7 +124,7 @@ public class PotatoLifeController : MonoBehaviour {
 	void causeDamage(int val){
 		damaged = true;
 		if (!isDead) {
-			Debug.Log( "atingido" );
+			//Debug.Log( "atingido" );
 			updateLifePointsAndBar(-val);
 			if( lifePoints <= 0){
 				PlayDeathAnimation();
