@@ -6,8 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Assets/Scenes/StartMenu.unity
+    path: Assets/Assets/Scenes/Arcade.unity
+  - enabled: 1
+    path: Assets/Assets/Scenes/FastFood.unity
+  - enabled: 1
+    path: Assets/Assets/Scenes/FirstScene.unity
   - enabled: 1
     path: Assets/Assets/Scenes/PizzaPlanet.unity
   - enabled: 1
-    path: Assets/Assets/Scenes/FirstScene.unity
+    path: Assets/Assets/Scenes/StartMenu.unity
+  - enabled: 1
+    path: Assets/Assets/Scenes/Tutorial.unity
+  - enabled: 1
+    path: Assets/Assets/Scenes/ZurgScene.unity

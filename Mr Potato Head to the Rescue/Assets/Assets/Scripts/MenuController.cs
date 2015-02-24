@@ -5,26 +5,32 @@ using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour {
 	public float timeDelay = 0.5f;
-	public int startState;
-	public List<Text> texts;
-	public string InitialScene = "FirstScene";
-
-	private int state;
-	private int numStates;
+	public int state = 0;
+	public string InitialScene;
 
 	private float lastTime;
+	
+	private RawImage newGame;
+	private RawImage exit;
+	
+	public Texture2D newGame1;
+	public Texture2D newGame2;
+	public Texture2D exit1;
+	public Texture2D exit2;
 
 	// Use this for initialization
 	void Start () {
-		state = startState;
-		numStates = texts.Count;
 		lastTime = Time.time;
-		Text text = texts [state];
-		text.fontStyle = FontStyle.BoldAndItalic;
+		
+		newGame = GameObject.FindGameObjectWithTag("newGameImg").GetComponent <RawImage>();
+		exit = GameObject.FindGameObjectWithTag("exitImg").GetComponent <RawImage>();
+		newGame.texture = newGame2;
+		exit.texture = exit1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+	Debug.Log ("State = "+state);
 		if ( Input.anyKeyDown && Time.time - lastTime > timeDelay) {
 			int previousState = this.state;
 			lastTime = Time.time;
@@ -32,11 +38,7 @@ public class MenuController : MonoBehaviour {
 			if(Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Z)){
 				if( state == 0){		
 					Application.LoadLevel(InitialScene);
-				}
-				if( state == 1){		
-					Application.LoadLevel(InitialScene);
-				}
-				if( state == numStates-1){	
+				}else{	
 					Debug.Log( state );
 					#if UNITY_EDITOR
 						UnityEditor.EditorApplication.isPlaying = false;
@@ -48,23 +50,27 @@ public class MenuController : MonoBehaviour {
 			}
 
 			if (Input.GetKey(KeyCode.DownArrow)) {
+				if (state < 1) {
 					state += 1;
+				}else{
+					state = 0;
+				}
 			}
 			if (Input.GetKey (KeyCode.UpArrow)) {
+				if (state > 0) {
 					state -= 1;
+				}else{
+					state = 1;
+				}
 			}
-			if (state < 0) {
-					state = 0;
+			
+			if(state == 1){
+				newGame.texture = newGame1;
+				exit.texture = exit2;
+			}else{
+				newGame.texture = newGame2;
+				exit.texture = exit1;
 			}
-			if (state >= numStates) {
-					state = numStates - 1;
-			}	
-			Text previousText = texts [previousState];
-			previousText.fontStyle = FontStyle.Normal;
-
-			Text text = texts [state];
-			text.fontStyle = FontStyle.BoldAndItalic;
-
 		}
 	}
 }
