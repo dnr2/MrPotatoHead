@@ -15,7 +15,7 @@ GameObject:
   - 54: {fileID: 5414920}
   m_Layer: 0
   m_Name: TennisBall
-  m_TagString: laserbean
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 67cb2b9cd7e03a248b02e3e3f71703d7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2edaf3c6099502f418c69cca85c3fbe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPos: {x: 304.419983, y: 4.10999966, z: -.640000284}
+  targetPos: {x: -148.690567, y: 3.32370281, z: -.400000364}
   speed: 30
 --- !u!135 &13514920
 SphereCollider:

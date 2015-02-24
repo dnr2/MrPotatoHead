@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11480070}
   m_Layer: 0
   m_Name: HeatSeekingMissile
-  m_TagString: Untagged
+  m_TagString: laserbean
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c55afdc4a8a3b4890b07cc7d176510bb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30c9a38504cffae47a1f7cfb4503fb96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPos: {x: -122.900002, y: 31.4399986, z: -.400000006}
+  targetPos: {x: -121.336304, y: -1.51629734, z: -.400000006}
   type: 0
 --- !u!136 &13680070
 CapsuleCollider:

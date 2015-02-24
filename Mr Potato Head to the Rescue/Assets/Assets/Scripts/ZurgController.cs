@@ -7,7 +7,9 @@ public class ZurgController : MonoBehaviour {
 	public GameObject tennisShotSpawn;
 	public GameObject missileShotSpawn;
 	public GameObject Minion;
-	
+	public Transform[] tenisBallPositions;
+
+
 	private GameObject mrPotato;
 	
 	private float tennisBallFireRate = 0.1f;
@@ -22,8 +24,14 @@ public class ZurgController : MonoBehaviour {
 	private int missiles;
 	private int state;
 	private int side;
-	
+	private float LastTimeHit;
+
+
 	private Vector3 target;
+
+	public int zurgHPPoints = 50;
+	public float timeToNextDamage = 1;
+
 	// Use this for initialization
 	void Start () {
 		mrPotato = GameObject.FindWithTag("Player");
@@ -32,30 +40,46 @@ public class ZurgController : MonoBehaviour {
 		bullets = 3;
 		missiles = 5;
 	}
-	
+
+	void OnTriggerEnter(Collider other) {
+		if (other.tag == "weapon" && (Time.time - LastTimeHit) > timeToNextDamage) {
+			zurgHPPoints -= 1;
+			AudioSource.PlayClipAtPoint(audio.clip, this.gameObject.transform.position );
+			if( zurgHPPoints <= 0){
+				playDeathAnimation();
+			}
+			LastTimeHit = Time.time;
+		}
+	}
+
+	void playDeathAnimation(){
+		Application.LoadLevel("StartMenu");
+	}
+
 	// Update is called once per frame
 	void Update () {
+
 		if(mrPotato == null)
 			mrPotato = GameObject.FindWithTag("Player");
-		
+
+
 		if(state == 0)
 		{//bolas de tenis
-			
+
 			if(Time.time > nextTennisBallFire)
 			{
 				if(bullets == 3)
 				{
-					side = Random.Range(2,6)/2;
-					if(side == 1)
+					int pos = Random.Range(0,tenisBallPositions.Length);
+					this.transform.position = tenisBallPositions[pos].position;
+					target = new Vector3(mrPotato.transform.position.x, this.tennisShotSpawn.transform.position.y, this.tennisShotSpawn.transform.position.z);
+					 
+					if( this.tennisShotSpawn.transform.position.x - mrPotato.transform.position.x > 0 )
 					{
-						this.transform.position = new Vector3(mrPotato.transform.position.x + Random.Range(15,25), mrPotato.transform.position.y, mrPotato.transform.position.z);
-						target = new Vector3(mrPotato.transform.position.x, this.tennisShotSpawn.transform.position.y, this.tennisShotSpawn.transform.position.z);
 						transform.localEulerAngles = new Vector3(0,270,0);
 					}
 					else
 					{
-						this.transform.position = new Vector3(mrPotato.transform.position.x - Random.Range(15,25), mrPotato.transform.position.y, mrPotato.transform.position.z);
-						target = new Vector3(mrPotato.transform.position.x, this.tennisShotSpawn.transform.position.y, this.tennisShotSpawn.transform.position.z);
 						transform.localEulerAngles = new Vector3(0,90,0);
 					}
 					tennisBall.GetComponent<TennisBallController>().targetPos = target;
