@@ -5,7 +5,7 @@ public class HeatSeekingMissileController : MonoBehaviour {
 	public Vector3 targetPos;
 	public int type;
 	
-	private float speed = 30f;
+	private float speed = 100f;
 	private Vector3 startPos;
 	private Vector3 XAxis = new Vector3(1,0,0);
 	private Vector3 ZAxis = new Vector3(0,0,1);

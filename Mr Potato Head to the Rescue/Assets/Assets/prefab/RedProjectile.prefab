@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11424848}
   - 54: {fileID: 5424848}
   - 122: {fileID: 12200000}
+  - 96: {fileID: 9600000}
   m_Layer: 0
   m_Name: RedProjectile
   m_TagString: laserbean
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 124848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .200000003, y: 1, z: .200000003}
+  m_LocalScale: {x: .300000012, y: .699999988, z: .300000012}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,7 +46,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 19345cb58087b3a4f8b0a73a946035d1, type: 2}
+  - {fileID: 2100000, guid: 677f31c2d2a788243b84145ab174d3fa, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -75,6 +76,46 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!96 &9600000
+TrailRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124848}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials: []
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: .100000001
+  m_StartWidth: .100000001
+  m_EndWidth: .100000001
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 2583691517
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
 --- !u!114 &11424848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76146f56d6b21e541a2d73ea44ed39c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPos: {x: -242.745758, y: 44.0190086, z: -.400000006}
+  targetPos: {x: 58.3676949, y: 2.18370247, z: -.324712485}
   type: 0
 --- !u!122 &12200000
 Halo:
@@ -97,8 +138,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4291737855
-  m_Size: 1
+    rgba: 4278190335
+  m_Size: .699999988
 --- !u!136 &13624848
 CapsuleCollider:
   m_ObjectHideFlags: 1
