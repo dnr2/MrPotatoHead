@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 04c949d6b1efa6e439f333758e349064
+guid: ce8d79c79d11b8f9d00076e98d76c639
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -7,24 +7,24 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Plane
-    4300002: Pizza
-    7400000: PizzaRotate
-    7400002: Default Take
-    9500000: //RootNode
+    4300000: pPlane1
+    4300002: nurbsToPoly1
+    4300004: pCylinder1
+    4300006: waterPlaneMesh
+    11100000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 3
     materialSearch: 1
   animations:
-    legacyGenerateAnimations: 4
+    legacyGenerateAnimations: 0
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 0
-    animationRotationError: 5.38999987
-    animationPositionError: 2.72000003
-    animationScaleError: 2.56999993
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
@@ -41,12 +41,12 @@ ModelImporter:
     optimizeMeshForGPU: 1
     weldVertices: 1
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
+    splitTangentsAcrossUV: 0
     normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
@@ -63,6 +63,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
-  additionalBone: 0
+  animationType: 1
+  additionalBone: 1
   userData: 
