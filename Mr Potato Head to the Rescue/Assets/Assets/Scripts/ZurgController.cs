@@ -42,7 +42,7 @@ public class ZurgController : MonoBehaviour {
 			{
 				if(bullets == 3)
 				{
-					side = 2;
+					side = Random.Range(2,6)/2;
 					if(side == 1)
 					{
 						this.transform.position = new Vector3(mrPotato.transform.position.x + Random.Range(15,25), mrPotato.transform.position.y, mrPotato.transform.position.z);
@@ -85,7 +85,7 @@ public class ZurgController : MonoBehaviour {
 			{
 				if(missiles == 5)
 				{
-					this.transform.position = new Vector3(this.mrPotato.transform.position.x, this.transform.position.y + Random.Range(15,20), this.transform.position.z);
+					this.transform.position = new Vector3(this.mrPotato.transform.position.x, this.transform.position.y + Random.Range(25,30), this.transform.position.z);
 					target = new Vector3(this.shotSpawn.transform.position.x, this.shotSpawn.transform.position.y - 1, this.shotSpawn.transform.position.z);
 					heatSeekingMissile.GetComponent<HeatSeekingMissileController>().targetPos = target;
 					Instantiate(heatSeekingMissile, shotSpawn.transform.position, shotSpawn.transform.rotation);
