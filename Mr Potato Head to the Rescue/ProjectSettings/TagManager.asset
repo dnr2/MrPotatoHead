@@ -22,6 +22,8 @@ TagManager:
   - mpItem
   - mpSlider
   - PizzaCounterText
+  - newGameImg
+  - exitImg
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
