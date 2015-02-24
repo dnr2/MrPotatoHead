@@ -16,7 +16,9 @@ public class ProjectileController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if(other.GetComponent<ProjectileController>() == null || other.GetComponent<RedProjectileController>() == null)
+		if(other.gameObject.GetComponent<HeatSeekingMissileController>() == null || other.gameObject.GetComponent<TennisBallController>() == null
+		   || other.gameObject.GetComponent<ProjectileController>() == null || other.gameObject.GetComponent<RedProjectileController>() == null
+		   || other.gameObject.GetComponent<ZurgController>() == null)
 		{
 			/*if(other.gameObject.tag == "Player")
 			{
